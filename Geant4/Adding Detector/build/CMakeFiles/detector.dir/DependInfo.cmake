@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/construction.cc" "CMakeFiles/detector.dir/construction.cc.o" "gcc" "CMakeFiles/detector.dir/construction.cc.o.d"
-  "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/detector.cc" "CMakeFiles/detector.dir/detector.cc.o" "gcc" "CMakeFiles/detector.dir/detector.cc.o.d"
-  "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/physics.cc" "CMakeFiles/detector.dir/physics.cc.o" "gcc" "CMakeFiles/detector.dir/physics.cc.o.d"
+  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/construction.cc" "CMakeFiles/detector.dir/construction.cc.o" "gcc" "CMakeFiles/detector.dir/construction.cc.o.d"
+  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/detector.cc" "CMakeFiles/detector.dir/detector.cc.o" "gcc" "CMakeFiles/detector.dir/detector.cc.o.d"
+  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/physics.cc" "CMakeFiles/detector.dir/physics.cc.o" "gcc" "CMakeFiles/detector.dir/physics.cc.o.d"
   )
 
 # Targets to which this target links.

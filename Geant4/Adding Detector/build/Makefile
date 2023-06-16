@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector"
+CMAKE_SOURCE_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build"
+CMAKE_BINARY_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles" "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

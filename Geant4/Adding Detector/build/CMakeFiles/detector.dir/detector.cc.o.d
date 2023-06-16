@@ -1,5 +1,5 @@
 CMakeFiles/detector.dir/detector.cc.o: \
- /home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding\ Detector/detector.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding\ Detector/detector.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -620,7 +620,7 @@ CMakeFiles/detector.dir/detector.cc.o: \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4ToolsSGQtGLES.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4UIExecutive.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4VUIshell.hh \
- /home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding\ Detector/construction.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding\ Detector/construction.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4VPhysicalVolume.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4LogicalVolume.hh \
@@ -635,7 +635,7 @@ CMakeFiles/detector.dir/detector.cc.o: \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4SystemOfUnits.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4Material.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4Tubs.hh \
- /home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding\ Detector/physics.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding\ Detector/physics.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4VModularPhysicsList.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4VPhysicsConstructor.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4PhysicsListHelper.hh \

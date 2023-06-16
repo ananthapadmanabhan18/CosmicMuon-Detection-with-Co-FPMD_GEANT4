@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector"
+CMAKE_SOURCE_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build"
+CMAKE_BINARY_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/detector.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/detector.cc.o: CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/detector.cc.o: ../detector.cc
 CMakeFiles/detector.dir/detector.cc.o: CMakeFiles/detector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detector.dir/detector.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detector.dir/detector.cc.o -MF CMakeFiles/detector.dir/detector.cc.o.d -o CMakeFiles/detector.dir/detector.cc.o -c "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/detector.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detector.dir/detector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detector.dir/detector.cc.o -MF CMakeFiles/detector.dir/detector.cc.o.d -o CMakeFiles/detector.dir/detector.cc.o -c "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/detector.cc"
 
 CMakeFiles/detector.dir/detector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detector.dir/detector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/detector.cc" > CMakeFiles/detector.dir/detector.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/detector.cc" > CMakeFiles/detector.dir/detector.cc.i
 
 CMakeFiles/detector.dir/detector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detector.dir/detector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/detector.cc" -o CMakeFiles/detector.dir/detector.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/detector.cc" -o CMakeFiles/detector.dir/detector.cc.s
 
 CMakeFiles/detector.dir/construction.cc.o: CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/construction.cc.o: ../construction.cc
 CMakeFiles/detector.dir/construction.cc.o: CMakeFiles/detector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detector.dir/construction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detector.dir/construction.cc.o -MF CMakeFiles/detector.dir/construction.cc.o.d -o CMakeFiles/detector.dir/construction.cc.o -c "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/construction.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detector.dir/construction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detector.dir/construction.cc.o -MF CMakeFiles/detector.dir/construction.cc.o.d -o CMakeFiles/detector.dir/construction.cc.o -c "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/construction.cc"
 
 CMakeFiles/detector.dir/construction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detector.dir/construction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/construction.cc" > CMakeFiles/detector.dir/construction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/construction.cc" > CMakeFiles/detector.dir/construction.cc.i
 
 CMakeFiles/detector.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detector.dir/construction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/construction.cc" -o CMakeFiles/detector.dir/construction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/construction.cc" -o CMakeFiles/detector.dir/construction.cc.s
 
 CMakeFiles/detector.dir/physics.cc.o: CMakeFiles/detector.dir/flags.make
 CMakeFiles/detector.dir/physics.cc.o: ../physics.cc
 CMakeFiles/detector.dir/physics.cc.o: CMakeFiles/detector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detector.dir/physics.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detector.dir/physics.cc.o -MF CMakeFiles/detector.dir/physics.cc.o.d -o CMakeFiles/detector.dir/physics.cc.o -c "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/physics.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detector.dir/physics.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/detector.dir/physics.cc.o -MF CMakeFiles/detector.dir/physics.cc.o.d -o CMakeFiles/detector.dir/physics.cc.o -c "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/physics.cc"
 
 CMakeFiles/detector.dir/physics.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detector.dir/physics.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/physics.cc" > CMakeFiles/detector.dir/physics.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/physics.cc" > CMakeFiles/detector.dir/physics.cc.i
 
 CMakeFiles/detector.dir/physics.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detector.dir/physics.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/physics.cc" -o CMakeFiles/detector.dir/physics.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/physics.cc" -o CMakeFiles/detector.dir/physics.cc.s
 
 # Object files for target detector
 detector_OBJECTS = \
@@ -171,7 +171,7 @@ detector: /home/apmnair18/geant4/geant4_install/lib/libG4global.so
 detector: /home/apmnair18/geant4/geant4_install/lib/libG4clhep.so
 detector: /home/apmnair18/geant4/geant4_install/lib/libG4ptl.so.2.3.3
 detector: CMakeFiles/detector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable detector"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detector.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +183,6 @@ CMakeFiles/detector.dir/clean:
 .PHONY : CMakeFiles/detector.dir/clean
 
 CMakeFiles/detector.dir/depend:
-	cd "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector" "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector" "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build" "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build" "/home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding Detector/build/CMakeFiles/detector.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/detector.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/detector.dir/depend
 

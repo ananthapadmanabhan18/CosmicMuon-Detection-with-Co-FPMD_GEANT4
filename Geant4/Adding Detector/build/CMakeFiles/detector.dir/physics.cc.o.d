@@ -1,7 +1,7 @@
 CMakeFiles/detector.dir/physics.cc.o: \
- /home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding\ Detector/physics.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding\ Detector/physics.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Internship-Files/2023-VECC/Works/Geant4/Adding\ Detector/physics.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding\ Detector/physics.hh \
  /home/apmnair18/geant4/geant4_install/include/Geant4/G4VModularPhysicsList.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
