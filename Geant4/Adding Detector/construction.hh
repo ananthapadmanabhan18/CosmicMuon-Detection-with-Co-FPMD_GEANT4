@@ -11,11 +11,20 @@
 #include "G4Tubs.hh"
 
 
-class MyDetectorConstruction : public G4VUserDetectorConstruction
+class scintillation1 : public G4VUserDetectorConstruction
 {
 public:
-    MyDetectorConstruction();
-    ~MyDetectorConstruction();
+    scintillation1();
+    ~scintillation1();
+
+    virtual G4VPhysicalVolume *Construct();
+};
+
+class scintillation2 : public G4VUserDetectorConstruction
+{
+public:
+    scintillation2();
+    ~scintillation2();
 
     virtual G4VPhysicalVolume *Construct();
 };
