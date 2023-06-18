@@ -338,4 +338,9 @@ CMakeFiles/detector.dir/construction.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4SystemOfUnits.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Material.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.icc
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/graphics_reps_defs.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Color.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc

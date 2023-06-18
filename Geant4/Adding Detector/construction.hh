@@ -10,6 +10,7 @@
 #include "G4Material.hh"
 #include "G4Tubs.hh"
 #include "G4LogicalVolume.hh"
+#include "G4VisAttributes.hh"
 
 
 class scintillation1 : public G4VUserDetectorConstruction

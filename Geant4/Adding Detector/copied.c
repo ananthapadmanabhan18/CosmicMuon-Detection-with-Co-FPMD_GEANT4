@@ -56,7 +56,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
     G4Material *worldMat = nist->FindOrBuildMaterial("G4_WATER");
 
     //Defining World Volume
-    G4Box *solidworld = new G4Box("world",1*m,0.05*m,0.1*m);
+    G4Box *sbox1 = new G4Box("world",1*m,0.05*m,0.1*m);
     G4LogicalVolume *lbox1 = new G4LogicalVolume(sbox1, worldMat,"lbox1");
     G4VPhysicalVolume *pbox1 = new G4PVPlacement(0,G4ThreeVector(0,0,0),lbox1, "pbox1", 0, false,0,true);
     return pbox1;

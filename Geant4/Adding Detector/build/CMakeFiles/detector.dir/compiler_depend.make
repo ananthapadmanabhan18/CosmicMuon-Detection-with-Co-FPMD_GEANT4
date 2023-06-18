@@ -393,7 +393,12 @@ CMakeFiles/detector.dir/construction.cc.o: ../construction.cc \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4SystemOfUnits.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Material.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.hh \
-  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.icc
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.icc \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/graphics_reps_defs.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Color.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc
 
 CMakeFiles/detector.dir/detector.cc.o: ../detector.cc \
   /usr/include/stdc-predef.h \
@@ -1085,6 +1090,7 @@ CMakeFiles/detector.dir/detector.cc.o: ../detector.cc \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4SystemOfUnits.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Material.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh \
   ../physics.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4VModularPhysicsList.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicsConstructor.hh \
@@ -1784,10 +1790,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4ModelingParameters.icc:
 
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh:
-
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4Cons.icc:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4GraphicsSystemList.hh:
@@ -1878,6 +1880,12 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelNode.icc:
 
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelNode.hh:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.icc:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.hh:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/HepPolyhedron.h:
@@ -1963,6 +1971,10 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 /usr/include/c++/11/fenv.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4BlockingList.hh:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/pwdefs.hh:
 
 /usr/include/c++/11/utility:
 
@@ -2250,10 +2262,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4GRSSolid.icc:
-
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4Navigator.icc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
@@ -2321,14 +2329,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 /usr/include/c++/11/bits/stl_construct.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/graphics_reps_defs.hh:
-
-/usr/include/c++/11/array:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4SandiaTable.hh:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4TrajectoryContainer.hh:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleMomentum.hh:
 
@@ -2532,8 +2532,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.hh:
-
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/wchar.h:
@@ -2658,10 +2656,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationY.h:
 
-/home/apmnair18/geant4/geant4-install/include/Geant4/pwdefs.hh:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4BlockingList.hh:
-
 /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationZ.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
@@ -2696,6 +2690,8 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4Region.icc:
 
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh:
+
 /usr/include/c++/11/sstream:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4AutoLock.hh:
@@ -2713,8 +2709,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedron.hh:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelNode.hh:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
@@ -2868,6 +2862,20 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.icc:
 
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4GRSSolid.icc:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc:
+
+/usr/include/c++/11/array:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4SandiaTable.hh:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4TrajectoryContainer.hh:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/graphics_reps_defs.hh:
+
 /usr/include/c++/11/list:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
@@ -2996,9 +3004,9 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Random/Randomize.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4BlockingList.icc:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Random/JamesRandom.h:
 
@@ -3013,8 +3021,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/Vector3D.h:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Random/RanshiEngine.h:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4SmartVoxelProxy.icc:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4UIdirectory.hh:
 
