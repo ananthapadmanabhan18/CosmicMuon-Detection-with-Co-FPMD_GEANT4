@@ -9,6 +9,7 @@
 #include "G4SystemOfUnits.hh"
 #include "G4Material.hh"
 #include "G4Tubs.hh"
+#include "G4LogicalVolume.hh"
 
 
 class scintillation1 : public G4VUserDetectorConstruction
@@ -20,12 +21,5 @@ public:
     virtual G4VPhysicalVolume *Construct();
 };
 
-// class scintillation2 : public G4VUserDetectorConstruction
-// {
-// public:
-//     scintillation2();
-//     ~scintillation2();
 
-//     virtual G4VPhysicalVolume *Construct();
-// };
 #endif
