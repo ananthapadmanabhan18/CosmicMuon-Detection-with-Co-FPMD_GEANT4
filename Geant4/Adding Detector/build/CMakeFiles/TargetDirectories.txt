@@ -1,4 +1,4 @@
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/detector.dir
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/Simulation.dir
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/edit_cache.dir
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/rebuild_cache.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/detector.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/Simulation.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/edit_cache.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Adding Detector/build/CMakeFiles/rebuild_cache.dir

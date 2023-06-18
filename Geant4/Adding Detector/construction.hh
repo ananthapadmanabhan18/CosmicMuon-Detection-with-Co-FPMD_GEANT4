@@ -20,12 +20,12 @@ public:
     virtual G4VPhysicalVolume *Construct();
 };
 
-class scintillation2 : public G4VUserDetectorConstruction
-{
-public:
-    scintillation2();
-    ~scintillation2();
+// class scintillation2 : public G4VUserDetectorConstruction
+// {
+// public:
+//     scintillation2();
+//     ~scintillation2();
 
-    virtual G4VPhysicalVolume *Construct();
-};
+//     virtual G4VPhysicalVolume *Construct();
+// };
 #endif
