@@ -26,10 +26,17 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4LogicalVolume* logicalDetector2 = new G4LogicalVolume(solidDetector2, detectorMaterial, "Detector2");
     new G4PVPlacement(nullptr, G4ThreeVector(0, 1*m,0), logicalDetector2, "Detector2", logicworld, false, 0,true);
 
+    //defining Honeycomb detector
+    G4Tubs* hcdetector = new G4Tubs("honeycomb",0,5*mm,2.5*mm,0,2*M_PI);
+    G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,detectorMaterial,"hclogic");
+    new G4PVPlacement(nullptr, G4ThreeVector(0,0,0), logicalDetector2, "Detector2", logicworld, false, 0,true);
 
-    // logicworld->SetVisAttributes(G4VisAttributes::GetInvisible); // Make the world volume invisible
 
-    return new G4PVPlacement(nullptr, G4ThreeVector(), logicworld, "World", nullptr, false, 0,true);
+
+
+
+    // return new G4PVPlacement(nullptr, G4ThreeVector(), logicworld, "World", nullptr, false, 0,true);
+    return physicalworld;
 
 }
 
