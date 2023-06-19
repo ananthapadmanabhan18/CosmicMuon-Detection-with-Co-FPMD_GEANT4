@@ -60,3 +60,36 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
     G4LogicalVolume *lbox1 = new G4LogicalVolume(sbox1, worldMat,"lbox1");
     G4VPhysicalVolume *pbox1 = new G4PVPlacement(0,G4ThreeVector(0,0,0),lbox1, "pbox1", 0, false,0,true);
     return pbox1;
+
+
+
+
+
+
+    new G4double[2]{0, detectorHeight},new G4double[2]{0, detectorRadius},new G4double[2]{0, detectorRadius}
+
+
+
+
+
+// Class description:
+//
+//   Class implementing a CSG-like type "PGON" Geant 3.21 volume,
+//   inherited from class G4VCSGfaceted:
+//
+//   G4Polyhedra( const G4String& name,
+//                G4double phiStart,         - initial phi starting angle
+//                G4double phiTotal,         - total phi angle
+//                G4int numSide,             - number sides
+//                G4int numZPlanes,          - number of z planes
+//                const G4double zPlane[],   - position of z planes
+//                const G4double rInner[],   - tangent distance to inner surface
+//                const G4double rOuter[]  ) - tangent distance to outer surface
+//
+//   G4Polyhedra( const G4String& name,
+//                G4double phiStart,    - initial phi starting angle
+//                G4double phiTotal,    - total phi angle
+//                G4int    numSide,     - number sides
+//                G4int    numRZ,       - number corners in r,z space
+//                const G4double r[],   - r coordinate of these corners
+//                const G4double z[] )  - z coordinate of these corners
