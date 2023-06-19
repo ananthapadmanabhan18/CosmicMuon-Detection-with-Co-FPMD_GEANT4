@@ -27,7 +27,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     new G4PVPlacement(nullptr, G4ThreeVector(0, 1*m,0), logicalDetector2, "Detector2", logicworld, false, 0,true);
 
 
-    logicworld->SetVisAttributes(G4VisAttributes::GetInvisible); // Make the world volume invisible
+    // logicworld->SetVisAttributes(G4VisAttributes::GetInvisible); // Make the world volume invisible
 
     return new G4PVPlacement(nullptr, G4ThreeVector(), logicworld, "World", nullptr, false, 0,true);
 
