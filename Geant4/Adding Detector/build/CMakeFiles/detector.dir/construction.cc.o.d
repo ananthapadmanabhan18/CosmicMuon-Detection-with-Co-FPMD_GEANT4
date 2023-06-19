@@ -343,4 +343,10 @@ CMakeFiles/detector.dir/construction.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/graphics_reps_defs.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Color.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGfaceted.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4PolyhedraSide.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGface.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4PolyhedraHistorical.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.icc

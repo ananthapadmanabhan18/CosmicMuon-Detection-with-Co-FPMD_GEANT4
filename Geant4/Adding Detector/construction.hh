@@ -11,6 +11,7 @@
 #include "G4Tubs.hh"
 #include "G4LogicalVolume.hh"
 #include "G4VisAttributes.hh"
+#include "G4Polyhedra.hh"
 
 
 class scintillation1 : public G4VUserDetectorConstruction

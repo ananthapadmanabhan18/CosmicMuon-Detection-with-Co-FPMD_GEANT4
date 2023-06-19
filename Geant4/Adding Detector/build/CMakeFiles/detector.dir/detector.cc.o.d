@@ -632,6 +632,7 @@ CMakeFiles/detector.dir/detector.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Material.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.hh \
  /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Adding\ Detector/physics.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VModularPhysicsList.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicsConstructor.hh \

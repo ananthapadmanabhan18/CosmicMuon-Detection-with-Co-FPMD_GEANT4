@@ -6,6 +6,9 @@ scintillation1::~scintillation1()
 {}
 G4VPhysicalVolume *scintillation1::Construct()
 {
+    G4double zp[] =  {0,5.0*mm};
+    G4double ir[]= {0,5.0*mm};
+
     // Define materials
     G4NistManager* nistManager = G4NistManager::Instance();
     G4Material* air = nistManager->FindOrBuildMaterial("G4_Al");
@@ -27,9 +30,10 @@ G4VPhysicalVolume *scintillation1::Construct()
     new G4PVPlacement(nullptr, G4ThreeVector(0, 1*m,0), logicalDetector2, "Detector2", logicworld, false, 0,true);
 
     //defining Honeycomb detector
-    G4Tubs* hcdetector = new G4Tubs("honeycomb",0,5*mm,2.5*mm,0,2*M_PI);
+    // G4Tubs* hcdetector = new G4Tubs("honeycomb",0,5*mm,2.5*mm,0,2*M_PI);
+    G4Polyhedra *hcdetector = new G4Polyhedra("DetectorSolid",0,360 * deg,6,2,zp,ir,ir);
     G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,detectorMaterial,"hclogic");
-    new G4PVPlacement(nullptr, G4ThreeVector(0,0,0), logicalDetector2, "Detector2", logicworld, false, 0,true);
+    new G4PVPlacement(nullptr, G4ThreeVector(0,0,0), logicalDetector1, "HCdetector", logicworld, false, 0,true);
 
 
 
