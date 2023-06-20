@@ -1,0 +1,4 @@
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles/particlegun.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles/Simulation.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles/edit_cache.dir
+/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles/rebuild_cache.dir
