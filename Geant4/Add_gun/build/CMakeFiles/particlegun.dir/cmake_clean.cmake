@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/particlegun.dir/action.cc.o"
+  "CMakeFiles/particlegun.dir/action.cc.o.d"
   "CMakeFiles/particlegun.dir/construction.cc.o"
   "CMakeFiles/particlegun.dir/construction.cc.o.d"
   "CMakeFiles/particlegun.dir/particlegun.cc.o"

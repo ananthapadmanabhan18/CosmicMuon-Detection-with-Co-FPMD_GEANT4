@@ -4,8 +4,9 @@
 #include "G4VisManager.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-#include "construction.hh"
+#include "detector.hh"
 #include "physics.hh"
+#include "action.hh"
 
 int main(int argc, char** argv)
 {
@@ -13,6 +14,7 @@ int main(int argc, char** argv)
     
     runManager->SetUserInitialization(new scintillation1());
     runManager->SetUserInitialization(new MyPhysicsList());
+    runManager->SetUserInitialization(new ActionInitialization());
     runManager->Initialize();
 
 

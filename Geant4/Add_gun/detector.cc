@@ -1,4 +1,4 @@
-#include "construction.hh"
+#include "detector.hh"
 #include "G4LogicalVolume.hh"
 #include "math.h"
 scintillation1::scintillation1()

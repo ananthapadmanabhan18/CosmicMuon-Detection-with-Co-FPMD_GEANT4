@@ -1,5 +1,5 @@
-CMakeFiles/particlegun.dir/particlegun.cc.o: \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/particlegun.cc \
+CMakeFiles/simulation.dir/simulation.cc.o: \
+ /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/simulation.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -616,7 +616,7 @@ CMakeFiles/particlegun.dir/particlegun.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ToolsSGQtGLES.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4UIExecutive.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUIshell.hh \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/construction.hh \
+ /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/detector.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4LogicalVolume.hh \

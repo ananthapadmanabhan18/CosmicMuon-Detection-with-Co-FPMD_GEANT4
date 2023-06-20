@@ -83,10 +83,24 @@ CMakeFiles/particlegun.dir/particlegun.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particlegun.dir/particlegun.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/particlegun.cc -o CMakeFiles/particlegun.dir/particlegun.cc.s
 
+CMakeFiles/particlegun.dir/action.cc.o: CMakeFiles/particlegun.dir/flags.make
+CMakeFiles/particlegun.dir/action.cc.o: ../action.cc
+CMakeFiles/particlegun.dir/action.cc.o: CMakeFiles/particlegun.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/particlegun.dir/action.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particlegun.dir/action.cc.o -MF CMakeFiles/particlegun.dir/action.cc.o.d -o CMakeFiles/particlegun.dir/action.cc.o -c /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/action.cc
+
+CMakeFiles/particlegun.dir/action.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/particlegun.dir/action.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/action.cc > CMakeFiles/particlegun.dir/action.cc.i
+
+CMakeFiles/particlegun.dir/action.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/particlegun.dir/action.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/action.cc -o CMakeFiles/particlegun.dir/action.cc.s
+
 CMakeFiles/particlegun.dir/construction.cc.o: CMakeFiles/particlegun.dir/flags.make
 CMakeFiles/particlegun.dir/construction.cc.o: ../construction.cc
 CMakeFiles/particlegun.dir/construction.cc.o: CMakeFiles/particlegun.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/particlegun.dir/construction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/particlegun.dir/construction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particlegun.dir/construction.cc.o -MF CMakeFiles/particlegun.dir/construction.cc.o.d -o CMakeFiles/particlegun.dir/construction.cc.o -c /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/construction.cc
 
 CMakeFiles/particlegun.dir/construction.cc.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/particlegun.dir/construction.cc.s: cmake_force
 CMakeFiles/particlegun.dir/physics.cc.o: CMakeFiles/particlegun.dir/flags.make
 CMakeFiles/particlegun.dir/physics.cc.o: ../physics.cc
 CMakeFiles/particlegun.dir/physics.cc.o: CMakeFiles/particlegun.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/particlegun.dir/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/particlegun.dir/physics.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particlegun.dir/physics.cc.o -MF CMakeFiles/particlegun.dir/physics.cc.o.d -o CMakeFiles/particlegun.dir/physics.cc.o -c /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/physics.cc
 
 CMakeFiles/particlegun.dir/physics.cc.i: cmake_force
@@ -114,6 +128,7 @@ CMakeFiles/particlegun.dir/physics.cc.s: cmake_force
 # Object files for target particlegun
 particlegun_OBJECTS = \
 "CMakeFiles/particlegun.dir/particlegun.cc.o" \
+"CMakeFiles/particlegun.dir/action.cc.o" \
 "CMakeFiles/particlegun.dir/construction.cc.o" \
 "CMakeFiles/particlegun.dir/physics.cc.o"
 
@@ -121,6 +136,7 @@ particlegun_OBJECTS = \
 particlegun_EXTERNAL_OBJECTS =
 
 particlegun: CMakeFiles/particlegun.dir/particlegun.cc.o
+particlegun: CMakeFiles/particlegun.dir/action.cc.o
 particlegun: CMakeFiles/particlegun.dir/construction.cc.o
 particlegun: CMakeFiles/particlegun.dir/physics.cc.o
 particlegun: CMakeFiles/particlegun.dir/build.make
@@ -170,7 +186,7 @@ particlegun: /home/apmnair18/geant4/geant4-install/lib/libG4global.so
 particlegun: /home/apmnair18/geant4/geant4-install/lib/libG4clhep.so
 particlegun: /home/apmnair18/geant4/geant4-install/lib/libG4ptl.so.2.3.3
 particlegun: CMakeFiles/particlegun.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable particlegun"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable particlegun"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/particlegun.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
