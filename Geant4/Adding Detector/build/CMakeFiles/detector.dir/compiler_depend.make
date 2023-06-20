@@ -405,6 +405,9 @@ CMakeFiles/detector.dir/construction.cc.o: ../construction.cc \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGface.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4PolyhedraHistorical.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.icc \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VGraphicsSystem.hh \
   /usr/include/c++/11/math.h
 
 CMakeFiles/detector.dir/detector.cc.o: ../detector.cc \
@@ -1099,6 +1102,8 @@ CMakeFiles/detector.dir/detector.cc.o: ../detector.cc \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
+  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
   ../physics.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4VModularPhysicsList.hh \
   /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicsConstructor.hh \
@@ -1700,8 +1705,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateQt.hh:
 
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh:
-
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4ToolsSGOffscreen.hh:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4VRML2File.hh:
@@ -1890,6 +1893,10 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHistory.icc:
 
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistory.icc:
+
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/HepPolyhedron.h:
@@ -1917,8 +1924,6 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/c++/11/bits/hashtable.h:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistory.icc:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicsConstructor.hh:
 
@@ -2900,6 +2905,8 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGface.hh:
 
+/home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh:
+
 /usr/include/c++/11/math.h:
 
 /usr/include/c++/11/list:
@@ -3113,5 +3120,3 @@ CMakeFiles/detector.dir/physics.cc.o: ../physics.cc \
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevel.icc:
-
-/home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh:

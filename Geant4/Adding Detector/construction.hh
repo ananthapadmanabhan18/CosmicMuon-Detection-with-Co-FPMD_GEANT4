@@ -12,6 +12,9 @@
 #include "G4LogicalVolume.hh"
 #include "G4VisAttributes.hh"
 #include "G4Polyhedra.hh"
+#include "G4Colour.hh"
+#include "G4OpenGLImmediateX.hh"
+#include "G4Element.hh"
 
 
 class scintillation1 : public G4VUserDetectorConstruction

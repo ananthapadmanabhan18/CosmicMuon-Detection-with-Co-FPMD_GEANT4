@@ -350,4 +350,8 @@ CMakeFiles/detector.dir/construction.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGface.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4PolyhedraHistorical.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VGraphicsSystem.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Element.hh \
  /usr/include/c++/11/math.h
