@@ -3,5 +3,6 @@
     "files.associations": {
         "*.icc": "cpp",
         "cmath": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun"
 }
