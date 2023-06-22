@@ -25,29 +25,27 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     // Define materials
     G4NistManager* nistManager = G4NistManager::Instance();
+
     G4Material* air = nistManager->FindOrBuildMaterial("G4_AIR");
     G4Material* plastic = nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+    G4Element* gold = nistManager->FindOrBuildElement("Au");
+    G4Element* copper = nistManager->FindOrBuildElement("Cu");
+    G4Element* argonGas = nistManager->FindOrBuildElement("Ar");
 
-    G4Element* elAu = new G4Element("Gold", "Au", 79, 196.96657 * g/mole);
-    G4Material* gold = new G4Material("GoldMaterial", 19.3 * g/cm3, 1);
-    gold->AddElement(elAu, 1);
-
-    G4Material* copper = nistManager->FindOrBuildMaterial("G4_Cu");
-    G4Material* argonGas = nistManager->FindOrBuildMaterial("G4_Ar");
-
-
-
-    G4double a1 = 12*g/mole;
-    G4Element* elC = new G4Element("Carbon","C" ,6, a1);
-    G4double a2 = 16.00*g/mole;
-    G4Element* elO = new G4Element("Oxygen" ,"O" ,8., a2);
-    G4double density = 1.72*kg/m3;
-    G4Material* CO = new G4Material("CO",density,2);
-    CO->AddElement(elC, 1);
-    CO->AddElement(elO, 1);
-
+    //gold material
+    G4Material* Au = new G4Material("Gold", 19.32 * g/cm3, 1);
+    Au->AddElement(gold,1);
+    //copper material
+    G4Material* cu = new G4Material("Copper", 8.96 * g/cm3, 1);
+    Au->AddElement(copper,1);
+    //Carbon Monoxide
+    G4double density = 1.25*g/L;
+    G4Material* CO = new G4Material("CO",1.25*g/L,2);
+    CO->AddElement(nistManager->FindOrBuildElement("C"), 1);
+    CO->AddElement(nistManager->FindOrBuildElement("O"), 1);
+    //Gas Mixture
     G4Material* gasMixture = new G4Material("GasMixture", 1.72 , 2);
-    gasMixture->AddMaterial(argonGas, 0.9);
+    gasMixture->AddElement(argonGas, 0.9);
     gasMixture->AddMaterial(CO, 0.1);
 
 
@@ -82,7 +80,7 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     //defining Honeycomb detector
     G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
-    G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,copper,"hclogic");
+    G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,cu,"hclogic");
     hclogic->SetVisAttributes(vishc);
 
     for (int i = -15;i<=16;i++){
