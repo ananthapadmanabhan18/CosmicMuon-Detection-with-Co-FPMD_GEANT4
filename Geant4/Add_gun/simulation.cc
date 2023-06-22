@@ -34,6 +34,7 @@ int main(int argc, char** argv)
     UImanager->ApplyCommand("/vis/set/textColour");
 
 
+
     ui->SessionStart();
 
     return 0;
