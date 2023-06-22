@@ -25,19 +25,18 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     // Define materials
     G4NistManager* nistManager = G4NistManager::Instance();
-
+    //Defining Elements
     G4Material* air = nistManager->FindOrBuildMaterial("G4_AIR");
     G4Material* plastic = nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
     G4Element* gold = nistManager->FindOrBuildElement("Au");
     G4Element* copper = nistManager->FindOrBuildElement("Cu");
     G4Element* argonGas = nistManager->FindOrBuildElement("Ar");
-
     //gold material
     G4Material* Au = new G4Material("Gold", 19.32 * g/cm3, 1);
     Au->AddElement(gold,1);
     //copper material
-    G4Material* cu = new G4Material("Copper", 8.96 * g/cm3, 1);
-    Au->AddElement(copper,1);
+    G4Material* Cu = new G4Material("Copper", 8.96 * g/cm3, 1);
+    Cu->AddElement(copper,1);
     //Carbon Monoxide
     G4double density = 1.25*g/L;
     G4Material* CO = new G4Material("CO",1.25*g/L,2);
@@ -47,6 +46,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Material* gasMixture = new G4Material("GasMixture", 1.72 , 2);
     gasMixture->AddElement(argonGas, 0.9);
     gasMixture->AddMaterial(CO, 0.1);
+
 
 
     //Defining colours
@@ -65,24 +65,25 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4VisAttributes* WW = new G4VisAttributes(G4Colour(0.85,0.85,1,0));
     WW->SetForceSolid(true);
 
+
+
     //Defining World Volume
     G4Box *solidworld = new G4Box("world",2.5*m,2.5*m,2.5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
     logicworld->SetVisAttributes(WW);
     G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0),logicworld, "physicalworld", nullptr, false,0,true);
 
-    //defining 2 Scintillation Detectors Detector
+    //Defining 2 Scintillation Detectors Detector
     G4Box* solidDetector = new G4Box("Detector1", 16*(30/sqrt(3))*mm,5*cm,1*cm);
     G4LogicalVolume* logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
-    // logicalDetector->SetVisAttributes(visscintilation);
     new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m, -1*m), logicalDetector, "Detector1", logicworld, false, 0,true);
     new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m,1*m), logicalDetector, "Detector2", logicworld, false, 0,true);
 
-    //defining Honeycomb detector
-    G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
-    G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,cu,"hclogic");
-    hclogic->SetVisAttributes(vishc);
 
+    //Defining Honeycomb detector
+    G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
+    G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,Cu,"hclogic");
+    hclogic->SetVisAttributes(vishc);
     for (int i = -15;i<=16;i++){
         for (int j = -15;j<=16;j++){
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), hclogic, "HCdetector", logicworld, false, 0,true);
@@ -90,9 +91,10 @@ G4VPhysicalVolume *scintillation1::Construct()
         }
     }
 
+
     //Defining the gold wire 
     G4Tubs *goldwire = new G4Tubs("goldwire",0,0.01*mm,2.5*mm,0,2*M_PI);
-    G4LogicalVolume* goldlogic = new G4LogicalVolume(goldwire,gold,"goldlogic");
+    G4LogicalVolume* goldlogic = new G4LogicalVolume(goldwire,Au,"goldlogic");
     goldlogic->SetVisAttributes(visgold);
     for (int i = -15;i<=16;i++){
         for (int j = -15;j<=16;j++){
