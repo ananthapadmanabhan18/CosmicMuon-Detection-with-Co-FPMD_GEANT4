@@ -616,7 +616,7 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ToolsSGQtGLES.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4UIExecutive.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUIshell.hh \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/detector.hh \
+ /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/construction.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4LogicalVolume.hh \
@@ -636,6 +636,12 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Element.hh \
+ /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/detector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VReadOutGeometry.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4SensitiveVolumeList.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4CollectionNameVector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSDFilter.hh \
  /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/physics.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VModularPhysicsList.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicsConstructor.hh \

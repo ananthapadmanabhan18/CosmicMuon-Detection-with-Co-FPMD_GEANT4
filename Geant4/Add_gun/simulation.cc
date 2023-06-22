@@ -4,7 +4,7 @@
 #include "G4VisManager.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-#include "detector.hh"
+#include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
 
@@ -27,11 +27,12 @@ int main(int argc, char** argv)
     G4UImanager *UImanager = G4UImanager::GetUIpointer();
 
     UImanager->ApplyCommand("/vis/open OGL");
-    UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
+    UImanager->ApplyCommand("/vis/viewer/set/viewpointVector 0 0 1");
     UImanager->ApplyCommand("/vis/drawVolume");
     UImanager->ApplyCommand("/vis/scene/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/set/textColour");
+    UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
 
 
 
