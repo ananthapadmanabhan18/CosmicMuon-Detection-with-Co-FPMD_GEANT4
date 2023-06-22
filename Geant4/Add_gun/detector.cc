@@ -80,39 +80,39 @@ G4VPhysicalVolume *scintillation1::Construct()
     new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m,1*m), logicalDetector, "Detector2", logicworld, false, 0,true);
 
 
-    // //Defining Honeycomb detector
-    // G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
-    // G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,Cu,"hclogic");
-    // hclogic->SetVisAttributes(vishc);
-    // for (int i = -15;i<=16;i++){
-    //     for (int j = -15;j<=16;j++){
-    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), hclogic, "HCdetector", logicworld, false, 0,true);
-    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), hclogic, "HCdetector", logicworld, false, 0,true);
-    //     }
-    // }
+    //Defining Honeycomb detector
+    G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
+    G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,Cu,"hclogic");
+    hclogic->SetVisAttributes(vishc);
+    for (int i = -15;i<=16;i++){
+        for (int j = -15;j<=16;j++){
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), hclogic, "HCdetector", logicworld, false, 0,true);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), hclogic, "HCdetector", logicworld, false, 0,true);
+        }
+    }
 
 
-    // //Defining the Gold wire 
-    // G4Tubs *goldwire = new G4Tubs("goldwire",0,0.01*mm,2.5*mm,0,2*M_PI);
-    // G4LogicalVolume* goldlogic = new G4LogicalVolume(goldwire,Au,"goldlogic");
-    // goldlogic->SetVisAttributes(visgold);
-    // for (int i = -15;i<=16;i++){
-    //     for (int j = -15;j<=16;j++){
-    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), goldlogic, "goldwire", logicworld, false, 0,true);
-    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), goldlogic, "goldwire", logicworld, false, 0,true);
-    //     }
-    // }
+    //Defining the Gold wire 
+    G4Tubs *goldwire = new G4Tubs("goldwire",0,0.01*mm,2.5*mm,0,2*M_PI);
+    G4LogicalVolume* goldlogic = new G4LogicalVolume(goldwire,Au,"goldlogic");
+    goldlogic->SetVisAttributes(visgold);
+    for (int i = -15;i<=16;i++){
+        for (int j = -15;j<=16;j++){
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), goldlogic, "goldwire", logicworld, false, 0,true);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), goldlogic, "goldwire", logicworld, false, 0,true);
+        }
+    }
 
-    // //Filling the detector with argon/CO mixture
-    // G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
-    // G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
-    // gaslogic->SetVisAttributes(gas);
-    // for (int i = -15;i<=16;i++){
-    //     for (int j = -15;j<=16;j++){
-    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), gaslogic, "gasmix", logicworld, false, 0,true);
-    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), gaslogic, "gasmix", logicworld, false, 0,true);
-    //     }
-    // }
+    //Filling the detector with argon/CO mixture
+    G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
+    G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
+    gaslogic->SetVisAttributes(gas);
+    for (int i = -15;i<=16;i++){
+        for (int j = -15;j<=16;j++){
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), gaslogic, "gasmix", logicworld, false, 0,true);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), gaslogic, "gasmix", logicworld, false, 0,true);
+        }
+    }
     return physicalworld;
     
 }
