@@ -636,12 +636,6 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Element.hh \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/detector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VReadOutGeometry.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SensitiveVolumeList.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4CollectionNameVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSDFilter.hh \
  /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/physics.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VModularPhysicsList.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicsConstructor.hh \
@@ -710,5 +704,11 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4EmStandardPhysics.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpticalPhysics.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpticalParameters.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4DecayPhysics.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Decay.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VRestDiscreteProcess.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleChangeForDecay.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4DecayProcessType.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4RadioactiveDecayPhysics.hh \
  /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/action.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUserActionInitialization.hh

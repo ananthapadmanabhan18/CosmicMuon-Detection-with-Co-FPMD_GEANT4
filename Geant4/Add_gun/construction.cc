@@ -64,19 +64,19 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4VisAttributes* WW = new G4VisAttributes(G4Colour(0.85,0.85,1,0));
     WW->SetForceSolid(true);
 
-
+    G4bool checkoverlap = false;
 
     //Defining World Volume
     G4Box *solidworld = new G4Box("world",2.5*m,2.5*m,2.5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
     logicworld->SetVisAttributes(WW);
-    G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0),logicworld, "physicalworld", nullptr, false,0,true);
+    G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
 
     //Defining 2 Scintillation Detectors Detector
     G4Box* solidDetector = new G4Box("Detector1", 16*(30/sqrt(3))*mm,5*cm,1*cm);
     G4LogicalVolume* logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
-    new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m, -1*m), logicalDetector, "Detector1", logicworld, false, 0,true);
-    new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m,1*m), logicalDetector, "Detector2", logicworld, false, 0,true);
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m, -1*m), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 0*m,1*m), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);
 
 
     //Defining Honeycomb detector
@@ -85,8 +85,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     hclogic->SetVisAttributes(vishc);
     for (int i = -15;i<=16;i++){
         for (int j = -15;j<=16;j++){
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), hclogic, "HCdetector", logicworld, false, 0,true);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,true);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
         }
     }
 
@@ -97,8 +97,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     goldlogic->SetVisAttributes(visgold);
     for (int i = -15;i<=16;i++){
         for (int j = -15;j<=16;j++){
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), goldlogic, "goldwire", logicworld, false, 0,true);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,true);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
         }
     }
 
@@ -108,17 +108,12 @@ G4VPhysicalVolume *scintillation1::Construct()
     gaslogic->SetVisAttributes(gas);
     for (int i = -15;i<=16;i++){
         for (int j = -15;j<=16;j++){
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), gaslogic, "gasmix", logicworld, false, 0,true);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,true);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
         }
     }
-    return physicalworld;
-    
-}
 
-void scintillation1::ConstructSDandField()
-{
-    SensitiveDetector* sensdet = new SensitiveDetector("SensitiveD");
-    logicDetector->SetSensitiveDetector(sensdet);
+    
+    return physicalworld;  
 }
 
