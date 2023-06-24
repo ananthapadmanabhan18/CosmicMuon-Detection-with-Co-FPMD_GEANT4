@@ -271,4 +271,6 @@ CMakeFiles/simulation.dir/generator.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleTableIterator.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleTable.icc \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4MuonMinus.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Proton.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Ions.hh \
  /usr/include/c++/11/math.h

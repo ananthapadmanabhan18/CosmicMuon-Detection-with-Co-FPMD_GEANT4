@@ -1,5 +1,6 @@
 #include "construction.hh"
 #include "math.h"
+#include "detector.hh"
 scintillation1::scintillation1()
 {}
 scintillation1::~scintillation1()
@@ -115,5 +116,14 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     
     return physicalworld;  
+}
+
+
+void scintillation1::ConstructSDandFields()
+{
+    SensitiveDetector* sensdet = new SensitiveDetector("SensitiveD");
+    G4SDManager::GetSDMpointer()->AddNewDetector(sensdet);
+    gaslogic->SetSensitiveDetector(sensdet);
+    logicalDetector->SetSensitiveDetector(sensdet);
 }
 

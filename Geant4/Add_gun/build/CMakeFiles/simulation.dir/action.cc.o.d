@@ -272,4 +272,6 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleTable.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleTableIterator.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleTable.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4MuonMinus.hh
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4MuonMinus.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Proton.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Ions.hh

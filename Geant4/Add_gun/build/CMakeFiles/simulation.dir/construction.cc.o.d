@@ -354,4 +354,66 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4VGraphicsSystem.hh \
  /home/apmnair18/geant4/geant4-install/include/Geant4/G4Element.hh \
- /usr/include/c++/11/math.h
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4SDManager.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4SDStructure.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VHit.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Step.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4StepPoint.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Allocator.hh \
+ /usr/include/c++/11/cstddef \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4AllocatorPool.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4SteppingControl.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4StepStatus.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHandle.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VTouchable.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VTouchable.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4LogicalVolume.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4StepPoint.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4TrackVector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Profiler.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Profiler.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/PTL/Globals.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/PTL/Types.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/PTL/Utility.hh \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Step.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Track.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/trkdefs.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4DynamicParticle.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleDefinition.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4PDefManager.hh \
+ /usr/include/c++/11/stdlib.h \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/pwdefs.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleDefinition.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4LorentzVector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleMomentum.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4ElectronOccupancy.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4DynamicParticle.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4TrackStatus.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4Track.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4HCofThisEvent.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VHitsCollection.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VReadOutGeometry.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4SensitiveVolumeList.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHistory.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistory.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4AffineTransform.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4AffineTransform.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevel.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevelRep.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevelRep.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevel.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistory.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHistory.icc \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4CollectionNameVector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSDFilter.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4HCtable.hh \
+ /usr/include/c++/11/math.h \
+ /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/detector.hh \
+ /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSensitiveDetector.hh

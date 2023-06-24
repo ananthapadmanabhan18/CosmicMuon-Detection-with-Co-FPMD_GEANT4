@@ -1,4 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "enabled",
-    "cmake.sourceDirectory": "/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun"
+    "cmake.sourceDirectory": "/home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun",
+    "files.associations": {
+        "*.icc": "cpp"
+    }
 }

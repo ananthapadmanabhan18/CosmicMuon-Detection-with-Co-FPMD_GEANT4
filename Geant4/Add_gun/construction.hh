@@ -15,6 +15,7 @@
 #include "G4Colour.hh"
 #include "G4OpenGLImmediateX.hh"
 #include "G4Element.hh"
+#include "G4SDManager.hh"
 
 
 
@@ -27,6 +28,10 @@ class scintillation1 : public G4VUserDetectorConstruction
         ~scintillation1();
 
         virtual G4VPhysicalVolume *Construct();
+    private:
+        G4LogicalVolume*gaslogic;   
+        G4LogicalVolume*logicalDetector; 
+        virtual void ConstructSDandFields();
 };
 
 
