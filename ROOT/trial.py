@@ -20,14 +20,15 @@ g.SetMarkerSize(1)
 
 # Set title
 g.SetTitle("Plot of f vs theta")
-
+# # Optionally, you can set the line color and width:
+# g.SetLineColor(ROOT.kRed)
+# g.SetLineWidth(1)
 # Create a canvas and draw the graph
 canvas = poi.TCanvas("canvas", "Graph", 1600, 900)
 g.Draw("AP")
+g.Show("AP")
 
-# Optionally, you can set the line color and width:
-# g.SetLineColor(ROOT.kRed)
-# g.SetLineWidth(1)
+
 
 # Save the graph as a PNG image
-canvas.SaveAs("graph.png")
+# canvas.SaveAs("graph.png")
