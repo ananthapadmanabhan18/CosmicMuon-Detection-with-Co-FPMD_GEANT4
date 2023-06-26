@@ -1,6 +1,7 @@
 #include "construction.hh"
 #include "math.h"
 #include "detector.hh"
+
 scintillation1::scintillation1()
 {}
 scintillation1::~scintillation1()
@@ -113,17 +114,31 @@ G4VPhysicalVolume *scintillation1::Construct()
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
         }
     }
+ 
 
-    
+    //Assigning the Sensitive detectors for the gas volume
+    GSD* sensitiveDetector = new GSD("MySensitiveDetector");
+    G4SDManager::GetSDMpointer()->AddNewDetector(sensitiveDetector);
+    gaslogic->SetSensitiveDetector(sensitiveDetector);
     return physicalworld;  
 }
 
 
-void scintillation1::ConstructSDandFields()
-{
-    SensitiveDetector* sensdet = new SensitiveDetector("SensitiveD");
-    G4SDManager::GetSDMpointer()->AddNewDetector(sensdet);
-    gaslogic->SetSensitiveDetector(sensdet);
-    logicalDetector->SetSensitiveDetector(sensdet);
-}
+
+
+
+
+
+
+
+
+
+
+// void scintillation1::ConstructSDandFields()
+// {
+//     SensitiveDetector* sensdet = new SensitiveDetector("SensitiveD");
+//     G4SDManager::GetSDMpointer()->AddNewDetector(sensdet);
+//     gaslogic->SetSensitiveDetector(sensdet);
+//     logicalDetector->SetSensitiveDetector(sensdet);
+// }
 

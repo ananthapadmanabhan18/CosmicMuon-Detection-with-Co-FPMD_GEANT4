@@ -28,11 +28,10 @@ class scintillation1 : public G4VUserDetectorConstruction
         ~scintillation1();
 
         virtual G4VPhysicalVolume *Construct();
-    private:
-        G4LogicalVolume*gaslogic;   
-        G4LogicalVolume*logicalDetector; 
-        virtual void ConstructSDandFields();
 };
+
+
+
 
 
 #endif
