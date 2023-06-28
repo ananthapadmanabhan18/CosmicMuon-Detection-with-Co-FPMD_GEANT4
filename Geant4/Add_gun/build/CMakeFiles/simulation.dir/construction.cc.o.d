@@ -1,8 +1,8 @@
 CMakeFiles/simulation.dir/construction.cc.o: \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/construction.cc \
+ /home/apmnair18/GitHub/Geant4_ROOT/Geant4/Add_gun/construction.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/construction.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUserDetectorConstruction.hh \
+ /home/apmnair18/GitHub/Geant4_ROOT/Geant4/Add_gun/construction.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -45,10 +45,10 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/globals.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ios.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Types.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4GlobalConfig.hh \
+ /home/apmnair18/geant4/include/Geant4/globals.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ios.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Types.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GlobalConfig.hh \
  /usr/include/c++/11/complex /usr/include/c++/11/cmath \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -182,7 +182,7 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/tls.hh \
+ /home/apmnair18/geant4/include/Geant4/tls.hh \
  /usr/include/c++/11/iostream /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -204,10 +204,10 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4String.hh \
+ /home/apmnair18/geant4/include/Geant4/G4String.hh \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4String.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/templates.hh \
+ /home/apmnair18/geant4/include/Geant4/G4String.icc \
+ /home/apmnair18/geant4/include/Geant4/templates.hh \
  /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
@@ -217,9 +217,9 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Exception.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ExceptionSeverity.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4EnvironmentUtils.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Exception.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ExceptionSeverity.hh \
+ /home/apmnair18/geant4/include/Geant4/G4EnvironmentUtils.hh \
  /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
@@ -235,33 +235,33 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/geomdefs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4RotationMatrix.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ThreeVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Utility/defs.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/Rotation.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/AxisAngle.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationX.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationX.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationY.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationY.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationZ.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/Rotation.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4GeomSplitter.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/geomwdefs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4AutoLock.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Threading.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VPhysicalVolume.hh \
+ /home/apmnair18/geant4/include/Geant4/geomdefs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4RotationMatrix.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ThreeVector.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Utility/defs.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/Rotation.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/LorentzVector.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/AxisAngle.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationX.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationX.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationY.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationY.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationZ.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/RotationZ.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/Rotation.icc \
+ /home/apmnair18/geant4/include/Geant4/G4GeomSplitter.hh \
+ /home/apmnair18/geant4/include/Geant4/geomwdefs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AutoLock.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Threading.hh \
  /usr/include/c++/11/condition_variable \
  /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
@@ -272,148 +272,154 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicalVolume.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4LogicalVolume.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Region.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Region.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4LogicalVolume.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Box.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4GeomTypes.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4GeomConfig.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4CSGSolid.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSolid.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSolid.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedron.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/HepPolyhedron.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4TwoVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/TwoVector.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Point3D.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/Point3D.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Normal3D.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Transform3D.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Visible.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Visible.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Box.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PVPlacement.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NistManager.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Material.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Element.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Isotope.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4IonisParamElm.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4IsotopeVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ElementTable.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ElementVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4MaterialPropertiesTable.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4MaterialPropertiesIndex.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4MaterialPropertyVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PhysicsFreeVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PhysicsVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VPhysicalVolume.icc \
+ /home/apmnair18/geant4/include/Geant4/G4LogicalVolume.hh \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /home/apmnair18/geant4/include/Geant4/G4Region.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Region.icc \
+ /home/apmnair18/geant4/include/Geant4/G4VPhysicalVolume.hh \
+ /home/apmnair18/geant4/include/Geant4/G4LogicalVolume.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Box.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GeomTypes.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GeomConfig.hh \
+ /home/apmnair18/geant4/include/Geant4/G4CSGSolid.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VSolid.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VSolid.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Polyhedron.hh \
+ /home/apmnair18/geant4/include/Geant4/HepPolyhedron.h \
+ /home/apmnair18/geant4/include/Geant4/G4TwoVector.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/TwoVector.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/TwoVector.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Point3D.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Geometry/Point3D.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+ /home/apmnair18/geant4/include/Geant4/G4Normal3D.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h \
+ /home/apmnair18/geant4/include/Geant4/G4Transform3D.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Geometry/Transform3D.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Geometry/Vector3D.h \
+ /home/apmnair18/geant4/include/Geant4/G4Visible.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Visible.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Box.icc \
+ /home/apmnair18/geant4/include/Geant4/G4PVPlacement.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NistManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Material.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Element.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Isotope.hh \
+ /home/apmnair18/geant4/include/Geant4/G4IonisParamElm.hh \
+ /home/apmnair18/geant4/include/Geant4/G4IsotopeVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ElementTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ElementVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MaterialPropertiesTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MaterialPropertiesIndex.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MaterialPropertyVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsFreeVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsVector.hh \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Log.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PhysicsVectorType.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PhysicsVector.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4IonisParamMat.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4DensityEffectCalculator.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SandiaTable.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4OrderedTable.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4DataVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4DataVector.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Log.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsVectorType.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsVector.icc \
+ /home/apmnair18/geant4/include/Geant4/G4IonisParamMat.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DensityEffectCalculator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4SandiaTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4OrderedTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DataVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DataVector.icc \
  /usr/include/assert.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4MaterialTable.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NistElementBuilder.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NistMaterialBuilder.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ICRU90StoppingData.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Pow.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Exp.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SystemOfUnits.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Material.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Tubs.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/graphics_reps_defs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Color.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VisAttributes.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGfaceted.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PolyhedraSide.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VCSGface.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PolyhedraHistorical.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Polyhedra.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Colour.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4OpenGLImmediateX.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VGraphicsSystem.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Element.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SDManager.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SDStructure.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VHit.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Step.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4StepPoint.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Allocator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MaterialTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NistElementBuilder.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NistMaterialBuilder.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ICRU90StoppingData.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Pow.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Exp.hh \
+ /home/apmnair18/geant4/include/Geant4/G4SystemOfUnits.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Material.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Tubs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Tubs.icc \
+ /home/apmnair18/geant4/include/Geant4/G4VisAttributes.hh \
+ /home/apmnair18/geant4/include/Geant4/graphics_reps_defs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Colour.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Color.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VisAttributes.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Polyhedra.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VCSGfaceted.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PolyhedraSide.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VCSGface.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PolyhedraHistorical.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Polyhedra.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Colour.hh \
+ /home/apmnair18/geant4/include/Geant4/G4OpenGLImmediateX.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VGraphicsSystem.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Element.hh \
+ /home/apmnair18/geant4/include/Geant4/G4SDManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4SDStructure.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VHit.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Step.hh \
+ /home/apmnair18/geant4/include/Geant4/G4StepPoint.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Allocator.hh \
  /usr/include/c++/11/cstddef \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4AllocatorPool.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SteppingControl.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4StepStatus.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHandle.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VTouchable.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VTouchable.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4LogicalVolume.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4StepPoint.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4TrackVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Profiler.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Profiler.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/PTL/Globals.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/PTL/Types.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/PTL/Utility.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AllocatorPool.hh \
+ /home/apmnair18/geant4/include/Geant4/G4SteppingControl.hh \
+ /home/apmnair18/geant4/include/Geant4/G4StepStatus.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TouchableHandle.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VTouchable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VTouchable.icc \
+ /home/apmnair18/geant4/include/Geant4/G4ReferenceCountedHandle.hh \
+ /home/apmnair18/geant4/include/Geant4/G4LogicalVolume.hh \
+ /home/apmnair18/geant4/include/Geant4/G4StepPoint.icc \
+ /home/apmnair18/geant4/include/Geant4/G4TrackVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Profiler.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Profiler.icc \
+ /home/apmnair18/geant4/include/Geant4/PTL/Globals.hh \
+ /home/apmnair18/geant4/include/Geant4/PTL/Types.hh \
+ /home/apmnair18/geant4/include/Geant4/PTL/Utility.hh \
  /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Step.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Track.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/trkdefs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4DynamicParticle.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleDefinition.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PDefManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Step.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Track.hh \
+ /home/apmnair18/geant4/include/Geant4/trkdefs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DynamicParticle.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PDefManager.hh \
  /usr/include/c++/11/stdlib.h \
- /home/apmnair18/geant4/geant4-install/include/Geant4/pwdefs.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleDefinition.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4LorentzVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ParticleMomentum.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4ElectronOccupancy.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4DynamicParticle.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4TrackStatus.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4Track.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4HCofThisEvent.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VHitsCollection.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VReadOutGeometry.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4SensitiveVolumeList.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHistory.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistory.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4AffineTransform.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4AffineTransform.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevel.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevelRep.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevelRep.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationLevel.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistoryPool.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4NavigationHistory.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4TouchableHistory.icc \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4CollectionNameVector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSDFilter.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4HCtable.hh \
+ /home/apmnair18/geant4/include/Geant4/pwdefs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.icc \
+ /home/apmnair18/geant4/include/Geant4/G4LorentzVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleMomentum.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ElectronOccupancy.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DynamicParticle.icc \
+ /home/apmnair18/geant4/include/Geant4/G4TrackStatus.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserTrackInformation.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsModelCatalog.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Track.icc \
+ /home/apmnair18/geant4/include/Geant4/G4HCofThisEvent.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VHitsCollection.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VReadOutGeometry.hh \
+ /home/apmnair18/geant4/include/Geant4/G4SensitiveVolumeList.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TouchableHistory.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationHistory.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AffineTransform.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AffineTransform.icc \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationLevel.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationLevelRep.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationLevelRep.icc \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationLevel.icc \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationHistoryPool.hh \
+ /home/apmnair18/geant4/include/Geant4/G4NavigationHistory.icc \
+ /home/apmnair18/geant4/include/Geant4/G4TouchableHistory.icc \
+ /home/apmnair18/geant4/include/Geant4/G4CollectionNameVector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VSDFilter.hh \
+ /home/apmnair18/geant4/include/Geant4/G4HCtable.hh \
  /usr/include/c++/11/math.h \
- /home/apmnair18/Github_Repos/Geant4_ROOT/Geant4/Add_gun/detector.hh \
- /home/apmnair18/geant4/geant4-install/include/Geant4/G4VSensitiveDetector.hh
+ /home/apmnair18/GitHub/Geant4_ROOT/Geant4/Add_gun/detector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh
