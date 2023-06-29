@@ -422,4 +422,14 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4HCtable.hh \
  /usr/include/c++/11/math.h \
  /home/apmnair18/GitHub/Geant4_ROOT/Geant4/Add_gun/detector.hh \
- /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh
+ /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PrimaryVertex.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PrimaryParticle.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleTableIterator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleTable.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Proton.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Ions.hh

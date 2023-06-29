@@ -645,6 +645,12 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4VSDFilter.hh \
  /home/apmnair18/geant4/include/Geant4/G4HCtable.hh \
  /home/apmnair18/GitHub/Geant4_ROOT/Geant4/Add_gun/physics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ProductionCutsTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MaterialCutsCouple.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ProductionCuts.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUPLSplitter.hh \
  /home/apmnair18/geant4/include/Geant4/G4VModularPhysicsList.hh \
  /home/apmnair18/geant4/include/Geant4/G4VPhysicsConstructor.hh \
  /home/apmnair18/geant4/include/Geant4/G4PhysicsListHelper.hh \
@@ -703,12 +709,7 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
  /usr/include/c++/11/bits/regex_executor.h \
  /usr/include/c++/11/bits/regex_executor.tcc \
- /home/apmnair18/geant4/include/Geant4/G4VUPLSplitter.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
- /home/apmnair18/geant4/include/Geant4/G4ProductionCutsTable.hh \
- /home/apmnair18/geant4/include/Geant4/G4MaterialCutsCouple.hh \
- /home/apmnair18/geant4/include/Geant4/G4ProductionCuts.hh \
- /home/apmnair18/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
  /home/apmnair18/geant4/include/Geant4/G4EmStandardPhysics.hh \
  /home/apmnair18/geant4/include/Geant4/G4OpticalPhysics.hh \
  /home/apmnair18/geant4/include/Geant4/G4OpticalParameters.hh \
@@ -718,5 +719,11 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4ParticleChangeForDecay.hh \
  /home/apmnair18/geant4/include/Geant4/G4DecayProcessType.hh \
  /home/apmnair18/geant4/include/Geant4/G4RadioactiveDecayPhysics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GenericIon.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Ions.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ProcessManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
  /home/apmnair18/GitHub/Geant4_ROOT/Geant4/Add_gun/action.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh
