@@ -23,10 +23,10 @@ void UserPhysicsList::ConstructProcess() {
     }
 }
 
-// void UserPhysicsList::SetCuts() {
-//     G4double cutValue = 1.0*mm;
-//     SetCutValue(cutValue, "muonminus");
-// }
+void UserPhysicsList::SetCuts() {
+    G4double cutValue = 1.0*mm;
+    SetCutValue(cutValue, "muonminus");
+}
 
 
 

@@ -23,7 +23,7 @@ public:
     virtual ~UserPhysicsList();
     virtual void ConstructParticle();
     virtual void ConstructProcess();
-    // virtual void SetCuts();
+    virtual void SetCuts();
 };
 
 
