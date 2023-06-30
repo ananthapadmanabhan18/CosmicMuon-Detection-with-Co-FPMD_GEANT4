@@ -1,6 +1,20 @@
 #include "physics.hh"
 
 
+
+
+DefaultPhysics::DefaultPhysics()
+{
+    RegisterPhysics (new G4EmStandardPhysics());
+    RegisterPhysics (new G4OpticalPhysics());
+}
+DefaultPhysics::~DefaultPhysics()
+{}
+
+
+
+
+
 UserPhysicsList::UserPhysicsList() : G4VUserPhysicsList() {}
 
 UserPhysicsList::~UserPhysicsList() {}
@@ -24,7 +38,7 @@ void UserPhysicsList::ConstructProcess() {
 }
 
 void UserPhysicsList::SetCuts() {
-    G4double cutValue = 1.0*mm;
+    G4double cutValue = 0.001*mm;
     SetCutValue(cutValue, "muonminus");
 }
 
@@ -32,11 +46,3 @@ void UserPhysicsList::SetCuts() {
 
 
 
-
-// MyPhysicsList::MyPhysicsList()
-// {
-//     RegisterPhysics (new G4EmStandardPhysics());
-//     RegisterPhysics (new G4OpticalPhysics());
-// }
-// MyPhysicsList::~MyPhysicsList()
-// {}

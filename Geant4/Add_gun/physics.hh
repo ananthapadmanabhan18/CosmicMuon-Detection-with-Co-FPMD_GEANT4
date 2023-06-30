@@ -14,7 +14,13 @@
 #include "G4MuonMinus.hh"
 
 
+class DefaultPhysics : public G4VModularPhysicsList
+{
+    public:
+    DefaultPhysics();
+    ~DefaultPhysics();
 
+};
 
 
 class UserPhysicsList : public G4VUserPhysicsList {
@@ -24,18 +30,13 @@ public:
     virtual void ConstructParticle();
     virtual void ConstructProcess();
     virtual void SetCuts();
+    // virtual void ConstructPhysics(); 
 };
 
 
 
 
 
-// class MyPhysicsList : public G4VModularPhysicsList
-// {
-//     public:
-//     MyPhysicsList();
-//     ~MyPhysicsList();
 
-// };
 
 #endif

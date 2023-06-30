@@ -14,6 +14,7 @@ int main(int argc, char** argv)
     
     runManager->SetUserInitialization(new scintillation1());
     runManager->SetUserInitialization(new UserPhysicsList());
+    runManager->SetUserInitialization(new DefaultPhysics());
     runManager->SetUserInitialization(new ActionInitialization());
     runManager->Initialize();
 

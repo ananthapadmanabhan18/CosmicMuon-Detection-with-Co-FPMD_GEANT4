@@ -5,7 +5,7 @@
 
 PrimaryGenerator::PrimaryGenerator()
 {
-    fParticleGun=new G4ParticleGun(1);
+    fParticleGun=new G4ParticleGun(100);
 }
 PrimaryGenerator::~PrimaryGenerator()
 {
