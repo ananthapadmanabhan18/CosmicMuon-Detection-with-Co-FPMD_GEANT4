@@ -71,7 +71,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     //Defining World Volume
     G4Box *solidworld = new G4Box("world",2.5*m,2.5*m,2.5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
-    logicworld->SetVisAttributes(WW);
+    // logicworld->SetVisAttributes(WW);
     G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
 
     //Defining 2 Scintillation Detectors Detector
