@@ -5,6 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/home/apmnair18/geant4/geant4-install/include/Geant4/",
+                "/home/apmnair18/geant4/geant4-install/include/Geant4",
                 "/home/apmnair18/geant4/geant4-install/include/Geant4"
             ],
             "defines": [],

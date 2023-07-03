@@ -32,10 +32,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Element* gold = nistManager->FindOrBuildElement("Au");
     G4Element* copper = nistManager->FindOrBuildElement("Cu");
     G4Element* argonGas = nistManager->FindOrBuildElement("Ar");
-    G4Element* Aluminium = nistManager->FindOrBuildElement("Al");
-    //Aluminium
-    G4Material* Al = new G4Material("Aluminium", 2.7 * g/cm3, 1);
-    Al->AddElement(Aluminium,1);    
     //gold material
     G4Material* Au = new G4Material("Gold", 19.32 * g/cm3, 1);
     Au->AddElement(gold,1);
@@ -70,7 +66,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4VisAttributes* WW = new G4VisAttributes(G4Colour(0.85,0.85,1,0));
     WW->SetForceSolid(true);
 
-    G4bool checkoverlap = true;
+    G4bool checkoverlap = false;
 
     //Defining World Volume
     G4Box *solidworld = new G4Box("world",2.5*m,2.5*m,2.5*m);
@@ -98,8 +94,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
     G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,Cu,"hclogic");
     hclogic->SetVisAttributes(vishc);
-    for (int i = -24;i<=23;i++){
-        for (int j = -48;j<=47;j++){
+    for (int i = -15;i<=16;i++){
+        for (int j = -15;j<=16;j++){
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
         }
@@ -110,8 +106,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Tubs *goldwire = new G4Tubs("goldwire",0,0.01*mm,2.5*mm,0,2*M_PI);
     G4LogicalVolume* goldlogic = new G4LogicalVolume(goldwire,Au,"goldlogic");
     goldlogic->SetVisAttributes(visgold);
-    for (int i = -24;i<=23;i++){
-        for (int j = -48;j<=47;j++){
+    for (int i = -15;i<=16;i++){
+        for (int j = -15;j<=16;j++){
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
         }
@@ -121,8 +117,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
     G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
     gaslogic->SetVisAttributes(gas);
-    for (int i = -24;i<=23;i++){
-        for (int j = -48;j<=47;j++){
+    for (int i = -15;i<=16;i++){
+        for (int j = -15;j<=16;j++){
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3)))*mm,j*10*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
             new G4PVPlacement(nullptr, G4ThreeVector((i*(30/sqrt(3))-(15/sqrt(3)))*mm,((j*10)-(5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
         }
@@ -135,4 +131,23 @@ G4VPhysicalVolume *scintillation1::Construct()
     gaslogic->SetSensitiveDetector(sensitiveDetector);
     return physicalworld;  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// void scintillation1::ConstructSDandFields()
+// {
+//     SensitiveDetector* sensdet = new SensitiveDetector("SensitiveD");
+//     G4SDManager::GetSDMpointer()->AddNewDetector(sensdet);
+//     gaslogic->SetSensitiveDetector(sensdet);
+//     logicalDetector->SetSensitiveDetector(sensdet);
+// }
 
