@@ -76,13 +76,13 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4VisAttributes* WW = new G4VisAttributes(G4Colour(0.85,0.85,1,0));
     WW->SetForceSolid(true);
 
-    G4bool checkoverlap = false;
+    G4bool checkoverlap = true;
 
     //Defining World Volume
     G4Box *solidworld = new G4Box("world",2.5*m,2.5*m,2.5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
     G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
-    logicworld->SetVisAttributes(WW);
+    // logicworld->SetVisAttributes(WW);
 
 
 
@@ -136,7 +136,7 @@ G4VPhysicalVolume *scintillation1::Construct()
 
 
     // //The Round things
-    // G4Tubs *round1 = new G4Tubs("round",0,0.002*mm,2.3*cm,0,2*M_PI);    
+    // G4Tubs *round1 = new G4Tubs("round",0,2000*mm,20*cm,0,2*M_PI);    
     // G4RotationMatrix* rotmat = new G4RotationMatrix;
     // rotmat->rotateX(90*deg);
     // G4LogicalVolume* round1logic = new G4LogicalVolume(round1,plastic,"roundlogic");
@@ -147,45 +147,56 @@ G4VPhysicalVolume *scintillation1::Construct()
 
 
     //Defining the PCB
-    G4Box* pcb = new G4Box("pcb", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,1.25*mm);
-    G4LogicalVolume* pcblogic = new G4LogicalVolume(pcb, plastic, "Detector1");
-    new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm, -3.75*mm), pcblogic, "Detector1", logicworld, false, 0,checkoverlap);
-    new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm,3.75*mm), pcblogic, "Detector2", logicworld, false, 0,checkoverlap);
+    // G4Box* pcb = new G4Box("pcb", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,1.25*cm);
+    // G4LogicalVolume* pcblogic = new G4LogicalVolume(pcb, plastic, "PCB");
+    // new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm, -4*cm), pcblogic, "PCB1", logicworld, false, 0,checkoverlap);
+    // new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm,4*cm), pcblogic, "PCB2", logicworld, false, 0,checkoverlap);
 
 
-
+    G4Box *pcb = new G4Box("pcb",367.5/sqrt(3)*mm,12.5*cm,1.25*mm);
+    G4LogicalVolume *pcblogic = new G4LogicalVolume(pcb, plastic,"pcblogic");
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 0,50*cm), pcblogic, "pcb1", logicworld, false, 0,checkoverlap);
+    pcblogic->SetVisAttributes(visstand);
 
 
 
     //Defining the Stand  
-    G4double phitotalstand=M_PI;
-    G4int standsidenum=2;
-    G4int planestandno =2;
-    G4double zPlanestand[] = {-15*cm,15*cm};
-    G4double standouter[]={1.25*cm,1.25*cm};
-    G4double standinner[]={0.75*cm,0.75*cm};
+    // G4double phitotalstand=M_PI;
+    // G4int standsidenum=2;
+    // G4int planestandno =2;
+    // G4double zPlanestand[] = {-15*cm,15*cm};
+    // G4double standouter[]={1.25*cm,1.25*cm};
+    // G4double standinner[]={0.75*cm,0.75*cm};
 
-    G4Polyhedra *stand1 = new G4Polyhedra("HCD", -45*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
-    G4LogicalVolume* stand1logic = new G4LogicalVolume(stand1,Al,"stand");
-    new G4PVPlacement(nullptr, G4ThreeVector(((36.75/sqrt(3)-1.25))*cm,11.25*cm,-15.5*cm), stand1logic, "stand", logicworld, false, 0,checkoverlap);
-
-    G4Polyhedra *stand2 = new G4Polyhedra("HCD", 45*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
-    G4LogicalVolume* stand2logic = new G4LogicalVolume(stand2,Al,"stand");    
-    new G4PVPlacement(nullptr, G4ThreeVector(-((36.75/sqrt(3)-1.25))*cm,11.25*cm,-15.5*cm), stand2logic, "stand", logicworld, false, 0,checkoverlap);
+    // G4Box* standplane = new G4Box("standplane", 26*cm,15*cm,5*mm);
+    // G4LogicalVolume* standplanelogic = new G4LogicalVolume(standplane, Al, "standplane");
+    // new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm, -10*mm), standplanelogic, "Detector1", logicworld, false, 0,checkoverlap);
+    // standplanelogic->SetVisAttributes(visstand);
 
 
-    G4Polyhedra *stand3 = new G4Polyhedra("HCD", 135*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
-    G4LogicalVolume* stand3logic = new G4LogicalVolume(stand3,Al,"stand");
-    new G4PVPlacement(nullptr, G4ThreeVector(-((36.75/sqrt(3)-1.25))*cm,-11.25*cm,-15.5*cm), stand3logic, "stand", logicworld, false, 0,checkoverlap);
 
-    G4Polyhedra *stand4 = new G4Polyhedra("HCD", 225*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
-    G4LogicalVolume* stand4logic = new G4LogicalVolume(stand4,Al,"stand");    
-    new G4PVPlacement(nullptr, G4ThreeVector(((36.75/sqrt(3)-1.25))*cm,-11.25*cm,-15.5*cm), stand4logic, "stand", logicworld, false, 0,checkoverlap);
 
-    stand1logic->SetVisAttributes(visstand);
-    stand2logic->SetVisAttributes(visstand);
-    stand3logic->SetVisAttributes(visstand);
-    stand4logic->SetVisAttributes(visstand);
+    // G4Polyhedra *stand1 = new G4Polyhedra("HCD", -45*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
+    // G4LogicalVolume* stand1logic = new G4LogicalVolume(stand1,Al,"stand1");
+    // new G4PVPlacement(nullptr, G4ThreeVector(24.75*cm,13.75*cm,-19.5*cm), stand1logic, "stand1", logicworld, false, 0,checkoverlap);
+
+    // G4Polyhedra *stand2 = new G4Polyhedra("HCD", 45*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
+    // G4LogicalVolume* stand2logic = new G4LogicalVolume(stand2,Al,"stand2");    
+    // new G4PVPlacement(nullptr, G4ThreeVector(-24.75*cm,13.75*cm,-19.5*cm), stand2logic, "stand2", logicworld, false, 0,checkoverlap);
+
+
+    // G4Polyhedra *stand3 = new G4Polyhedra("HCD", 135*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
+    // G4LogicalVolume* stand3logic = new G4LogicalVolume(stand3,Al,"stand3");
+    // new G4PVPlacement(nullptr, G4ThreeVector(-24.75*cm,-13.75*cm,-19.5*cm), stand3logic, "stand3", logicworld, false, 0,checkoverlap);
+
+    // G4Polyhedra *stand4 = new G4Polyhedra("HCD", 225*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
+    // G4LogicalVolume* stand4logic = new G4LogicalVolume(stand4,Al,"stand4");    
+    // new G4PVPlacement(nullptr, G4ThreeVector(24.75*cm,-13.75*cm,-19.5*cm), stand4logic, "stand4", logicworld, false, 0,checkoverlap);
+
+    // stand1logic->SetVisAttributes(visstand);
+    // stand2logic->SetVisAttributes(visstand);
+    // stand3logic->SetVisAttributes(visstand);
+    // stand4logic->SetVisAttributes(visstand);
 
 
 
