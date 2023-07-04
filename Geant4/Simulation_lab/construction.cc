@@ -19,8 +19,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4double gInner[]= {0.01*mm, 0.01*mm};
     G4double gOuter[] = {2.4*mm, 2.4*mm};
 
-    G4RotationMatrix* rotmat = new G4RotationMatrix;
-    rotmat->rotateZ(90*deg);
 
     G4double atomicNumber = 29;
     G4double atomicMass = 63.55 * g/mole;
@@ -63,6 +61,12 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4VisAttributes* visgold = new G4VisAttributes(G4Colour(1,0.843,0));
     visgold->SetForceSolid(true);
 
+    G4VisAttributes* visstand = new G4VisAttributes(G4Colour(.3267,0.3342,0.3391));
+    visstand->SetForceSolid(true);
+
+
+
+
     G4VisAttributes* visscintilation = new G4VisAttributes(G4Colour(0,0,1));
     visscintilation->SetForceSolid(true);
 
@@ -78,7 +82,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Box *solidworld = new G4Box("world",2.5*m,2.5*m,2.5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
     G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
-
+    logicworld->SetVisAttributes(WW);
 
 
 
@@ -132,7 +136,9 @@ G4VPhysicalVolume *scintillation1::Construct()
 
 
     // //The Round things
-    // G4Tubs *round1 = new G4Tubs("round",0,200*mm,20*cm,0,2*M_PI);
+    // G4Tubs *round1 = new G4Tubs("round",0,0.002*mm,2.3*cm,0,2*M_PI);    
+    // G4RotationMatrix* rotmat = new G4RotationMatrix;
+    // rotmat->rotateX(90*deg);
     // G4LogicalVolume* round1logic = new G4LogicalVolume(round1,plastic,"roundlogic");
     // new G4PVPlacement(rotmat, G4ThreeVector(50*cm,50*cm,50*cm), round1logic, "bleh", logicworld, false, 0,checkoverlap);
 
@@ -176,6 +182,10 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4LogicalVolume* stand4logic = new G4LogicalVolume(stand4,Al,"stand");    
     new G4PVPlacement(nullptr, G4ThreeVector(((36.75/sqrt(3)-1.25))*cm,-11.25*cm,-15.5*cm), stand4logic, "stand", logicworld, false, 0,checkoverlap);
 
+    stand1logic->SetVisAttributes(visstand);
+    stand2logic->SetVisAttributes(visstand);
+    stand3logic->SetVisAttributes(visstand);
+    stand4logic->SetVisAttributes(visstand);
 
 
 
