@@ -16,6 +16,7 @@
 #include "G4OpenGLImmediateX.hh"
 #include "G4Element.hh"
 #include "G4SDManager.hh"
+#include "G4RotationMatrix.hh"
 
 
 
