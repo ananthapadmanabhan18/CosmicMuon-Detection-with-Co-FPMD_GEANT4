@@ -193,7 +193,7 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     G4Box* standsu = new G4Box("standsu", 1*cm,1*cm,50*cm);
     G4LogicalVolume* standsulogic = new G4LogicalVolume(standsu, Al, "standsu");
-    new G4PVPlacement(nullptr, G4ThreeVector(-4.15*cm,-18*cm,19.5*cm), standsulogic, "standsu", logicworld, false, 0,checkoverlap);
+    new G4PVPlacement(nullptr, G4ThreeVector(-5*cm,-18*cm,19.5*cm), standsulogic, "standsu", logicworld, false, 0,checkoverlap);
   
     standsulogic->SetVisAttributes(visstand);
 
@@ -208,10 +208,22 @@ G4VPhysicalVolume *scintillation1::Construct()
     new G4PVPlacement(nullptr, G4ThreeVector(0*cm,0,-28.75*cm), suplane1logic, "suplane1", logicworld, false, 0,checkoverlap); 
     suplane1logic->SetVisAttributes(visstand);
 
-    G4Box* suplane2 = new G4Box("suplane1", 1*mm,15*cm,15*cm);
-    G4LogicalVolume* suplane2logic = new G4LogicalVolume(suplane2,plastic, "suplane1");
-    new G4PVPlacement(nullptr, G4ThreeVector(-26.25*cm,0,-15.5*cm), suplane2logic, "suplane1", logicworld, false, 0,true); 
+    G4Box* suplane2 = new G4Box("suplane2", 1*mm,15*cm,15*cm);
+    G4LogicalVolume* suplane2logic = new G4LogicalVolume(suplane2,plastic, "suplane2");
+    new G4PVPlacement(nullptr, G4ThreeVector(-26.25*cm,0,-15.5*cm), suplane2logic, "suplane2", logicworld, false, 0,true); 
     suplane2logic->SetVisAttributes(visstandplane);
+
+    G4Box* bar1 = new G4Box("bar1", 0.5*mm,9.5*cm,6.25*cm);
+    G4LogicalVolume* bar1logic = new G4LogicalVolume(bar1,plastic, "bar1");
+    new G4PVPlacement(nullptr, G4ThreeVector(-3.9*cm,-21*cm,-11.5*cm), bar1logic, "bar1", logicworld, false, 0,true); 
+    bar1logic->SetVisAttributes(visstandplane);
+
+    G4Box* bar2 = new G4Box("bar2", 5*cm,0.5*mm,5*cm);
+    G4LogicalVolume* bar2logic = new G4LogicalVolume(bar2,Al, "bar2");
+    new G4PVPlacement(nullptr, G4ThreeVector(-7.30*cm,-19.05*cm,11.5*cm), bar2logic, "bar2", logicworld, false, 0,true); 
+    bar2logic->SetVisAttributes(visstand);
+
+
 
 
     //defining the stand legs
