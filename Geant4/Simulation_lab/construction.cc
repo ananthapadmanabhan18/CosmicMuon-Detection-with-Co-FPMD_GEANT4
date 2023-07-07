@@ -33,6 +33,11 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Element* copper = nistManager->FindOrBuildElement("Cu");
     G4Element* argonGas = nistManager->FindOrBuildElement("Ar");
     G4Element* Aluminium = nistManager->FindOrBuildElement("Al");
+    G4Element* Hydrogen = nistManager->FindOrBuildElement("H");
+    G4Element* Silicon = nistManager->FindOrBuildElement("Si");
+    G4Element* carbon = nistManager->FindOrBuildElement("C");
+    G4Element* oxygen = nistManager->FindOrBuildElement("O");
+
     //Aluminium
     G4Material* Al = new G4Material("Aluminium", 2.7 * g/cm3, 1);
     Al->AddElement(Aluminium,1);    
@@ -51,6 +56,19 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Material* gasMixture = new G4Material("GasMixture", 1.72 , 2);
     gasMixture->AddElement(argonGas, 0.9);
     gasMixture->AddMaterial(CO, 0.1);
+    //FR4
+    G4Material* fr4 = new G4Material("fr4", 1.85*g/cm3 , 4);
+    fr4->AddElement(Hydrogen, 0.475);
+    fr4->AddElement(carbon, 0.285);
+    fr4->AddElement(oxygen, 0.175);
+    fr4->AddElement(Silicon, 0.065);
+
+
+
+
+
+
+
 
 
 
@@ -68,10 +86,12 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4VisAttributes* visstand = new G4VisAttributes(G4Colour(.7922,0.8,0.8078));
     visstand->SetForceSolid(true);
 
+    G4VisAttributes* visPCB = new G4VisAttributes(G4Colour(1.0, 0.9, 0.6));
+    visPCB->SetForceSolid(true);
+    G4VisAttributes* viselect = new G4VisAttributes(G4Colour(0.7, 0.7, 0.0));
+    viselect->SetForceSolid(true);
 
-
-
-    G4VisAttributes* visscintilation = new G4VisAttributes(G4Colour(1,0.6956,0.5543));
+    G4VisAttributes* visscintilation = new G4VisAttributes(G4Colour(0.4, 0.2, 0.0));
     visscintilation->SetForceSolid(true);
 
     G4VisAttributes* gas = new G4VisAttributes(G4Colour(0.85,0.85,1,0.3));
@@ -165,10 +185,10 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     //Defining the PCB
     G4Box* pcb = new G4Box("pcb", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,1.25*mm);
-    G4LogicalVolume* pcblogic = new G4LogicalVolume(pcb, plastic, "PCB");
+    G4LogicalVolume* pcblogic = new G4LogicalVolume(pcb, fr4, "PCB");
     new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm, -3.75*mm), pcblogic, "PCB1", logicworld, false, 0,checkoverlap);
     new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm,3.75*mm), pcblogic, "PCB2", logicworld, false, 0,checkoverlap);
-
+    pcblogic->SetVisAttributes(visPCB);
 
 
 
@@ -210,20 +230,29 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     G4Box* suplane2 = new G4Box("suplane2", 1*mm,15*cm,15*cm);
     G4LogicalVolume* suplane2logic = new G4LogicalVolume(suplane2,plastic, "suplane2");
-    new G4PVPlacement(nullptr, G4ThreeVector(-26.25*cm,0,-15.5*cm), suplane2logic, "suplane2", logicworld, false, 0,true); 
+    new G4PVPlacement(nullptr, G4ThreeVector(-26.25*cm,0,-15.5*cm), suplane2logic, "suplane2", logicworld, false, 0,checkoverlap); 
     suplane2logic->SetVisAttributes(visstandplane);
 
     G4Box* bar1 = new G4Box("bar1", 0.5*mm,9.5*cm,6.25*cm);
     G4LogicalVolume* bar1logic = new G4LogicalVolume(bar1,plastic, "bar1");
-    new G4PVPlacement(nullptr, G4ThreeVector(-3.9*cm,-21*cm,-11.5*cm), bar1logic, "bar1", logicworld, false, 0,true); 
+    new G4PVPlacement(nullptr, G4ThreeVector(-3.9*cm,-21*cm,-11.5*cm), bar1logic, "bar1", logicworld, false, 0,checkoverlap); 
     bar1logic->SetVisAttributes(visstandplane);
 
     G4Box* bar2 = new G4Box("bar2", 5*cm,0.5*mm,5*cm);
     G4LogicalVolume* bar2logic = new G4LogicalVolume(bar2,Al, "bar2");
-    new G4PVPlacement(nullptr, G4ThreeVector(-7.30*cm,-19.05*cm,11.5*cm), bar2logic, "bar2", logicworld, false, 0,true); 
+    new G4PVPlacement(nullptr, G4ThreeVector(-7.30*cm,-19.05*cm,11.5*cm), bar2logic, "bar2", logicworld, false, 0,checkoverlap); 
     bar2logic->SetVisAttributes(visstand);
 
+    G4Box* elect = new G4Box("elect", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,5*mm);
+    G4LogicalVolume* electlogic = new G4LogicalVolume(elect,fr4, "elect");
+    new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm,1*cm), electlogic, "elect", logicworld, false, 0,checkoverlap); 
+    electlogic->SetVisAttributes(viselect);
 
+
+    G4Box* pins = new G4Box("pins",1*cm,1.5*mm,2.5*mm);
+    G4LogicalVolume* pinlogic = new G4LogicalVolume(pins,fr4, "pin");
+    new G4PVPlacement(nullptr, G4ThreeVector(0,0,17.5*mm), pinlogic, "pin", logicworld, false, 0,checkoverlap); 
+    // electlogic->SetVisAttributes(viselect);
 
 
     //defining the stand legs
