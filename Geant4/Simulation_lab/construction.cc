@@ -184,7 +184,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     round3logic->SetVisAttributes(visscintilation);
 
     //Defining the PCB
-    G4Box* pcb = new G4Box("pcb", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,1.25*mm);
+    // G4Box* pcb = new G4Box("pcb", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,1.25*mm);
+    G4Box* pcb = new G4Box("pcb",245*mm,(12.5)*cm,1.25*mm);
     G4LogicalVolume* pcblogic = new G4LogicalVolume(pcb, fr4, "PCB");
     new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm, -3.75*mm), pcblogic, "PCB1", logicworld, false, 0,checkoverlap);
     new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm,3.75*mm), pcblogic, "PCB2", logicworld, false, 0,checkoverlap);
@@ -243,16 +244,22 @@ G4VPhysicalVolume *scintillation1::Construct()
     new G4PVPlacement(nullptr, G4ThreeVector(-7.30*cm,-19.05*cm,11.5*cm), bar2logic, "bar2", logicworld, false, 0,checkoverlap); 
     bar2logic->SetVisAttributes(visstand);
 
-    G4Box* elect = new G4Box("elect", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,5*mm);
+    // G4Box* elect = new G4Box("elect", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,5*mm);
+    G4Box* elect = new G4Box("elect",245*mm,(12.5)*cm,5*mm);
     G4LogicalVolume* electlogic = new G4LogicalVolume(elect,fr4, "elect");
-    new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm,1*cm), electlogic, "elect", logicworld, false, 0,checkoverlap); 
+    new G4PVPlacement(nullptr, G4ThreeVector(0*mm,0*mm,1*cm), electlogic, "elect", logicworld, false, 0,checkoverlap); 
     electlogic->SetVisAttributes(viselect);
 
 
     G4Box* pins = new G4Box("pins",1*cm,1.5*mm,2.5*mm);
     G4LogicalVolume* pinlogic = new G4LogicalVolume(pins,fr4, "pin");
-    new G4PVPlacement(nullptr, G4ThreeVector(0,0,17.5*mm), pinlogic, "pin", logicworld, false, 0,checkoverlap); 
-    // electlogic->SetVisAttributes(viselect);
+    for (int i = 1;i<=12;i++){
+        for (int j = 1;j<=12;j++){
+        new G4PVPlacement(nullptr, G4ThreeVector((4*i-26)*cm,(-12+2*j)*cm,17.5*mm), pinlogic, "pin", logicworld, false, 0,checkoverlap);
+        }
+    }
+     
+    pinlogic->SetVisAttributes(visscintilation);
 
 
     //defining the stand legs
