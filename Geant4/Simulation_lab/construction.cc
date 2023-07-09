@@ -24,6 +24,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4double atomicMass = 63.55 * g/mole;
     G4double density1 = 8.96 * g/cm3;
 
+
     // Define materials
     G4NistManager* nistManager = G4NistManager::Instance();
     //Defining Elements
