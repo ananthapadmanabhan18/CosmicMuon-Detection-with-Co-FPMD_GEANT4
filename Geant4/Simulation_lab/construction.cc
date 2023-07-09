@@ -20,9 +20,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4double gOuter[] = {2.4*mm, 2.4*mm};
 
 
-    G4double atomicNumber = 29;
-    G4double atomicMass = 63.55 * g/mole;
-    G4double density1 = 8.96 * g/cm3;
 
 
     // Define materials
@@ -49,7 +46,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Material* Cu = new G4Material("Copper", 8.96 * g/cm3, 1);
     Cu->AddElement(copper,1);
     //Carbon Monoxide
-    G4double density = 1.25*g/L;
     G4Material* CO = new G4Material("CO",1.25*g/L,2);
     CO->AddElement(nistManager->FindOrBuildElement("C"), 1);
     CO->AddElement(nistManager->FindOrBuildElement("O"), 1);
@@ -150,12 +146,12 @@ G4VPhysicalVolume *scintillation1::Construct()
             new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
             new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
 
-            // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
-            // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
 
 
-            // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
-            // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
         }
 
 
@@ -254,9 +250,9 @@ G4VPhysicalVolume *scintillation1::Construct()
 
     G4Box* pins = new G4Box("pins",1*cm,1.5*mm,2.5*mm);
     G4LogicalVolume* pinlogic = new G4LogicalVolume(pins,fr4, "pin");
-    for (int i = 1;i<=12;i++){
+    for (int n = 1;n<=12;n++){
         for (int j = 1;j<=12;j++){
-        new G4PVPlacement(nullptr, G4ThreeVector((4*i-26)*cm,(-12+2*j)*cm,17.5*mm), pinlogic, "pin", logicworld, false, 0,checkoverlap);
+        new G4PVPlacement(nullptr, G4ThreeVector((4*n-26)*cm,(-13+2*j)*cm,17.5*mm), pinlogic, "pin", logicworld, false, 0,checkoverlap);
         }
     }
      

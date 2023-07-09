@@ -19,7 +19,7 @@ void PrimaryGenerator::GeneratePrimaries(G4Event*anEvent)
     G4ThreeVector mom(0,0,-1);
     fParticleGun->SetParticlePosition(pos);
     fParticleGun->SetParticleMomentumDirection(mom);
-    fParticleGun->SetParticleMomentum(1*GeV);
+    fParticleGun->SetParticleMomentum(4*GeV);
     fParticleGun->SetParticleDefinition(G4MuonMinus::Definition());
     fParticleGun->GeneratePrimaryVertex(anEvent);
 }

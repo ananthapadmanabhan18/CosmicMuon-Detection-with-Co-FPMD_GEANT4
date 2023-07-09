@@ -19,7 +19,7 @@ public:
   {
     G4Track* track = step->GetTrack();
     G4StepPoint *preStepPoint = step->GetPreStepPoint();
-    G4StepPoint *postStepPoint= step->GetPostStepPoint();
+    // G4StepPoint *postStepPoint= step->GetPostStepPoint();
     G4ThreeVector posparticle = preStepPoint->GetPosition();
     G4ParticleDefinition* particle = track->GetDefinition();
     // G4int particleID = particle->GetPDGEncoding();

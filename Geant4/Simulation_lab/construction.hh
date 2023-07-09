@@ -13,7 +13,6 @@
 #include "G4VisAttributes.hh"
 #include "G4Polyhedra.hh"
 #include "G4Colour.hh"
-#include "G4OpenGLImmediateX.hh"
 #include "G4Element.hh"
 #include "G4SDManager.hh"
 #include "G4RotationMatrix.hh"
