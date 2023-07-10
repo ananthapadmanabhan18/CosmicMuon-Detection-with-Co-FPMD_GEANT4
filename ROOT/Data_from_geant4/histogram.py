@@ -1,20 +1,27 @@
 import ROOT
-file = open("ROOT\Data_from_geant4\output.txt", "r")
+canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
+histogram = ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 0.01)
 
-data = []
+histogram.SetXTitle("Energy (MeV)")
+histogram.SetYTitle("Frequency")
+
+file = open("output.txt", "r")
+
 for line in file:
     value = float(line.strip())
-    data.append(value)
-
+    histogram.Fill(value)
 file.close()
 
-canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
-histogram = ROOT.TH1F("histogram", "Histogram Title", 200, 0, 0.01)
 
-for value in data:
-    histogram.Fill(value)
-
-# histogram.SetFillColor(ROOT.kBlue)
 histogram.Draw()
 canvas.Update()
+
+totalno = histogram.Integral()
+print("Total Area of the curve:", totalno)
+
+area = histogram.Integral("width")
+print("Area under curve:", area)
+
+print("The Area/Muon is:", totalno/area)
+
 ROOT.gApplication.Run()
