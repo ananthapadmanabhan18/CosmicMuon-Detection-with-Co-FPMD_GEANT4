@@ -5,7 +5,7 @@ histogram = ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 
 histogram.SetXTitle("Energy (MeV)")
 histogram.SetYTitle("Frequency")
 
-file = open("output_1GeV.txt", "r")
+file = open("ROOT/Data_from_geant4/output.txt", "r")
 
 for line in file:
     value = float(line.strip())

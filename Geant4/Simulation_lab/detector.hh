@@ -25,9 +25,10 @@ public:
     // G4int particleID = particle->GetPDGEncoding();
     if(particle==G4MuonMinus::Definition()){
       G4double energyDeposit = step->GetTotalEnergyDeposit();
+      G4double edmev = energyDeposit*MeV;
       std::ofstream file("output.txt", std::ios::app);
       file.seekp(0, std::ios::end);
-      file <<energyDeposit<< G4endl;
+      file <<edmev<< G4endl;
       file.close();
     }  
 
