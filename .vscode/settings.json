@@ -2,5 +2,6 @@
     "cmake.configureOnOpen": false,
     "files.associations": {
         "bleh.C": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Simulation_lab"
 }
