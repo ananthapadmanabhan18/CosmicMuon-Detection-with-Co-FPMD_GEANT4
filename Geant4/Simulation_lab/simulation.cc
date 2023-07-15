@@ -33,7 +33,7 @@ int main(int argc, char** argv)
     UImanager->ApplyCommand("/vis/scene/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/set/textColour");
-    // UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+    UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
 
 
 
