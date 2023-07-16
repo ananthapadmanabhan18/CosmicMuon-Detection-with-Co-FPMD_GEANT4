@@ -17,6 +17,7 @@
 #include "G4Element.hh"
 #include "G4SDManager.hh"
 #include "G4RotationMatrix.hh"
+#include "detector.hh"
 
 
 
@@ -31,6 +32,7 @@ class detectorconstruction : public G4VUserDetectorConstruction
 
     private:
         G4LogicalVolume* gaslogic;
+        virtual void ConstructSDandFields();
 
 };
 
