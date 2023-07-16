@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/construction.cc" "CMakeFiles/simulation.dir/construction.cc.o" "gcc" "CMakeFiles/simulation.dir/construction.cc.o.d"
+  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.cc" "CMakeFiles/simulation.dir/physics.cc.o" "gcc" "CMakeFiles/simulation.dir/physics.cc.o.d"
   "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/simulation.cc" "CMakeFiles/simulation.dir/simulation.cc.o" "gcc" "CMakeFiles/simulation.dir/simulation.cc.o.d"
   )
 
