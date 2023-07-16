@@ -32,7 +32,7 @@ class detectorconstruction : public G4VUserDetectorConstruction
 
     private:
         G4LogicalVolume* gaslogic;
-        virtual void ConstructSDandFields();
+        virtual void ConstructSDandField();
 
 };
 

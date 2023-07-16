@@ -11,7 +11,7 @@
 #include "G4Proton.hh"
 
 
-class sensitivedetector : G4VSensitiveDetector{
+class sensitivedetector : public G4VSensitiveDetector{
 
     public:
         sensitivedetector(G4String);

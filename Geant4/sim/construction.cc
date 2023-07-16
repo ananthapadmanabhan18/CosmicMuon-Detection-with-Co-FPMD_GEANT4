@@ -279,7 +279,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
 
-void detectorconstruction::ConstructSDandFields(){
-    sensitivedetector* sensdet = new sensitivedetector("sensd");
+void detectorconstruction::ConstructSDandField(){
+    sensitivedetector *sensdet = new sensitivedetector("SD");
     gaslogic->SetSensitiveDetector(sensdet);
 }
