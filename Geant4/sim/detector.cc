@@ -7,6 +7,7 @@ sensitivedetector::~sensitivedetector(){}
 G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist){
 
     G4Track* track = aStep->GetTrack();
+    // track->SetTrackStatus(fStopAndKill);
     G4StepPoint* presteppoint = aStep->GetPreStepPoint();
     G4StepPoint* poststeppoint = aStep->GetPostStepPoint();
 
