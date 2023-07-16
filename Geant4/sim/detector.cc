@@ -8,10 +8,10 @@ G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist
 
     G4Track* track = aStep->GetTrack();
     // track->SetTrackStatus(fStopAndKill);
-    G4StepPoint* presteppoint = aStep->GetPreStepPoint();
-    G4StepPoint* poststeppoint = aStep->GetPostStepPoint();
+    // G4StepPoint* presteppoint = aStep->GetPreStepPoint();
+    // G4StepPoint* poststeppoint = aStep->GetPostStepPoint();
+    G4double energyDeposit = aStep->GetTotalEnergyDeposit();
+    // G4ThreeVector position = presteppoint->GetPosition();
 
-    G4ThreeVector position = presteppoint->GetPosition();
-
-    G4cout<<"Position:"<<position<<G4endl;    
+    G4cout<<"Position:"<<energyDeposit<<G4endl;    
 }
