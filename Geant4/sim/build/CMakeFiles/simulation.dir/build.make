@@ -83,10 +83,24 @@ CMakeFiles/simulation.dir/simulation.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation.dir/simulation.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/simulation.cc -o CMakeFiles/simulation.dir/simulation.cc.s
 
+CMakeFiles/simulation.dir/action.cc.o: CMakeFiles/simulation.dir/flags.make
+CMakeFiles/simulation.dir/action.cc.o: ../action.cc
+CMakeFiles/simulation.dir/action.cc.o: CMakeFiles/simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulation.dir/action.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation.dir/action.cc.o -MF CMakeFiles/simulation.dir/action.cc.o.d -o CMakeFiles/simulation.dir/action.cc.o -c /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.cc
+
+CMakeFiles/simulation.dir/action.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulation.dir/action.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.cc > CMakeFiles/simulation.dir/action.cc.i
+
+CMakeFiles/simulation.dir/action.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation.dir/action.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.cc -o CMakeFiles/simulation.dir/action.cc.s
+
 CMakeFiles/simulation.dir/construction.cc.o: CMakeFiles/simulation.dir/flags.make
 CMakeFiles/simulation.dir/construction.cc.o: ../construction.cc
 CMakeFiles/simulation.dir/construction.cc.o: CMakeFiles/simulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulation.dir/construction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simulation.dir/construction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation.dir/construction.cc.o -MF CMakeFiles/simulation.dir/construction.cc.o.d -o CMakeFiles/simulation.dir/construction.cc.o -c /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/construction.cc
 
 CMakeFiles/simulation.dir/construction.cc.i: cmake_force
@@ -97,10 +111,24 @@ CMakeFiles/simulation.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation.dir/construction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/construction.cc -o CMakeFiles/simulation.dir/construction.cc.s
 
+CMakeFiles/simulation.dir/generator.cc.o: CMakeFiles/simulation.dir/flags.make
+CMakeFiles/simulation.dir/generator.cc.o: ../generator.cc
+CMakeFiles/simulation.dir/generator.cc.o: CMakeFiles/simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simulation.dir/generator.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation.dir/generator.cc.o -MF CMakeFiles/simulation.dir/generator.cc.o.d -o CMakeFiles/simulation.dir/generator.cc.o -c /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.cc
+
+CMakeFiles/simulation.dir/generator.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulation.dir/generator.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.cc > CMakeFiles/simulation.dir/generator.cc.i
+
+CMakeFiles/simulation.dir/generator.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation.dir/generator.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.cc -o CMakeFiles/simulation.dir/generator.cc.s
+
 CMakeFiles/simulation.dir/physics.cc.o: CMakeFiles/simulation.dir/flags.make
 CMakeFiles/simulation.dir/physics.cc.o: ../physics.cc
 CMakeFiles/simulation.dir/physics.cc.o: CMakeFiles/simulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simulation.dir/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simulation.dir/physics.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation.dir/physics.cc.o -MF CMakeFiles/simulation.dir/physics.cc.o.d -o CMakeFiles/simulation.dir/physics.cc.o -c /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.cc
 
 CMakeFiles/simulation.dir/physics.cc.i: cmake_force
@@ -114,14 +142,18 @@ CMakeFiles/simulation.dir/physics.cc.s: cmake_force
 # Object files for target simulation
 simulation_OBJECTS = \
 "CMakeFiles/simulation.dir/simulation.cc.o" \
+"CMakeFiles/simulation.dir/action.cc.o" \
 "CMakeFiles/simulation.dir/construction.cc.o" \
+"CMakeFiles/simulation.dir/generator.cc.o" \
 "CMakeFiles/simulation.dir/physics.cc.o"
 
 # External object files for target simulation
 simulation_EXTERNAL_OBJECTS =
 
 simulation: CMakeFiles/simulation.dir/simulation.cc.o
+simulation: CMakeFiles/simulation.dir/action.cc.o
 simulation: CMakeFiles/simulation.dir/construction.cc.o
+simulation: CMakeFiles/simulation.dir/generator.cc.o
 simulation: CMakeFiles/simulation.dir/physics.cc.o
 simulation: CMakeFiles/simulation.dir/build.make
 simulation: /home/apmnair18/geant4/lib/libG4Tree.so
@@ -170,7 +202,7 @@ simulation: /home/apmnair18/geant4/lib/libG4global.so
 simulation: /home/apmnair18/geant4/lib/libG4clhep.so
 simulation: /home/apmnair18/geant4/lib/libG4ptl.so.2.3.3
 simulation: CMakeFiles/simulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable simulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable simulation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simulation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

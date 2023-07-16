@@ -721,4 +721,12 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
  /home/apmnair18/geant4/include/Geant4/G4ProcessManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
- /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh
+ /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleGun.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VPrimaryGenerator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Proton.hh
