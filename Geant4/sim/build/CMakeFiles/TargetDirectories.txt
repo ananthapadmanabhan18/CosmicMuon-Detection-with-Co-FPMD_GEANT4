@@ -1,0 +1,4 @@
+/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles/simulation.dir
+/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles/Simulation.dir
+/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles/edit_cache.dir
+/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles/rebuild_cache.dir

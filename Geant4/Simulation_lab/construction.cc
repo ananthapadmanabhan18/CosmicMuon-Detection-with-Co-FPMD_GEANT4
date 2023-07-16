@@ -50,7 +50,7 @@ G4VPhysicalVolume *scintillation1::Construct()
     CO->AddElement(nistManager->FindOrBuildElement("C"), 1);
     CO->AddElement(nistManager->FindOrBuildElement("O"), 1);
     //Gas Mixture
-    G4Material* gasMixture = new G4Material("GasMixture", 1.72 , 2);
+    G4Material* gasMixture = new G4Material("GasMixture", 1.72*g/L , 2);
     gasMixture->AddElement(argonGas, 0.9);
     gasMixture->AddMaterial(CO, 0.1);
     //FR4
@@ -146,15 +146,15 @@ G4VPhysicalVolume *scintillation1::Construct()
             new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
             new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
 
-            // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
-            // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
 
 
-            // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
-            // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
         }
 
-
+    }
 
     //The Round things
     G4Tubs *round1 = new G4Tubs("round",0,1.15*cm,2*cm,0,2*M_PI);    
@@ -282,19 +282,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     stand3logic->SetVisAttributes(visstand);
     stand4logic->SetVisAttributes(visstand);
 
-
-
-
-
-
-
-
-
-
-
-
-
-    }
  
 
     //Assigning the Sensitive detectors for the gas volume
