@@ -18,20 +18,12 @@
 #include "G4RotationMatrix.hh"
 
 
-
-
-
-class scintillation1 : public G4VUserDetectorConstruction
+class Detectors : public G4VUserDetectorConstruction
 {
     public:
-        scintillation1();
-        ~scintillation1();
-
+        Detectors();
+        ~Detectors();
         virtual G4VPhysicalVolume *Construct();
 };
-
-
-
-
 
 #endif

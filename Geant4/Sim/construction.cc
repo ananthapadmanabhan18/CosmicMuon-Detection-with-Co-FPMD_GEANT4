@@ -1,30 +1,14 @@
 #include "construction.hh"
 #include "math.h"
-#include "detector.hh"
 
-scintillation1::scintillation1()
+Detectors::Detectors()
 {}
-scintillation1::~scintillation1()
+Detectors::~Detectors()
 {}
-G4VPhysicalVolume *scintillation1::Construct()
+G4VPhysicalVolume *Detectors::Construct()
 {
-    // Set up the dimensions of the honey comb detector
-    G4double phiStart = - 0 * M_PI;
-    G4double phiTotal =  2* M_PI; 
-    G4int numZplanes = 2;
-    G4int numSides=6;
-    G4double rInner[]= {2.4*mm, 2.4*mm};
-    G4double rOuter[] = {2.5*mm, 2.5*mm};
-    G4double zPlanes[]={-2.5*mm,2.5*mm};
-    G4double gInner[]= {0.01*mm, 0.01*mm};
-    G4double gOuter[] = {2.4*mm, 2.4*mm};
-
-
-
-
     // Define materials
     G4NistManager* nistManager = G4NistManager::Instance();
-    //Defining Elements
     G4Material* air = nistManager->FindOrBuildMaterial("G4_AIR");
     G4Material* plastic = nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
     G4Element* gold = nistManager->FindOrBuildElement("Au");
@@ -35,7 +19,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     G4Element* Silicon = nistManager->FindOrBuildElement("Si");
     G4Element* carbon = nistManager->FindOrBuildElement("C");
     G4Element* oxygen = nistManager->FindOrBuildElement("O");
-
     //Aluminium
     G4Material* Al = new G4Material("Aluminium", 2.7 * g/cm3, 1);
     Al->AddElement(Aluminium,1);    
@@ -61,21 +44,12 @@ G4VPhysicalVolume *scintillation1::Construct()
     fr4->AddElement(Silicon, 0.065);
 
 
-
-
-
-
-
-
-
-
     //Defining colours
     G4VisAttributes* vishc = new G4VisAttributes(G4Colour(1,0.72,0.243));
     vishc->SetForceSolid(true);
 
     G4VisAttributes* visstandplane = new G4VisAttributes(G4Colour(105/173,1,45/173));
     visstandplane->SetForceSolid(true);
-
 
     G4VisAttributes* visgold = new G4VisAttributes(G4Colour(1,0.843,0));
     visgold->SetForceSolid(true);
@@ -119,24 +93,28 @@ G4VPhysicalVolume *scintillation1::Construct()
     
 
     //Defining Honeycomb detector
+    G4double phiStart = - 0 * M_PI;
+    G4double phiTotal =  2* M_PI; 
+    G4int numZplanes = 2;
+    G4int numSides=6;
+    G4double rInner[]= {2.4*mm, 2.4*mm};
+    G4double rOuter[] = {2.5*mm, 2.5*mm};
+    G4double zPlanes[]={-2.5*mm,2.5*mm};
+    G4double gInner[]= {0.01*mm, 0.01*mm};
+    G4double gOuter[] = {2.4*mm, 2.4*mm};
     G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
     G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,Cu,"hclogic");
     hclogic->SetVisAttributes(vishc);
-
-
 
     //Defining the Gold wire 
     G4Tubs *goldwire = new G4Tubs("goldwire",0,0.01*mm,2.5*mm,0,2*M_PI);
     G4LogicalVolume* goldlogic = new G4LogicalVolume(goldwire,Au,"goldlogic");
     goldlogic->SetVisAttributes(visgold);
 
-
     //Filling the detector with argon/CO mixture
     G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
     G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
     gaslogic->SetVisAttributes(gas);
-    
-    
     
 
     //Placing the logic volumes of HoneyComb
@@ -146,12 +124,12 @@ G4VPhysicalVolume *scintillation1::Construct()
             new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
             new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
 
-            // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
-            // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
 
 
-            // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
-            // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
         }
 
 
@@ -181,7 +159,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     round3logic->SetVisAttributes(visscintilation);
 
     //Defining the PCB
-    // G4Box* pcb = new G4Box("pcb", ((15/sqrt(3))*24+(7.5/sqrt(3)))*mm,(12.5)*cm,1.25*mm);
     G4Box* pcb = new G4Box("pcb",245*mm,(12.5)*cm,1.25*mm);
     G4LogicalVolume* pcblogic = new G4LogicalVolume(pcb, fr4, "PCB");
     new G4PVPlacement(nullptr, G4ThreeVector(-15/sqrt(3)*0*mm, -5*0*mm, -3.75*mm), pcblogic, "PCB1", logicworld, false, 0,checkoverlap);
@@ -257,8 +234,6 @@ G4VPhysicalVolume *scintillation1::Construct()
     }
      
     pinlogic->SetVisAttributes(visscintilation);
-
-
     //defining the stand legs
     G4Polyhedra *stand1 = new G4Polyhedra("HCD", -45*deg,phitotalstand,standsidenum,planestandno,zPlanestand,standinner, standouter);
     G4LogicalVolume* stand1logic = new G4LogicalVolume(stand1,Al,"stand1");
@@ -281,26 +256,8 @@ G4VPhysicalVolume *scintillation1::Construct()
     stand2logic->SetVisAttributes(visstand);
     stand3logic->SetVisAttributes(visstand);
     stand4logic->SetVisAttributes(visstand);
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
  
-
-    //Assigning the Sensitive detectors for the gas volume
-    GSD* sensitiveDetector = new GSD("MySensitiveDetector");
-    G4SDManager::GetSDMpointer()->AddNewDetector(sensitiveDetector);
-    gaslogic->SetSensitiveDetector(sensitiveDetector);
-    return physicalworld;  
+ return physicalworld;
 }
 
