@@ -24,10 +24,14 @@
 class detectorconstruction : public G4VUserDetectorConstruction
 {
     public:
-    detectorconstruction();
-    ~detectorconstruction();
+        detectorconstruction();
+        ~detectorconstruction();
 
-    virtual G4VPhysicalVolume* Construct();
+        virtual G4VPhysicalVolume* Construct();
+
+    private:
+        G4LogicalVolume* gaslogic;
+
 };
 
 

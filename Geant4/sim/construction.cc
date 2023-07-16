@@ -120,7 +120,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
     //Filling the detector with argon/CO mixture
     G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
-    G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
+    gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
     gaslogic->SetVisAttributes(gas);
     
     
