@@ -7,11 +7,13 @@ sensitivedetector::~sensitivedetector(){}
 G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist){
 
     G4Track* track = aStep->GetTrack();
-    // track->SetTrackStatus(fStopAndKill);
-    // G4StepPoint* presteppoint = aStep->GetPreStepPoint();
-    // G4StepPoint* poststeppoint = aStep->GetPostStepPoint();
-    G4double energyDeposit = aStep->GetTotalEnergyDeposit();
-    // G4ThreeVector position = presteppoint->GetPosition();
-
-    G4cout<<"Position:"<<energyDeposit<<G4endl;    
+    G4ParticleDefinition* particle = track->GetDefinition();
+    if(particle==G4MuonMinus::Definition()){
+      G4double energyDeposit = aStep->GetTotalEnergyDeposit();
+      G4double edmev = energyDeposit / eV;
+      std::ofstream file("/sim/output.txt", std::ios::app);
+      file.seekp(0, std::ios::end);
+      file <<edmev<< G4endl;
+      file.close();
+    }   
 }

@@ -1,11 +1,11 @@
 import ROOT
 canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
-histogram = ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 0.01)
+histogram = ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 3000)
 
 histogram.SetXTitle("Energy (MeV)")
 histogram.SetYTitle("Frequency")
 
-file = open("ROOT/Data_from_geant4/output.txt", "r")
+file = open("output.txt", "r")
 
 
 i=0
