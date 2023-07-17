@@ -1,0 +1,42 @@
+\section{The Topology of \textit{SU(2)} and \textit{SO(3)}}
+
+Now in this section, we will discuss about the structure of the group SO(3). Let m $\epsilon$ $M$ and $a \; \epsilon \;G$. A group element c lies in $G_{am}$ if and only if:
+\begin{equation}
+  c=aba^{-1}  \;\text{where}\; b \; \epsilon \; G_{m}
+\end{equation}
+mathematically:
+\begin{equation}
+    G_{am}=aG_{m}a^{-1}
+\end{equation}
+Then if $b$ is in $G_{m}$ (So that, $bm=m$, then $c(am)=(aba^{-1)}am=abm=am$ so that $c$ is in $G_{am}$. Now using this, its converse and the concept of Euler's angle, we will prove the mapping $\phi$ in section of Section-2 \ref{Homomorphisms} where we took SU(2) to all of SO(3). In the Euler's description, any arbitrary element of \textit{SO(3)} can be written a product of 3 rotations:
+\begin{equation}
+    R={R^{z}}_{\phi}{R^{y}}_{\theta}{R^{z}}_{\psi}
+\end{equation}
+Where the axis of rotation is denoted by the superscript and the angle by which the rotation is made is denoted by the subscript. Here $\psi,\;\theta,\; \text{and}\; \phi$ are called the \textit{Euler angles}. Once we got this kind of composition, we can now construct a matrix in $SU(2)$ which maps into product of any such rotation. Now, lets prove the Euler's theorem. Lets consider a unit sphere and let its north pole be $n$. The rotation R is completely determined by a the knowledge of the image $Rn$ of n and of the image of any unit tangent vector to the sphere passing through $n$~\cite{sternberg1995group}. 
+If B is in the isotropy group of $SO(3)_R{n}$, then C is some rotation which satisfy $R=CB$ with, $CBn=Bn$ where B is some other rotation which satisfy $Rn=Bn$.  So we can get n to any other point on the unit sphere (namely $p=Rn$) by first applying rotation about the y-axis and then rotating about the z-axis. considering $p=Rn$, we van write:
+\begin{equation}
+    Rn={R^{z}}_{\phi}{R^{y}}_{\theta}n
+\end{equation}
+That is, $Rn=Bn$ with $B={R^{z}}_{\phi}{R^{y}}_{\theta}$. But this means $R=CB$, where C is in $SO(3)$
+, so $C=BDB^{-1}$, Where $D$ is in $SO(3)_R{n}$. Thus D is a rotation about the z-axis, i.e. $D={R^{z}}_{\psi}$ for some $\psi$ ~\cite{sternberg1995group}. So we have:
+\begin{equation}
+  R=BDB^{-1}B=BD={R^{z}}_{\phi}{R^{y}}_{\theta}{R^{z}}_{\psi}  
+\end{equation}
+Hence the Euler's theorem is proved.
+
+Now using these we will study some topological properties of the group SO(3). We know that every element of the $SU(2)$ can be written in the form of the matrix 
+$\begin{pmatrix}
+a&b\\
+-b^{*}&a^{*}\\
+\end{pmatrix}$
+where $|a|^{2}+|b|^{2}=1$. Now writing $a=y_1-iy_2$ and $b=y_3-iy_4$, then the $y_i$'s represent a unit sphere in the 4-D y space with:
+\begin{equation}
+    y_{1}^{2}+y_{2}^{2}+y_{3}^{2}+y_{4}^{2}=1
+\end{equation}
+Here the Identity element e corresponds to $(1,0,0,0)$.
+
+Now the sphere in any positive dimension has the property that it can shrink any closed curve to a single point. So, lets consoder a curve $\gamma(t)$ with $ \gamma (1) =\gamma (0) = e $.We can move the curve a little bit so that $\gamma$ does not pass through the point $(-1,0,0,0)$ for any $t$. NOw, we can continuously deform the curve by a constant map by pushing each point in the curve along the great circle fron south polw i.e. $(-1,0,0,0)$ to the north pole $(1,0,0,0)$. Now we say that $SU(2)$ is \textit{simply connected}. 
+
+Now for the group $SO(3)$, consider a rotation through an angnle t about the z-axis. This Rotation $R_{t}^{z}$ describes a closed curve in $SO(3)$ as t ranges from $0$ to $\pi$. Now we will prove that this curve cannot be decomposed to a curve in $SO(3)$. We can consider the pre-image of this curve in $SU(2)$, and let it be $C(t)$ with $C(0)=e$ and also C is continuous and $\phi(C(t))=R_{t}^{z}$. We know that $\phi$ is two-to-one and that the two points that maps to the same point in $SO(3)$ are antipodal points on the 3-D sphere. As C its continuous, C gets fixed completely and it is the semi circle in the $y_3=y_4=0$ plane given by $y_1(t)=\cos(t/2)$ ans $y_2(t)=\sin(t/2)$. Thus, $C(2\pi)=-e$. By, using continuity, we can see that this is in fact true for any curve. That is for any curve $B(s,t)$ in $SO(3)$ with $B(s,0)=B(s,2\pi)=\;identity\;element\;$ and if $B(0,t)=R_{t}^{z}$, then we can find a curve $C(s,t)$ in $SU(2)$ such that C depends continuously on s and t and has the values in SU(2) with $\phi(C(s,t)=B(s,t)$. Then by the arguments same as abive we can show that $C(s,2\pi)=-e$. IN this way we can see that there is no way of shrinking the curve $R_{t}^{z}$ to the constant curve, i.e. there cannot be any continuous B with B(1,t) identically equal to the identity element in SO(3).
+
+So, we have shown that the curve consisting of a family of rotations about an axis traversed once from 0 to$\pi$ cannot be deformed to a point while the same curve when traversed twice can be shrunk to a point.

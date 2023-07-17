@@ -1,0 +1,114 @@
+\documentclass{article}
+
+
+\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,filecolor=magenta,urlcolor=cyan,}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{lipsum}
+\usepackage{float}
+
+
+%\renewenvironment{abstract}
+% {\quotation\small\noindent\rule{\linewidth}{0.5 pt}\par\smallskip
+%  {\centering\bfseries\abstractname\par}\medskip}
+% {\par\noindent\rule{\linewidth}{.5pt}\endquotation}
+
+
+
+
+
+%\title{\textbf{Group Theory-Some basic Definitions and Examples}}
+%\author[1]{Anantha Padmanabhan M Nair}
+%\affil[1]{\textit{School of Physical Sciences,3rd Year, National %Institute of Science Education and Research, HBNI, Jatni-752050, %India}}
+
+
+\begin{document}
+
+
+
+%Title Page and certificate and acknowlwdgements
+\newgeometry{top=5cm,bottom=2.5cm,left=4cm,right=4cm}
+\input{title}
+\restoregeometry
+
+
+%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements
+\newgeometry{top=6.5cm,bottom=2.5cm,left=6cm,right=6cm}
+\cleardoublepage
+\begin{center}
+    \Large{\textbf{Acknowledgements}}
+\end{center}
+
+\vspace{0.2in}
+I want to express my profound gratitude to Prof. Girish Sharma, who has served as my mentor and an outstanding role model during this endeavour. I appreciate him allowing me the chance to work with him and guiding me as I discover new ideas and themes. When we talked, he didn't simply explain the subjects; he also taught me how to approach the ideas in a way that wasn't solely based on mathematical proofs. For giving me this chance and inspiring me to investigate, I would also like to thank the School of Basic Sciences at the Indian Institute of Technology, Mandi, and the School of Physical Sciences at the National Institute of Science Education and Research.
+
+\newpage
+\restoregeometry
+%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements
+
+
+
+
+
+
+\newgeometry{top=5cm,bottom=2.5cm,left=4cm,right=4cm}
+\input{certificate}
+\restoregeometry
+
+
+%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract
+\newgeometry{top=6.5cm,bottom=2.5cm,left=5cm,right=5cm}
+
+\begin{abstract}
+    In this report we will discuss about the basics of the group theory and symmetries.
+    The Group Theory is used as a mathematical frame work for describing symmetry properties 
+    of classical as well as quantum systems. We will also read about Homomorphisms-a 
+    structure-preserving map between two algebraic structures of the same type, 
+    Conjugations, and some applications of the Group theory in different fields 
+    like the crystallography and Topologies etc. 
+    \end{abstract}
+\restoregeometry
+%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract
+
+
+%Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page
+\pagenumbering{roman}
+\newpage
+\newgeometry{top=4cm,bottom=2.5cm,left=4cm,right=4cm}
+\begin{center}
+ \tableofcontents   
+\end{center}
+\restoregeometry
+%Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page
+
+
+%Contents
+\newpage
+
+\begin{multicols}{2}
+\pagenumbering{arabic}
+\input{1Intro}
+\input{2homomorphism}
+\input{3action on a set}
+\input{4Conjugation and Conjugacy Classes}
+\input{5Applications to crystallography}
+\input{6The Topology of SU(2) and SO(3)}
+\input{7conclusion}
+\end{multicols}
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{bib.bib}
+
+
+\end{document}
