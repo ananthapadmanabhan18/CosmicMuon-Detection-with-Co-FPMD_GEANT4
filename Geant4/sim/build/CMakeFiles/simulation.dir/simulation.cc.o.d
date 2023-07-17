@@ -651,91 +651,6 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4ParticleTable.hh \
  /home/apmnair18/geant4/include/Geant4/G4Proton.hh \
  /home/apmnair18/geant4/include/Geant4/G4Ions.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.hh \
- /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
- /home/apmnair18/geant4/include/Geant4/G4ProductionCutsTable.hh \
- /home/apmnair18/geant4/include/Geant4/G4MaterialCutsCouple.hh \
- /home/apmnair18/geant4/include/Geant4/G4ProductionCuts.hh \
- /home/apmnair18/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
- /home/apmnair18/geant4/include/Geant4/G4VUPLSplitter.hh \
- /home/apmnair18/geant4/include/Geant4/G4VModularPhysicsList.hh \
- /home/apmnair18/geant4/include/Geant4/G4VPhysicsConstructor.hh \
- /home/apmnair18/geant4/include/Geant4/G4PhysicsListHelper.hh \
- /home/apmnair18/geant4/include/Geant4/G4PhysicsListOrderingParameter.hh \
- /home/apmnair18/geant4/include/Geant4/G4ThreadLocalSingleton.hh \
- /home/apmnair18/geant4/include/Geant4/G4Cache.hh \
- /home/apmnair18/geant4/include/Geant4/G4CacheDetails.hh \
- /home/apmnair18/geant4/include/Geant4/G4Backtrace.hh \
- /usr/include/c++/11/cxxabi.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/include/execinfo.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/c++/11/cfenv \
- /usr/include/c++/11/fenv.h /usr/include/fenv.h \
- /usr/include/x86_64-linux-gnu/bits/fenv.h /usr/include/c++/11/csignal \
- /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/include/c++/11/regex /usr/include/c++/11/bitset \
- /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
- /usr/include/c++/11/stack /usr/include/c++/11/deque \
- /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
- /usr/include/c++/11/bits/stl_stack.h \
- /usr/include/c++/11/bits/regex_constants.h \
- /usr/include/c++/11/bits/regex_error.h \
- /usr/include/c++/11/bits/regex_automaton.h \
- /usr/include/c++/11/bits/regex_automaton.tcc \
- /usr/include/c++/11/bits/regex_scanner.h \
- /usr/include/c++/11/bits/regex_scanner.tcc \
- /usr/include/c++/11/bits/regex_compiler.h \
- /usr/include/c++/11/bits/regex_compiler.tcc \
- /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
- /usr/include/c++/11/bits/regex_executor.h \
- /usr/include/c++/11/bits/regex_executor.tcc \
- /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
- /home/apmnair18/geant4/include/Geant4/G4EmStandardPhysics.hh \
- /home/apmnair18/geant4/include/Geant4/G4OpticalPhysics.hh \
- /home/apmnair18/geant4/include/Geant4/G4OpticalParameters.hh \
- /home/apmnair18/geant4/include/Geant4/G4DecayPhysics.hh \
- /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
- /home/apmnair18/geant4/include/Geant4/G4VRestDiscreteProcess.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleChangeForDecay.hh \
- /home/apmnair18/geant4/include/Geant4/G4DecayProcessType.hh \
- /home/apmnair18/geant4/include/Geant4/G4RadioactiveDecayPhysics.hh \
- /home/apmnair18/geant4/include/Geant4/G4GenericIon.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
- /home/apmnair18/geant4/include/Geant4/G4ProcessManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.hh \
- /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.hh \
- /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.hh \
- /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
  /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
@@ -859,4 +774,89 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/mpi_create_basket \
  /home/apmnair18/geant4/include/Geant4/tools/impi \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/columns.icc \
- /home/apmnair18/geant4/include/Geant4/G4RootNtupleManager.icc
+ /home/apmnair18/geant4/include/Geant4/G4RootNtupleManager.icc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ProductionCutsTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MaterialCutsCouple.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ProductionCuts.hh \
+ /home/apmnair18/geant4/include/Geant4/G4MCCIndexConversionTable.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUPLSplitter.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VModularPhysicsList.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VPhysicsConstructor.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsListHelper.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PhysicsListOrderingParameter.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ThreadLocalSingleton.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Cache.hh \
+ /home/apmnair18/geant4/include/Geant4/G4CacheDetails.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Backtrace.hh \
+ /usr/include/c++/11/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
+ /usr/include/execinfo.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/c++/11/cfenv \
+ /usr/include/c++/11/fenv.h /usr/include/fenv.h \
+ /usr/include/x86_64-linux-gnu/bits/fenv.h /usr/include/c++/11/csignal \
+ /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+ /usr/include/c++/11/regex /usr/include/c++/11/bitset \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/stack /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_stack.h \
+ /usr/include/c++/11/bits/regex_constants.h \
+ /usr/include/c++/11/bits/regex_error.h \
+ /usr/include/c++/11/bits/regex_automaton.h \
+ /usr/include/c++/11/bits/regex_automaton.tcc \
+ /usr/include/c++/11/bits/regex_scanner.h \
+ /usr/include/c++/11/bits/regex_scanner.tcc \
+ /usr/include/c++/11/bits/regex_compiler.h \
+ /usr/include/c++/11/bits/regex_compiler.tcc \
+ /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
+ /usr/include/c++/11/bits/regex_executor.h \
+ /usr/include/c++/11/bits/regex_executor.tcc \
+ /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
+ /home/apmnair18/geant4/include/Geant4/G4EmStandardPhysics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4OpticalPhysics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4OpticalParameters.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DecayPhysics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VRestDiscreteProcess.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleChangeForDecay.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DecayProcessType.hh \
+ /home/apmnair18/geant4/include/Geant4/G4RadioactiveDecayPhysics.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GenericIon.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ProcessManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh
