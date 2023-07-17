@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  17 JUL 2023 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  17 JUL 2023 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,12 +486,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  (D:\Apps\MikTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<NISER.png, id=87, 1204.5pt x 1239.63126pt>
+<NISER.png, id=7, 1204.5pt x 1239.63126pt>
 File: NISER.png Graphic file (type png)
 <use NISER.png>
 Package pdftex.def Info: NISER.png  used on input line 45.
 (pdftex.def)             Requested size: 92.47145pt x 95.16249pt.
-<VECC.png, id=89, 256.0767pt x 256.0767pt>
+<VECC.png, id=9, 256.0767pt x 256.0767pt>
 File: VECC.png Graphic file (type png)
 <use VECC.png>
 Package pdftex.def Info: VECC.png  used on input line 66.
@@ -574,17 +574,7 @@ l.107 \newpage
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--140
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--146
-
- []
-
-[2
+ [2
 
 
 ]
@@ -663,55 +653,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--146
  [1
 
 
-] (1Intro.tex) (2homomorphism.tex
+] (main.bbl)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \begin{equation}
-                      [1
+l.251 \end{document}
+                     [1
 
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.235 \end{equation}
-                     [2]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-\OT1/cmr/m/n/10 The lemma is that, ev-ery proper Lorentz
- []
-
-) (3action on a set.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2 \section
-            {Action of a group on a Set} [3]) (4Conjugation and Conjugacy Classes.tex [4]) (5Applications to crystallography.tex
-<fig1.png, id=218, 444.15938pt x 132.495pt>
-File: fig1.png Graphic file (type png)
-<use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 10.
-(pdftex.def)             Requested size: 213.39566pt x 63.65549pt.
-) (6The Topology of SU(2) and SO(3).tex [5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.22 \begin{equation}
-                      <./fig1.png>]) (7conclusion.tex) (main.bbl) [6] (main.aux)
+] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 55493805179E3B9C0876B840D825C9B4;3538.
+(rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
  ) 
 Here is how much of TeX's memory you used:
- 11385 strings out of 476410
- 183798 string characters out of 5803184
- 1880845 words of memory out of 5000000
- 31466 multiletter control sequences out of 15000+600000
- 519076 words of font info for 56 fonts, out of 8000000 for 9000
+ 11204 strings out of 476410
+ 179949 string characters out of 5803184
+ 1856845 words of memory out of 5000000
+ 31391 multiletter control sequences out of 15000+600000
+ 516799 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,77p,1467b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\apmna\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (11 pages, 674081 bytes).
+ 75i,5n,77p,393b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (6 pages, 490925 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 19 words of extra memory for PDF output out of 10000 (max. 10000000)
 

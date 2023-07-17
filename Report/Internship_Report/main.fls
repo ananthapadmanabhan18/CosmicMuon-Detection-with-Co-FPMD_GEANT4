@@ -303,63 +303,7 @@ INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmbx9.tfm
 INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
-INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmbxti10.tfm
 OUTPUT main.toc
-INPUT .\1Intro.tex
-INPUT .\1Intro.tex
-INPUT 1Intro.tex
-INPUT .\1Intro.tex
-INPUT .\1Intro.tex
-INPUT 1Intro.tex
-INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT D:\Apps\MikTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT .\2homomorphism.tex
-INPUT .\2homomorphism.tex
-INPUT 2homomorphism.tex
-INPUT .\2homomorphism.tex
-INPUT .\2homomorphism.tex
-INPUT 2homomorphism.tex
-INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmbx7.tfm
-INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmbx5.tfm
-INPUT .\3action on a set.tex
-INPUT .\3action on a set.tex
-INPUT 3action on a set.tex
-INPUT .\3action on a set.tex
-INPUT .\3action on a set.tex
-INPUT 3action on a set.tex
-INPUT .\4Conjugation and Conjugacy Classes.tex
-INPUT .\4Conjugation and Conjugacy Classes.tex
-INPUT 4Conjugation and Conjugacy Classes.tex
-INPUT .\4Conjugation and Conjugacy Classes.tex
-INPUT .\4Conjugation and Conjugacy Classes.tex
-INPUT 4Conjugation and Conjugacy Classes.tex
-INPUT .\5Applications to crystallography.tex
-INPUT .\5Applications to crystallography.tex
-INPUT 5Applications to crystallography.tex
-INPUT .\5Applications to crystallography.tex
-INPUT .\5Applications to crystallography.tex
-INPUT 5Applications to crystallography.tex
-INPUT .\fig1.png
-INPUT .\fig1.png
-INPUT fig1.png
-INPUT .\fig1.png
-INPUT .\fig1.png
-INPUT .\fig1.png
-INPUT .\fig1.png
-INPUT .\6The Topology of SU(2) and SO(3).tex
-INPUT .\6The Topology of SU(2) and SO(3).tex
-INPUT 6The Topology of SU(2) and SO(3).tex
-INPUT .\6The Topology of SU(2) and SO(3).tex
-INPUT .\6The Topology of SU(2) and SO(3).tex
-INPUT 6The Topology of SU(2) and SO(3).tex
-INPUT D:\Apps\MikTeX\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT .\7conclusion.tex
-INPUT .\7conclusion.tex
-INPUT 7conclusion.tex
-INPUT .\7conclusion.tex
-INPUT .\7conclusion.tex
-INPUT 7conclusion.tex
 INPUT .\main.bbl
 INPUT main.bbl
 INPUT .\main.bbl
@@ -367,24 +311,14 @@ INPUT main.bbl
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
-INPUT C:\Users\apmna\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
-INPUT C:\Users\apmna\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -393,19 +327,9 @@ INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT D:\Apps\MikTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
