@@ -16,40 +16,94 @@
 \usepackage{float}
 
 
-%\renewenvironment{abstract}
-% {\quotation\small\noindent\rule{\linewidth}{0.5 pt}\par\smallskip
-%  {\centering\bfseries\abstractname\par}\medskip}
-% {\par\noindent\rule{\linewidth}{.5pt}\endquotation}
-
-
-
-
-
-%\title{\textbf{Group Theory-Some basic Definitions and Examples}}
-%\author[1]{Anantha Padmanabhan M Nair}
-%\affil[1]{\textit{School of Physical Sciences,3rd Year, National %Institute of Science Education and Research, HBNI, Jatni-752050, %India}}
-
-
 \begin{document}
 
 
 
-%Title Page and certificate and acknowlwdgements
-\newgeometry{top=5cm,bottom=2.5cm,left=4cm,right=4cm}
-\input{title}
+%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage
+\newgeometry{top=4cm,bottom=2.5cm,left=4cm,right=4cm}
+\begin{titlepage}
+
+    \begin{center}
+    
+    
+    
+    \textup{\Large {\bf Summer Internship Project} \\ Report}\\[0.3in]
+    
+    % Title
+    \Large \textbf {Detection of Cosmic Muons Using Gas Detectors}\\[0.7in]
+    
+    
+           
+    
+    % Submitted by
+    \normalsize Submitted by \\[0.2in]
+    \textbf{Anantha Padmanabhan M Nair}\\
+    \normalsize
+    $4^{th}$ year Int. MSc Student\\[0.1in]
+    
+    \includegraphics[width=0.25 \textwidth]{NISER.png}\\[0.1in]
+    \Large{School of Physical Sciences}\\
+    \normalsize
+    \textsc{National Institute of Science Education and Research},\\
+    Tehsildar Office, Khurda\\
+    Pipli, Near, Jatni, Odisha 752050\\
+    
+    
+    
+    
+    
+    \vspace{.2in}
+    Under the guidance of\\[0.2in]
+    \textbf{Dr. Sanjib Muhuri}\\
+    Scientific Officer
+    
+    
+    
+    \vspace{.3in}
+    
+    % Bottom of the page
+    \includegraphics[width=0.2\textwidth]{VECC.png}\\[0.1in]
+    \Large{Experimental High Energy Physics}\\
+    \normalsize
+    \textsc{Variable Energy Cyclotron Centre}\\
+    1/AF, \\Bidhannagar, Kolkata, \\West Bengal, 700064 \\
+    \vspace{0.2in}
+    Summer Internship 2023
+    
+    \end{center}
+    
+\end{titlepage}
 \restoregeometry
+%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%TitlePage%
+
+
+
+
+
+
+
 
 
 %Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements
-\newgeometry{top=6.5cm,bottom=2.5cm,left=6cm,right=6cm}
+\newgeometry{top=6.5cm,bottom=2.5cm,left=5cm,right=5cm}
 \cleardoublepage
 \begin{center}
     \Large{\textbf{Acknowledgements}}
 \end{center}
 
 \vspace{0.2in}
-I want to express my profound gratitude to Prof. Girish Sharma, who has served as my mentor and an outstanding role model during this endeavour. I appreciate him allowing me the chance to work with him and guiding me as I discover new ideas and themes. When we talked, he didn't simply explain the subjects; he also taught me how to approach the ideas in a way that wasn't solely based on mathematical proofs. For giving me this chance and inspiring me to investigate, I would also like to thank the School of Basic Sciences at the Indian Institute of Technology, Mandi, and the School of Physical Sciences at the National Institute of Science Education and Research.
-
+I want to express my profound gratitude to Dr. Sanjib Buhuri, 
+who has served as my mentor and an outstanding role model during 
+this endeavour. I appreciate him allowing me the chance to 
+work with him and guiding me as I discover new ideas and themes. 
+When we talked, he didn't simply explain the subjects; he also 
+taught me how to approach the ideas in a way that wasn't solely 
+based on mathematical proofs. For giving me this chance and inspiring 
+me to investigate, I would also like to thank the Experimental High Energy Group
+at the Variable Energy Cyclotron Centre, Kolkata, and the School 
+of Physical Sciences at the National Institute of Science 
+Education and Research.
 \newpage
 \restoregeometry
 %Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements
@@ -59,9 +113,61 @@ I want to express my profound gratitude to Prof. Girish Sharma, who has served a
 
 
 
+
+
+
+
+
+%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate
 \newgeometry{top=5cm,bottom=2.5cm,left=4cm,right=4cm}
-\input{certificate}
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+
+\huge{School Of Basic Sciences}\\[0.5cm]
+\normalsize
+\textsc{Indian Institute Of Technology, Mandi}\\[2.0cm]
+
+\emph{\LARGE Certificate}\\[1cm]
+\end{center}
+This is to certify that Mr. Anantha Padmanabhan, Student of 
+National Institute of Science Education and Research, has 
+successfully completed a summer internship in the field of 
+Group Theory from 1/06/2022 to 12/07/2022 under the guidance 
+of Dr.Sanjib Muhuri. We wish him every success 
+in his life and career.\\
+
+
+VECC Kolkata,\\
+Bidhannagar,\\
+West Bengal\\
+\normalsize 
+
+
+\vfill
+
+
+% Bottom of the page
+\begin{flushright}
+Sanjib Muhuri\\
+(Project Guide)\\
+\end{flushright}
+\begin{flushleft}
+Date:
+\end{flushleft}
 \restoregeometry
+%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate%Certificate
+
+
+
+
+
+
+
+
+
+
 
 
 %Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract
@@ -79,6 +185,15 @@ I want to express my profound gratitude to Prof. Girish Sharma, who has served a
 %Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract%Abstract
 
 
+
+
+
+
+
+
+
+
+
 %Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page
 \pagenumbering{roman}
 \newpage
@@ -90,9 +205,7 @@ I want to express my profound gratitude to Prof. Girish Sharma, who has served a
 %Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page%Content Table Page
 
 
-%Contents
 \newpage
-
 \begin{multicols}{2}
 \pagenumbering{arabic}
 \input{1Intro}
