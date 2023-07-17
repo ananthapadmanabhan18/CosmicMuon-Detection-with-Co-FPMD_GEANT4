@@ -1,13 +1,8 @@
-CMakeFiles/simulation.dir/action.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.cc \
+CMakeFiles/simulation.dir/run.cc.o: \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.hh \
- /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.hh \
- /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleGun.hh \
- /home/apmnair18/geant4/include/Geant4/globals.hh \
- /home/apmnair18/geant4/include/Geant4/G4ios.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
  /home/apmnair18/geant4/include/Geant4/G4Types.hh \
  /home/apmnair18/geant4/include/Geant4/G4GlobalConfig.hh \
  /usr/include/c++/11/complex \
@@ -182,6 +177,14 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/apmnair18/geant4/include/Geant4/tls.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisManagerState.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisVerbose.hh \
+ /home/apmnair18/geant4/include/Geant4/globals.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ios.hh \
  /usr/include/c++/11/iostream /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -238,18 +241,6 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/apmnair18/geant4/include/Geant4/G4VPrimaryGenerator.hh \
- /home/apmnair18/geant4/include/Geant4/G4ThreeVector.hh \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Utility/defs.h \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Units/PhysicalConstants.h \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /home/apmnair18/geant4/include/Geant4/G4PDefManager.hh \
- /usr/include/c++/11/stdlib.h \
- /home/apmnair18/geant4/include/Geant4/pwdefs.hh \
- /home/apmnair18/geant4/include/Geant4/G4AutoLock.hh \
  /home/apmnair18/geant4/include/Geant4/G4Threading.hh \
  /usr/include/c++/11/condition_variable \
  /usr/include/c++/11/bits/shared_ptr.h \
@@ -260,30 +251,7 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.icc \
- /home/apmnair18/geant4/include/Geant4/G4PrimaryVertex.hh \
- /home/apmnair18/geant4/include/Geant4/G4Allocator.hh \
- /usr/include/c++/11/cstddef \
- /home/apmnair18/geant4/include/Geant4/G4AllocatorPool.hh \
- /home/apmnair18/geant4/include/Geant4/G4PrimaryParticle.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleMomentum.hh \
- /home/apmnair18/geant4/include/Geant4/G4SystemOfUnits.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleTable.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleTableIterator.hh \
- /home/apmnair18/geant4/include/Geant4/G4ParticleTable.icc \
- /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
- /home/apmnair18/geant4/include/Geant4/G4Proton.hh \
- /home/apmnair18/geant4/include/Geant4/G4Ions.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.hh \
- /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4VAnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisManagerState.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisVerbose.hh \
- /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/memory \
@@ -315,6 +283,7 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4THnToolsManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4THnManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4THnManager.icc \
+ /home/apmnair18/geant4/include/Geant4/G4AutoLock.hh \
  /home/apmnair18/geant4/include/Geant4/G4THnMessenger.hh \
  /home/apmnair18/geant4/include/Geant4/G4UImessenger.hh \
  /home/apmnair18/geant4/include/Geant4/G4UIdirectory.hh \
@@ -322,6 +291,10 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4UIparameter.hh \
  /home/apmnair18/geant4/include/Geant4/G4UItokenNum.hh \
  /home/apmnair18/geant4/include/Geant4/G4ApplicationState.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ThreeVector.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Utility/defs.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
  /home/apmnair18/geant4/include/Geant4/G4THnToolsManager.icc \
  /home/apmnair18/geant4/include/Geant4/G4THnMessenger.icc \
  /home/apmnair18/geant4/include/Geant4/G4Tokenizer.hh \

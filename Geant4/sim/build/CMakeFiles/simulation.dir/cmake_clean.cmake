@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/simulation.dir/generator.cc.o.d"
   "CMakeFiles/simulation.dir/physics.cc.o"
   "CMakeFiles/simulation.dir/physics.cc.o.d"
+  "CMakeFiles/simulation.dir/run.cc.o"
+  "CMakeFiles/simulation.dir/run.cc.o.d"
   "CMakeFiles/simulation.dir/simulation.cc.o"
   "CMakeFiles/simulation.dir/simulation.cc.o.d"
   "simulation"

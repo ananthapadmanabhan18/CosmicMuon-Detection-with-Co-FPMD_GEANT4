@@ -262,6 +262,30 @@ physics.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/physics.cc.s
 .PHONY : physics.cc.s
 
+run.o: run.cc.o
+.PHONY : run.o
+
+# target to build an object file
+run.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/run.cc.o
+.PHONY : run.cc.o
+
+run.i: run.cc.i
+.PHONY : run.i
+
+# target to preprocess a source file
+run.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/run.cc.i
+.PHONY : run.cc.i
+
+run.s: run.cc.s
+.PHONY : run.s
+
+# target to generate assembly for a file
+run.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/run.cc.s
+.PHONY : run.cc.s
+
 simulation.o: simulation.cc.o
 .PHONY : simulation.o
 
@@ -311,6 +335,9 @@ help:
 	@echo "... physics.o"
 	@echo "... physics.i"
 	@echo "... physics.s"
+	@echo "... run.o"
+	@echo "... run.i"
+	@echo "... run.s"
 	@echo "... simulation.o"
 	@echo "... simulation.i"
 	@echo "... simulation.s"
