@@ -8,6 +8,7 @@ G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist
 
     G4Track* track = aStep->GetTrack();
     G4ParticleDefinition* particle = track->GetDefinition();
+    
     if(particle==G4MuonMinus::Definition()){
         G4double energyDeposit = aStep->GetTotalEnergyDeposit();
         std::ofstream file("output.txt", std::ios::app);
