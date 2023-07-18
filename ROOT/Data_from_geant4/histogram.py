@@ -1,36 +1,41 @@
 import ROOT
 canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
-histogram = ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 0.01)
+histogram1 = ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 0.01)
 
-histogram.SetXTitle("Energy (MeV)")
-histogram.SetYTitle("Frequency")
+histogram1.SetXTitle("Energy (MeV)")
+histogram1.SetYTitle("Frequency")
+histogram1.SetLineColor(ROOT.kRed)
 
-file = open("/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/output.txt", "r")
+histogram2= ROOT.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 0.01)
+
+
+file1 = open("output_1GeV.txt", "r")
+file2 = open("output_2GeV.txt", "r")
 
 
 i=0
 count=0
-for line in file:
+for line in file1:
     value = float(line.strip())
     i=i+value
     count+=1
-    histogram.Fill(value)
-file.close()
-
-
-totalno = histogram.Integral()
-area = histogram.Integral("width")
-
-print("Total Number of particles = ", totalno)
+    histogram1.Fill(value)
+file1.close()
 
 
 
-histogram.Scale(1.0 / totalno)
-area = histogram.Integral("width")
-print("Total Energy of 1 Muon = ", area*pow(10,6), "eV")
-print("Avg=", (i/count)*1000000)
+i=0
+count=0
+for line in file2:
+    value = float(line.strip())
+    i=i+value
+    count+=1
+    histogram2.Fill(value)
+file2.close()
 
 
-histogram.Draw()
+
+histogram1.Draw()
+histogram2.Draw("same")
 canvas.Update()
 ROOT.gApplication.Run()
