@@ -8,7 +8,7 @@ histogram1.SetLineColor(ROOT.kRed)
 
 
 
-file1 = open("data/output_1GeV.txt", "r")
+file1 = open("/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Simulation_lab/build/output.txt", "r")
 
 
 i=0
@@ -22,6 +22,9 @@ file1.close()
 
 
 
+
+
 histogram1.Draw()
+
 canvas.Update()
 ROOT.gApplication.Run()
