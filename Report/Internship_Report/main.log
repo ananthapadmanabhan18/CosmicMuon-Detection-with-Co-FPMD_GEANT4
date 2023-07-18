@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  18 JUL 2023 01:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  18 JUL 2023 20:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,7 +657,7 @@ l.124 \newpage
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.290 \end{document}
+l.319 \end{document}
                      [1
 
 ] (main.aux)
@@ -673,7 +673,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,5n,77p,393b,513s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (6 pages, 500261 bytes).
+Output written on main.pdf (6 pages, 501411 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  9 named destinations out of 1000 (max. 500000)
