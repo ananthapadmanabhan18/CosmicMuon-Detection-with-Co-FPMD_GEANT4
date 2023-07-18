@@ -1,9 +1,9 @@
 CMakeFiles/simulation.dir/action.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim_singlethread/action.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim_singlethread/action.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim_singlethread/generator.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/apmnair18/geant4/include/Geant4/G4ParticleGun.hh \
  /home/apmnair18/geant4/include/Geant4/globals.hh \
@@ -275,7 +275,7 @@ CMakeFiles/simulation.dir/action.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
  /home/apmnair18/geant4/include/Geant4/G4Proton.hh \
  /home/apmnair18/geant4/include/Geant4/G4Ions.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim_singlethread/run.hh \
  /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
  /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.hh \
