@@ -1,3 +1,0 @@
-/vis/scene/add/trajectories smooth
-/vis/drawVolume
-/vis/scene/endOfEventAction accumulate
