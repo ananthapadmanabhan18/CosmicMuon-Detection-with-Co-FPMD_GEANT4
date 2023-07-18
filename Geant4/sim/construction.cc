@@ -85,12 +85,12 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
 
-    // //Defining 2 Scintillation Detectors Detector
-    // G4Box* solidDetector = new G4Box("Detector1", 1.15*cm,11.25*cm,0.5*cm);
-    // G4LogicalVolume* logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
-    // new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm, -11.5*cm), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
-    // new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm,11.5*cm), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);
-    // logicalDetector->SetVisAttributes(visscintilation);
+    //Defining 2 Scintillation Detectors Detector
+    G4Box* solidDetector = new G4Box("Detector1", 1.15*cm,11.25*cm,0.5*cm);
+    G4LogicalVolume* logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm, -11.5*cm), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm,11.5*cm), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);
+    logicalDetector->SetVisAttributes(visscintilation);
 
     // Set up the dimensions of the honey comb detector
     G4double phiStart = - 0 * M_PI;
