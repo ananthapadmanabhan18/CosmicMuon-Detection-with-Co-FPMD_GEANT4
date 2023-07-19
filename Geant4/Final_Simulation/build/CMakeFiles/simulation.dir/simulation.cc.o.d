@@ -1,5 +1,5 @@
 CMakeFiles/simulation.dir/simulation.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/simulation.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/simulation.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -613,7 +613,7 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4ToolsSGQtGLES.hh \
  /home/apmnair18/geant4/include/Geant4/G4UIExecutive.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUIshell.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/construction.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/construction.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/apmnair18/geant4/include/Geant4/G4VPhysicalVolume.hh \
  /home/apmnair18/geant4/include/Geant4/G4LogicalVolume.hh \
@@ -641,7 +641,7 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4VSDFilter.hh \
  /home/apmnair18/geant4/include/Geant4/G4HCtable.hh \
  /home/apmnair18/geant4/include/Geant4/G4RotationMatrix.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/detector.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/detector.hh \
  /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
  /home/apmnair18/geant4/include/Geant4/G4ParticleGun.hh \
@@ -775,7 +775,7 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/tools/impi \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/columns.icc \
  /home/apmnair18/geant4/include/Geant4/G4RootNtupleManager.icc \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/physics.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
  /home/apmnair18/geant4/include/Geant4/G4ProductionCutsTable.hh \
  /home/apmnair18/geant4/include/Geant4/G4MaterialCutsCouple.hh \
@@ -854,11 +854,11 @@ CMakeFiles/simulation.dir/simulation.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
  /home/apmnair18/geant4/include/Geant4/G4ProcessManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4Decay.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/action.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/action.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserActionInitialization.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/generator.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/generator.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/run.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/run.hh \
  /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
  /home/apmnair18/geant4/include/Geant4/G4MTRunManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4MTBarrier.hh \

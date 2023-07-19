@@ -1,7 +1,7 @@
 CMakeFiles/simulation.dir/construction.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/construction.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/construction.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/construction.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/construction.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserDetectorConstruction.hh \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -413,7 +413,7 @@ CMakeFiles/simulation.dir/construction.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4VSDFilter.hh \
  /home/apmnair18/geant4/include/Geant4/G4HCtable.hh \
  /home/apmnair18/geant4/include/Geant4/G4RotationMatrix.hh \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/detector.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/detector.hh \
  /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
  /home/apmnair18/geant4/include/Geant4/G4ParticleGun.hh \

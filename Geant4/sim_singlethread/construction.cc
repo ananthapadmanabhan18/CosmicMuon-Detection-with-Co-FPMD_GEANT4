@@ -86,7 +86,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
 
-    G4Box* solidDetector = new G4Box("Detector1", 50*cm,50*cm,0.5*cm);
+    G4Box* solidDetector = new G4Box("Detector1", 50*cm,50*cm,0.25*cm);
     G4LogicalVolume* logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
     new G4PVPlacement(nullptr, G4ThreeVector(0, 0, 0), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
     // new G4PVPlacement(nullptr, G4ThreeVector(0,0,0), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation
+CMAKE_SOURCE_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build
+CMAKE_BINARY_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build
 
 # Utility rule file for Simulation.
 
@@ -81,6 +81,6 @@ CMakeFiles/Simulation.dir/clean:
 .PHONY : CMakeFiles/Simulation.dir/clean
 
 CMakeFiles/Simulation.dir/depend:
-	cd /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build/CMakeFiles/Simulation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/build/CMakeFiles/Simulation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Simulation.dir/depend
 

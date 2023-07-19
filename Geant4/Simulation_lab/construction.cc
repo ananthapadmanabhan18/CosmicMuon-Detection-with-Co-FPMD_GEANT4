@@ -111,11 +111,11 @@ G4VPhysicalVolume *scintillation1::Construct()
 
 
 
-    // //Defining 2 Scintillation Detectors Detector
-    // G4Box* solidDetector = new G4Box("Detector1", 50*cm,50*cm,0.5*cm);
-    // G4LogicalVolume* gaslogic = new G4LogicalVolume(solidDetector, gasMixture, "Detector1");
-    // new G4PVPlacement(nullptr, G4ThreeVector(0, 0,0), gaslogic, "Detector1", logicworld, false, 0,checkoverlap);
-    // gaslogic->SetVisAttributes(visscintilation);
+    //Defining 2 Scintillation Detectors Detector
+    G4Box* solidDetector = new G4Box("Detector1", 50*cm,50*cm,0.25*cm);
+    G4LogicalVolume* gaslogic = new G4LogicalVolume(solidDetector, gasMixture, "Detector1");
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 0,0), gaslogic, "Detector1", logicworld, false, 0,checkoverlap);
+    gaslogic->SetVisAttributes(visscintilation);
 
 
 
@@ -142,16 +142,16 @@ G4VPhysicalVolume *scintillation1::Construct()
 
 
     //Filling the detector with argon/CO mixture
-    G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
-    G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
-    gaslogic->SetVisAttributes(gas);
+    // G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
+    // G4LogicalVolume* gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
+    // gaslogic->SetVisAttributes(gas);
     
     
     
 
     //Placing the logic volumes of HoneyComb
-    for (int i = -23;i<=24;i++){
-        for (int j = -23;j<=24;j++){
+    // for (int i = -23;i<=24;i++){
+    //     for (int j = -23;j<=24;j++){
 
             // new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
             // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
@@ -160,11 +160,11 @@ G4VPhysicalVolume *scintillation1::Construct()
             // new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
 
 
-            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
-        }
+    //         new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
+    //         new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
+    //     }
 
-    }
+    // }
 
     // //The Round things
     // G4Tubs *round1 = new G4Tubs("round",0,1.15*cm,2*cm,0,2*M_PI);    
