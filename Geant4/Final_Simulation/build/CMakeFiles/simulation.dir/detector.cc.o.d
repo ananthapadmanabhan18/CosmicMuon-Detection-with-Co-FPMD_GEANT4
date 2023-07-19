@@ -1,7 +1,7 @@
 CMakeFiles/simulation.dir/detector.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/detector.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/detector.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/detector.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/detector.hh \
  /home/apmnair18/geant4/include/Geant4/G4VSensitiveDetector.hh \
  /home/apmnair18/geant4/include/Geant4/G4VHit.hh \
  /home/apmnair18/geant4/include/Geant4/globals.hh \
