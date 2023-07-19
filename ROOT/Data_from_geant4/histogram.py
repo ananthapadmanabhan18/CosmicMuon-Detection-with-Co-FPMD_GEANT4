@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("data/output_4GeV.txt", "r")
+file = open("data/output_500MeV.txt", "r")
 
 
 i=0
@@ -36,11 +36,11 @@ histogram.Fit(landau_func, "R")
 
 fit_result = histogram.GetFunction("landau_func")
 
-mpv = fit_result.GetParameter(1)
-sigma = fit_result.GetParameter(2)
-print("Fit Parameters:")
-print("MPV:", mpv)
-print("Sigma:", sigma)
+# mpv = fit_result.GetParameter(1)
+# sigma = fit_result.GetParameter(2)
+# print("Fit Parameters:")
+# print("MPV:", mpv)
+# print("Sigma:", sigma)
 
 
 histogram.Draw()
