@@ -25,7 +25,7 @@ int main(int argc, char** argv){
     runManager->SetUserInitialization(new detectorconstruction());
     runManager->SetUserInitialization(new physicslist());
     runManager->SetUserInitialization(new actioninitialization());
-    // runManager->Initialize();
+    runManager->Initialize();
 
 
 

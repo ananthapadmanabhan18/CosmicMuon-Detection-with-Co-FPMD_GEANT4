@@ -45,39 +45,36 @@ def get_mpv(min,max,filepath):
     return max_bin_center
 
 
-flist=["data/soutput_80MeV.txt","data/soutput_100MeV.txt","data/soutput_200MeV.txt","data/soutput_300MeV.txt","data/soutput_400MeV.txt","data/soutput_500MeV.txt","data/soutput_600MeV.txt","data/soutput_700MeV.txt","data/soutput_800MeV.txt","data/soutput_900MeV.txt","data/soutput_1GeV.txt","data/soutput_1.1GeV.txt","data/soutput_2GeV.txt","data/soutput_4GeV.txt",]
+# flist=["data/wsoutput_80MeV.txt","data/wsoutput_100MeV.txt","data/wsoutput_200MeV.txt","data/wsoutput_300MeV.txt","data/wsoutput_400MeV.txt","data/wsoutput_500MeV.txt","data/wsoutput_600MeV.txt","data/wsoutput_700MeV.txt","data/wsoutput_800MeV.txt","data/wsoutput_900MeV.txt","data/wsoutput_1GeV.txt","data/wsoutput_1.1GeV.txt","data/wsoutput_2GeV.txt","data/wsoutput_4GeV.txt",]
 
 
-mpv_ed_scint=[]
+# mpv_ed_scint=[]
 
-for filep in flist:
-    mpv_ed_scint.append(get_mpv(1.1,4,filep)/1000)
-
-
-inc_E=[0.08,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,2,4]
-MPV_E_gas=[0.0008889,0.0006009,0.0003588,0.0003268,0.0003265,0.0003402,0.0003490,0.0003591,0.0003711,0.0003831,0.0003877,0.0003941,0.0004594,0.0005360]
-calc_ED_gas=[]
-
-for i in range(len(inc_E)):
-    calc_ED_gas.append(get_tot_ED(inc_E[i]))
+# for filep in flist:
+#     mpv_ed_scint.append(get_mpv(0.00001,0.001,filep))
 
 
+x=[0.08,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,2,4]
+y_gas_with_sci=[0.0008889,0.0006009,0.0003588,0.0003268,0.0003265,0.0003402,0.0003490,0.0003591,0.0003711,0.0003831,0.0003877,0.0003941,0.0004594,0.0005360]
+y_gas_without_sci=[0.000897756,0.0003572,0.00035724,0.0003335,0.000328244,0.0003370560,0.00036100,0.000376721,0.000381228,0.000462474,0.00039820,0.000462474,0.0005282,0.000564]
 
-plt.scatter(inc_E,MPV_E_gas,color='red',s=20,label='MPV values observed for Gas')
-plt.plot(inc_E,MPV_E_gas,color='red',)
-
-
-tempx=inc_E[:]
-tempx.pop(2)
-tempy=mpv_ed_scint[:]
-tempy.pop(2)
-plt.scatter(tempx,tempy,color='blue',s=20,label='For the Scintillation')
-plt.plot(tempx,tempy,color='Blue',)
+y_calculated=[]
+for i in range(len(x)):
+    y_calculated.append(get_tot_ED(x[i]))
 
 
 
-plt.scatter(inc_E,calc_ED_gas,color='green',s=20,label='MPV values Theoretical')
-plt.plot(inc_E,calc_ED_gas,color='green',)
+plt.scatter(x,y_gas_with_sci,color='red',s=20,label='MPV values observed for Gas')
+plt.plot(x,y_gas_with_sci,color='red',)
+
+
+plt.scatter(x,y_gas_without_sci,color='blue',s=20,label='MPV without scintillation')
+plt.plot(x,y_gas_without_sci,color='Blue',)
+
+
+
+plt.scatter(x,y_calculated,color='green',s=20,label='MPV values Theoretical')
+plt.plot(x,y_calculated,color='green',)
 
 plt.xlabel('incident Energy (GeV)')
 plt.ylabel('Most Probable Value (MeV)')
