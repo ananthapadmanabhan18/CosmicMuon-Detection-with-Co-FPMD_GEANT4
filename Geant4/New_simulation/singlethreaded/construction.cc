@@ -17,7 +17,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     //Defining colours
     G4VisAttributes* ironColour = new G4VisAttributes(G4Colour(0.6314,0.6157,0.5804));
     ironColour->SetForceSolid(true);
-    G4VisAttributes* aircolour = new G4VisAttributes(G4Colour(0.85,0.85,1,0.3));
+    G4VisAttributes* aircolour = new G4VisAttributes(G4Colour(1,0,0,1));
     aircolour->SetForceSolid(true);
     G4VisAttributes* WW = new G4VisAttributes(G4Colour(0.85,0.85,1,0));
     WW->SetForceSolid(true);
@@ -39,8 +39,16 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
     G4Box *FeDet = new G4Box("DetectorCell",(1.975*cm)/2,(1.975*cm)/2,(1.5*cm)/2);
+    G4double x_max=-1*((1.875*mm)+(43.45*cm))/2;
+    G4double y_max=-1*((1.875*mm)+(43.45*cm))/2;
+    G4double x_var=x_max+0.15*mm+((1.975*cm)/2);
+    G4double y_var=y_max+0.15*mm+((1.975*cm)/2);
     G4LogicalVolume* FeDetLogic = new G4LogicalVolume(FeDet, air, "FeLogic");
-    new G4PVPlacement(nullptr, G4ThreeVector(0,0,0),FeDetLogic , "FeLogic", outDetLogic, false, 0,checkoverlap);
+    for(int i =0;i<=21;i++){
+        for(int j=0;j<=21;j++){
+            new G4PVPlacement(nullptr, G4ThreeVector(x_var+i*(1.975*cm+0.075*mm),(y_var+j*(1.975*cm+0.075*mm)),0),FeDetLogic , "FeLogic", outDetLogic, false, 100*i+j,checkoverlap);
+        }
+    }
     FeDetLogic->SetVisAttributes(ironColour);
 
 

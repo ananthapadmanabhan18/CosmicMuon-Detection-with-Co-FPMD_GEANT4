@@ -10,7 +10,7 @@ primarygenerator::primarygenerator(){
     G4ThreeVector mom(0,0,-1);
     fparticlegun->SetParticlePosition(pos);
     fparticlegun->SetParticleMomentumDirection(mom);
-    fparticlegun->SetParticleMomentum(30*MeV);
+    fparticlegun->SetParticleMomentum(1.1*GeV);
     fparticlegun->SetParticleDefinition(particle);    
 }
 
