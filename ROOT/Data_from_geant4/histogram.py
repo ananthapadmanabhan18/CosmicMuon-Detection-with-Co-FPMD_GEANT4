@@ -22,7 +22,7 @@ integral = histogram.Integral()
 histogram.Scale(1/integral)
 
 
-landau_func = ROOT.TF1("landau_func", "landau", 1, 4)
+landau_func = ROOT.TF1("landau_func", "landau", 3, 4)
 
 
 
