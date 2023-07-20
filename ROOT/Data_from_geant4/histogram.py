@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("data/soutput_500MeV.txt", "r")
+file = open("data/soutput_100MeV.txt", "r")
 
 
 
@@ -18,26 +18,28 @@ for line in file:
 file.close()
 
 
-# integral = histogram.Integral()
-# histogram.Scale(1/integral)
+integral = histogram.Integral()
+histogram.Scale(1/integral)
 
 
-# landau_func = ROOT.TF1("landau_func", "landau", histogram.GetXaxis().GetXmin(), histogram.GetXaxis().GetXmax())
-
-#     # Set initial parameter values if needed
-#     # landau_func.SetParameters(initial_parameters)
+landau_func = ROOT.TF1("landau_func", "landau", 1, 4)
 
 
-# histogram.Fit(landau_func, "R")
 
+# landau_func.SetParameters(1.41,0.5)
 
-# fit_result = histogram.GetFunction("landau_func")
+histogram.Fit(landau_func, "R")
 
 
 
 
-# mpv = fit_result.GetParameter(1)
-# sigma = fit_result.GetParameter(2)
+
+
+
+fit_result = histogram.GetFunction("landau_func")
+
+mpv = fit_result.GetParameter(1)
+sigma = fit_result.GetParameter(2)
 print("Fit Parameters:")
 print("MPV:", mpv)
 print("Sigma:", sigma)

@@ -3,13 +3,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import ROOT as root
 
-def get_MPV_1(file):
+def get_MPV_scintilation(file):
     hist=histogram = root.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 4)
     for line in file:
         value = float(line.strip())
         histogram.Fill(value)
     file.close()
-    landau_func = root.TF1("landau_func", "landau", histogram.GetXaxis().GetXmin(), histogram.GetXaxis().GetXmax())
+    # landau_func = root.TF1("landau_func", "landau", histogram.GetXaxis().GetXmin(), histogram.GetXaxis().GetXmax())
+    landau_func = root.TF1("landau_func", "landau", 1, 2.6)
     histogram.Fit(landau_func, "R")
     fit_result = histogram.GetFunction("landau_func")
     mpv = fit_result.GetParameter(1)
@@ -48,13 +49,15 @@ def get_tot_ED(energy):
 
 
 
-
-file=open("data/soutput_500MeV.txt")
-
-
-# ED_sc=[0.916,3.108,1.492,1.748,1.644,]
+flist=["data/soutput_80MeV.txt","data/soutput_100MeV.txt","data/soutput_200MeV.txt","data/soutput_300MeV.txt","data/soutput_400MeV.txt","data/soutput_500MeV.txt","data/soutput_600MeV.txt","data/soutput_700MeV.txt","data/soutput_800MeV.txt","data/soutput_900MeV.txt","data/soutput_1GeV.txt","data/soutput_1.1GeV.txt","data/soutput_2GeV.txt","data/soutput_4GeV.txt",]
 
 
-print(get_MPV_2(file))
 
+mpv_ed_scin=[]
+
+# for path in flist:
+#     file=open(path)
+#     mpv_ed_scin.append()
+
+print(get_MPV_scintilation(open(flist[0],"r")))
 
