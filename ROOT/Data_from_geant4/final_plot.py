@@ -1,17 +1,7 @@
 import matplotlib.pyplot as plt
 import ROOT as root
+import calculations as cal
 
-def get_MPV(file):
-    hist=histogram = root.TH1F("histogram", "Plot of Frequency vs Energy (MeV)", 500, 0, 0.01)
-    for line in file:
-        value = float(line.strip())
-        histogram.Fill(value)
-    file.close()
-    landau_func = root.TF1("landau_func", "landau", histogram.GetXaxis().GetXmin(), histogram.GetXaxis().GetXmax())
-    histogram.Fit(landau_func, "R")
-    fit_result = histogram.GetFunction("landau_func")
-    mpv = fit_result.GetParameter(1)
-    return mpv
     
 
 file=open("data/output_4GeV.txt", "r")
@@ -21,7 +11,7 @@ file=open("data/output_4GeV.txt", "r")
 inc_E=[0.08,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1,2,4]
 
 
-MPV_E=[0.0008889,
+MPV_E_gas=[0.0008889,
        0.0006009,
        0.0003588,
        0.0003268,
@@ -37,12 +27,30 @@ MPV_E=[0.0008889,
        0.0005360
        ]
 
-plt.scatter(inc_E,MPV_E,color='black',s=20,label='MPV values')
-plt.plot(inc_E,MPV_E,color='red',)
+
+
+calc_ED_gas=[]
+
+for i in range(len(inc_E)):
+    calc_ED_gas.append(cal.get_tot_ED(inc_E[i]))
+
+
+
+
+ED_sc=[]
+
+
+
+plt.scatter(inc_E,MPV_E_gas,color='black',s=20,label='MPV values')
+plt.plot(inc_E,MPV_E_gas,color='red',)
+
+plt.scatter(inc_E,calc_ED_gas,color='green',s=20,label='MPV values Theoretical')
+plt.plot(inc_E,calc_ED_gas,color='blue',)
+
 plt.xlabel('incident Energy (GeV)')
 plt.ylabel('Most Probable Value (MeV)')
 plt.title("Most Probable Energy Deposit vs Incident Energy")
-plt.legend(loc="upper right")
+plt.legend(loc="lower right")
 plt.show()
 
 
