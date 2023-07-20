@@ -86,11 +86,11 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
     //Defining 2 Scintillation Detectors Detector
-    G4Box* solidDetector = new G4Box("Detector1", 1.15*cm,11.25*cm,0.5*cm);
-    logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
-    // new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm, -11.5*cm), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
-    new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm,11.5*cm), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);
-    logicalDetector->SetVisAttributes(visscintilation);
+    // G4Box* solidDetector = new G4Box("Detector1", 1.15*cm,11.25*cm,0.5*cm);
+    // logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
+    // // new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm, -11.5*cm), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
+    // new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm,11.5*cm), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);
+    // logicalDetector->SetVisAttributes(visscintilation);
 
     // Set up the dimensions of the honey comb detector
     G4double phiStart = - 0 * M_PI;
@@ -120,7 +120,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
     //Filling the detector with argon/CO2 mixture
     G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
-    G4LogicalVolume *gaslogic = new G4LogicalVolume(gassfill,gasMixture,"gaslogic");
+    gaslogic = new G4LogicalVolume(gassfill,gasMixture,"gaslogic");
     gaslogic->SetVisAttributes(gas);
     
     
@@ -277,5 +277,5 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 void detectorconstruction::ConstructSDandField(){
     sensitivedetector *sensdet = new sensitivedetector("SD");
-    logicalDetector->SetSensitiveDetector(sensdet);
+    gaslogic->SetSensitiveDetector(sensdet);
 }
