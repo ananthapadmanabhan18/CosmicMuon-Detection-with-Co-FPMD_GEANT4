@@ -49,8 +49,10 @@ def plot_histograms(file_paths, legend_labels, colors):
     return canvas, histograms
 
 # Example usage
-file_paths = ["data/output_1GeV.txt", "data/output_2GeV.txt", "data/output_4GeV.txt","data/output_40GeV.txt","data/output_50GeV.txt","data/output_60GeV.txt","data/output_70GeV.txt","data/output_80GeV.txt","data/output_90GeV.txt","data/output_100GeV.txt",]
-legend_labels = ["1GeV", "2GeV", "4GeV", "40GeV", "50GeV", "60GeV", "70GeV", "80GeV", "90GeV", "100GeV"]
-colors = [ROOT.kBlack, ROOT.kBlue, ROOT.kRed,ROOT.kGreen,ROOT.kYellow,ROOT.kOrange,ROOT.kViolet,ROOT.kTeal,ROOT.kPink,ROOT.kAzure]
+file_paths= ["data/output_80MeV.txt"]
+legend_labels = ["0.08GeV"]
+# file_paths= ["data/output_80MeV.txt","data/output_100MeV.txt","data/output_200MeV.txt","data/output_300MeV.txt","data/output_400MeV.txt","data/output_500MeV.txt","data/output_600MeV.txt","data/output_700MeV.txt","data/output_800MeV.txt","data/output_900MeV.txt","data/output_1GeV.txt","data/output_1.1GeV.txt","data/output_2GeV.txt","data/output_4GeV.txt",]
+# legend_labels = ["0.08GeV", "0.1GeV", ".2GeV", "0.3GeV", "0.4GeV", "0.5GeV", "0.6GeV", "0.7GeV", "0.8GeV", "0.9GeV","1GeV","2GeV","4GeV"]
+colors = [ROOT.kBlack]
 canvas, histograms = plot_histograms(file_paths, legend_labels, colors)
 ROOT.gApplication.Run()
