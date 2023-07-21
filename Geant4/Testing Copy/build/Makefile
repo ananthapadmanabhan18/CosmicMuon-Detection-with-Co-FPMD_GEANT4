@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation
+CMAKE_SOURCE_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Testing Copy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build
+CMAKE_BINARY_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Testing Copy/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build/CMakeFiles /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Testing Copy/build/CMakeFiles" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Testing Copy/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Testing Copy/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

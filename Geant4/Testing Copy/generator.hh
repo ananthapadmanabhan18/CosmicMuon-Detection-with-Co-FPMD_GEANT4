@@ -7,6 +7,8 @@
 #include "G4ParticleTable.hh"
 #include "G4MuonMinus.hh"
 #include "G4Proton.hh"
+#include "G4ParticleDefinition.hh"
+#include "G4ParticleDefinition.hh"
 
 class primarygenerator : public G4VUserPrimaryGeneratorAction
 {

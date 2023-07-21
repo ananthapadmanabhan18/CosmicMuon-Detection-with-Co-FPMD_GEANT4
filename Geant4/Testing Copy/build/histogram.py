@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("build/output.txt", "r")
+file = open("output_1GeV.txt", "r")
 
 
 i=0
@@ -25,22 +25,22 @@ integral = histogram.Integral()
 histogram.Scale(1/integral)
 
 
-# landau_func = ROOT.TF1("landau_func", "landau", histogram.GetXaxis().GetXmin(), histogram.GetXaxis().GetXmax())
+landau_func = ROOT.TF1("landau_func", "landau", histogram.GetXaxis().GetXmin(), histogram.GetXaxis().GetXmax())
 
-#     # Set initial parameter values if needed
-#     # landau_func.SetParameters(initial_parameters)
-
-
-# histogram.Fit(landau_func, "R")
+    # Set initial parameter values if needed
+    # landau_func.SetParameters(initial_parameters)
 
 
-# fit_result = histogram.GetFunction("landau_func")
+histogram.Fit(landau_func, "R")
 
-# mpv = fit_result.GetParameter(1)
-# sigma = fit_result.GetParameter(2)
-# print("Fit Parameters:")
-# print("MPV:", mpv)
-# print("Sigma:", sigma)
+
+fit_result = histogram.GetFunction("landau_func")
+
+mpv = fit_result.GetParameter(1)
+sigma = fit_result.GetParameter(2)
+print("Fit Parameters:")
+print("MPV:", mpv)
+print("Sigma:", sigma)
 
 
 histogram.Draw()

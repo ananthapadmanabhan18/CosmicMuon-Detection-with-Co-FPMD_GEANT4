@@ -330,6 +330,7 @@ CMakeFiles/simulation.dir/action.cc.o: ../action.cc \
   /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
   /home/apmnair18/geant4/include/Geant4/G4Proton.hh \
   /home/apmnair18/geant4/include/Geant4/G4Ions.hh \
+  /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh \
   ../run.hh \
   /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
   /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
@@ -2236,7 +2237,8 @@ CMakeFiles/simulation.dir/generator.cc.o: ../generator.cc \
   /home/apmnair18/geant4/include/Geant4/G4ParticleTable.icc \
   /home/apmnair18/geant4/include/Geant4/G4MuonMinus.hh \
   /home/apmnair18/geant4/include/Geant4/G4Proton.hh \
-  /home/apmnair18/geant4/include/Geant4/G4Ions.hh
+  /home/apmnair18/geant4/include/Geant4/G4Ions.hh \
+  /home/apmnair18/geant4/include/Geant4/G4ParticleDefinition.hh
 
 CMakeFiles/simulation.dir/physics.cc.o: ../physics.cc \
   /usr/include/stdc-predef.h \
