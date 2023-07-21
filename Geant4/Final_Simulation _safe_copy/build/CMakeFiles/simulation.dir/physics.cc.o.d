@@ -1,7 +1,7 @@
 CMakeFiles/simulation.dir/physics.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.cc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation\ _safe_copy/physics.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/sim/physics.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation\ _safe_copy/physics.hh \
  /home/apmnair18/geant4/include/Geant4/G4VUserPhysicsList.hh \
  /home/apmnair18/geant4/include/Geant4/G4ios.hh \
  /home/apmnair18/geant4/include/Geant4/G4Types.hh \

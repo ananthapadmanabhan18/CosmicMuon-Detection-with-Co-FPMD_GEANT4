@@ -1,2 +1,2 @@
-# Empty compiler generated dependencies file for simulation.
+# Empty custom commands generated dependencies file for Simulation.
 # This may be replaced when dependencies are built.

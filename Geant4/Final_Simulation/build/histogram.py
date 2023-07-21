@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("build/output.txt", "r")
+file = open("output.txt", "r")
 
 
 i=0

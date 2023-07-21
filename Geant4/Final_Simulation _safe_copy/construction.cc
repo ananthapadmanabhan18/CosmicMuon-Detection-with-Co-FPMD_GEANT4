@@ -87,7 +87,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
     //Defining 2 Scintillation Detectors Detector
     G4Box* solidDetector = new G4Box("Detector1", 1.15*cm,11.25*cm,0.5*cm);
-    G4LogicalVolume* logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
+    G4LogicalVolume *logicalDetector = new G4LogicalVolume(solidDetector, plastic, "Detector1");
     new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm, -11.5*cm), logicalDetector, "Detector1", logicworld, false, 0,checkoverlap);
     new G4PVPlacement(nullptr, G4ThreeVector(0, 15*mm,11.5*cm), logicalDetector, "Detector2", logicworld, false, 0,checkoverlap);
     logicalDetector->SetVisAttributes(visscintilation);
@@ -105,6 +105,13 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
 
+
+    G4Box* arGas = new G4Box("pcb",245*mm,(12.5)*cm,2.5*mm);
+    ArGaslogic = new G4LogicalVolume(arGas, gasMixture, "PCB");
+    new G4PVPlacement(nullptr, G4ThreeVector(0, 0, 0), ArGaslogic, "PCB1", logicworld, false, 0,checkoverlap);
+    ArGaslogic->SetVisAttributes(gas);
+
+
     //Defining Honeycomb detector
     G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
     G4LogicalVolume* hclogic = new G4LogicalVolume(hcdetector,Cu,"hclogic");
@@ -118,26 +125,18 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     goldlogic->SetVisAttributes(visgold);
 
 
-    //Filling the detector with argon/CO2 mixture
-    G4Polyhedra *gassfill = new G4Polyhedra("gas", phiStart,phiTotal,numSides,numZplanes,zPlanes,gInner, gOuter);
-    gaslogic = new G4LogicalVolume(gassfill,air,"gaslogic");
-    gaslogic->SetVisAttributes(gas);
     
     
     //Placing the logic volumes of HoneyComb
     for (int i = -23;i<=24;i++){
         for (int j = -23;j<=24;j++){
 
-            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), hclogic, "HCdetector", logicworld, false, 0,checkoverlap);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), hclogic, "HCdetector", logicworld, false,j+i*100,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), hclogic, "HCdetector", ArGaslogic, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), hclogic, "HCdetector", ArGaslogic, false,j+i*100,checkoverlap);
 
-            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", logicworld, false, 0,checkoverlap);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", logicworld, false, j+i*100,checkoverlap);
-
-
-            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), gaslogic, "gasmix", logicworld, false, i+j*100,checkoverlap);
-            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), gaslogic, "gasmix", logicworld, false, j+i*100,checkoverlap);
-        }
+            new G4PVPlacement(nullptr, G4ThreeVector(i*(15/sqrt(3))*mm,j*(5)*mm,0), goldlogic, "goldwire", ArGaslogic, false, 0,checkoverlap);
+            new G4PVPlacement(nullptr, G4ThreeVector((i*(15/sqrt(3))-(7.5/sqrt(3)))*mm,((j*5)-(2.5))*mm,0), goldlogic, "goldwire", ArGaslogic, false, j+i*100,checkoverlap);
+         }
 
     }
 
@@ -277,5 +276,5 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 void detectorconstruction::ConstructSDandField(){
     sensitivedetector *sensdet = new sensitivedetector("SD");
-    gaslogic->SetSensitiveDetector(sensdet);
+    ArGaslogic->SetSensitiveDetector(sensdet);
 }
