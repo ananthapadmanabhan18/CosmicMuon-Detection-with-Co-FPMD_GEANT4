@@ -6,6 +6,7 @@
 \usepackage{multicol}
 \usepackage[a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 \usepackage{multicol}
+\usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -14,7 +15,8 @@
 \usepackage{mathtools}
 \usepackage{lipsum}
 \usepackage{float}
-
+\usepackage{layout}
+\usepackage{bm}
 
 \begin{document}
 
@@ -283,48 +285,365 @@ Date:
 %introduction%introduction%introduction%introduction%introduction%introduction%introduction%introduction%introduction%introduction
 \section{Introduction}
 
-The detection and study of cosmic muons hold great significance 
-in the field of particle physics and high-energy physics. Cosmic 
-muons, which are highly energetic charged particles originating from 
-cosmic rays, provide valuable insights into the properties of elementary 
-particles and the fundamental forces governing our universe. To explore the 
-behavior of cosmic muons and their interaction with matter, sophisticated detector 
-systems such as the ALICE (A Large Ion Collider Experiment) detector are employed.
+The detection and study of cosmic muons hold great significance in the field of particle physics 
+and high-energy physics. Cosmic muons, which are highly energetic charged particles originating from 
+cosmic rays, provide valuable insights into the properties of elementary particles and the fundamental 
+forces governing our universe. To explore the behavior of cosmic muons and their interaction with matter, 
+we are using the CoFPMD (Cosmic flux Photon Multiplicity Detectors) detectors. 
 
 
-This internship report focuses on the investigation of cosmic muons and 
-their detection using the ALICE detector. The objective of this study is to 
-simulate the behavior of cosmic muons within the detector setup and to experimentally 
-collect data to validate the simulation results. The ALICE detector, known for its 
-capabilities in tracking and identifying particles, serves as a crucial tool in understanding the characteristics and energy deposition of cosmic muons.
+The internship comprises two main phases: simulation and experimentation. In the 
+simulation phase, the Geant4 framework is utilized to model the laboratory setup 
+and replicate the interaction of cosmic muons with the CoFPMD. Geant4, a 
+widely used toolkit in high-energy physics, provides a comprehensive platform for 
+simulating the passage of particles through matter, accurately capturing their interactions 
+and energy deposition.
 
 
-The internship comprises two main phases: simulation and experimentation. In the simulation phase, the Geant4 framework is utilized to model the laboratory setup and replicate the interaction of cosmic muons with the ALICE detector. Geant4, a widely used toolkit in high-energy physics, provides a comprehensive platform for simulating the passage of particles through matter, accurately capturing their interactions and energy deposition.
-
-Following the simulation phase, the experimental phase involves collecting real data from the ALICE detector in the laboratory. The detector, filled with Argon and CO2 gases, is capable of precisely tracking and measuring the energy deposited by cosmic muons as they pass through it. By comparing the simulated results with the experimental data, a comprehensive analysis of the accuracy and effectiveness of the simulation model can be performed.
-
-The findings of this internship contribute to our understanding of cosmic muons and their detection using the ALICE detector. By examining the energy deposition of cosmic muons, valuable information can be obtained regarding their origin, behavior, and potential interactions with various materials. Such insights are crucial for advancing our knowledge of fundamental particle physics and may have implications in astrophysics and cosmology.
-
-In this report, we will outline the methodology employed during the simulation and experimental phases, discuss the data analysis techniques used to evaluate the energy deposition of cosmic muons, present the comparison between simulated and experimental results, and provide a comprehensive analysis of the overall internship experience.
-
-By delving into the study of cosmic muons and their detection using the ALICE detector, we aim to contribute to the ongoing advancements in particle physics research and pave the way for future investigations in this fascinating field.
-
+In this report, we will outline the methodology employed during the simulation and 
+experimental phases, discuss the data analysis techniques used to evaluate the energy 
+deposition of cosmic muons, present the comparison between simulated and experimental 
+results, and provide a comprehensive analysis of the overall internship experience.
 
 
 %introduction%introduction%introduction%introduction%introduction%introduction%introduction%introduction%introduction%introduction
 
 
+%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties
+
+
+
+\section{Cosmic Muons and its Properties}
+
+
+
+Cosmic rays are high-energy particles that originate from various sources beyond our 
+solar system, such as distant stars, supernovae, and active galactic nuclei. They consist of 
+protons(87\%),Alpha Particles(12\%), and atomic Heavy Nuclei (1\%), some of which can have energies millions or even billions 
+of times greater than those produced in the most powerful particle accelerators on Earth. When 
+cosmic rays enter the Earth's atmosphere, they interact with air molecules, producing a cascade 
+of secondary particles, including muons, neutrinos, and gamma rays.
+
+\subsection{Production of Cosmic Muons}
+When there Cosmic Rays Reach the Earths atmosphere, it collides with the air molecules and produces 
+many particles, mostly Pions and Kaons. These are the primary Particles. These particles then decay to produce a wide variety
+of particles most of which are muons. Also, more than 90\% of the cosmic muons are produced from Pions.
+
+From the Kaons, We can see that the muons are produced by the weak interactions and it also produces neutrinos given by:
+\begin{equation}
+    K^{+} \longrightarrow \mu^{+} + \nu_{\mu}
+\end{equation}
+
+From the decay of Pions, 64\% of the time, disintegrates directly into $\mu^+$; 21\% of the time into $\pi^0$and$\pi^+$ and Only 6\% of the disintegrations produce three particles-$\mu^+$,$\mu^+$,$\mu-$. These pions then decay to produce muons according to:
+\begin{equation}
+    \pi^{+} \longrightarrow \mu^{+} + \nu_{\mu}
+\end{equation}
+\begin{equation}
+    \pi^{-} \longrightarrow \mu^{-} + \Bar{\nu_{\mu}}
+\end{equation}
+
+
+
+While the decay of these primary particles produces mostly muons, Many other elementary particles are also produced
+within this process. During the process of generation of primary particles that is the Kaons and pions, $K^0$ and $\pi^0$ are also produced
+which on decay produces $\gamma$-particles. These Muons and other particles further decay to produce Electrons and Positrons.
+
+
+\subsection{Properties of Muons}
+
+Muons are unstable particles having intermediate mass between that of an 
+electron and a proton, just like charged pions. Compared to pions, they are 
+a little lighter.The muons carry one unit of electrical charge, either positive 
+or negative, and are electrically charged. The life time of the muon is $2.2\mu s$.
+The properties of the muons are tabulated below in Table-\ref{muonproperty}
+
+\begin{table}[H]
+    \centering
+    \resizebox{0.85\columnwidth}{!}{%
+    \begin{tabular}{|cc|c|}
+        \hline
+        \multicolumn{2}{|c|}{\textbf{Properties}}                           & \textbf{Values}              \\ \hline
+        \multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Mass}}} & $m_{\mu}$    & $206.7686m_e$                \\ \cline{2-3} 
+        \multicolumn{1}{|c|}{}                               & $m_{\mu}c^2$ & 105.659MeV                   \\ \hline
+        \multicolumn{1}{|c|}{\textbf{Mean Life}}             & $\tau_{\mu}$ & $2.197 \mu s$                \\ \hline
+        \multicolumn{1}{|c|}{\textbf{Spin}}                  & $s_{\mu}$    & 1/2                          \\ \hline
+        \multicolumn{1}{|c|}{\textbf{Magnetic   Moment}}     & $\mu_{\mu}$  & $\frac{eh}{4\pi   m_{\mu} }$ \\ \hline
+    \end{tabular}%
+    }
+    \caption{Properties of Muons}
+    \label{muonproperty}
+\end{table}
+
+We know that the half life of muons are $1.56\mu s$. But we are able to observe 
+the muons coming from outer space on the earth surface. This is due to the relativistic
+effects. Now we know that the total energy of the cosmic muon is in the range of 4GeV.
+Let us calculate the value of $\gamma$. Considering the relativity:
+\begin{equation}
+    \gamma m_{\mu} c^2 =4GeV = 6.4\times10^{-10} J
+\end{equation}
+
+Substituting $m_{\mu} = 1.883 \times 10^{-28} Kg$ we get:
+\begin{equation}
+    \gamma = 37.754770
+\end{equation}
+
+
+Now, let $t_{1/2}$ be the half life of muon when it is at rest WRT the earth and $t_{1/2}'$ 
+be its half life when its moving. So, from time dilation, we have $t_{1/2}' =\gamma t_{1/2} $.
+on substituting the values we get:
+\begin{equation}
+    t_{1/2}' \approx 0.058s
+\end{equation}
+
+
+As $\gamma$ is very high, the speed of the muons are very close to the speed of the
+light. So time taken for the muons to reach the earth surface from the outer atmosphere is $\approx \text{distance}/c$
+which is $\approx 10^{7}m/c \approx 0.03s$
+
+So, this is why we are able to observe the cosmic muons incident on the earths surface
+even if the half of the muons are in the range of micro seconds. The Calculations are based on an average scale.
 
 
 
 
 
+%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties
+
+\section{Passage of Radiation Through Matter}
+
+Naturally, penetrating radiation views matter as a collection 
+of electrons and nuclei along with their subatomic particles, 
+which are its fundamental building blocks. Reactions with the 
+atoms or nuclei as a whole, or with each of their individual 
+constituents, may take place through any channels that are permitted,
+depending on the type of radiation, its energy, and the type of 
+material. The Coulomb force, electromagnetic collisions with atomic 
+electrons, elastic scattering from a nucleus, absorption in a 
+nuclear reaction, and other processes can all occur when an alpha 
+particle enters a gold foil, for instance. These occur with a 
+certain probability that is determined by the fundamental 
+interactions that are involved, as well as by the laws of quantum 
+mechanics. 
+
+
+
+\subsection{The Cross section of the Interactions}
+
+The cross section is a common way to describe how two particles 
+collide or interact. If the fundamental interaction between the 
+particles is known, this quantity can be calculated and serves as a 
+gauge of the likelihood that a reaction will take place. According 
+to formal definitions, the cross-section is defined as follows. 
+Think about a particle beam that hits a target particle 2, as 
+seen in Fig. 2.1. Assume that the target is much farther away 
+from the beam and that the beam's particles are evenly spaced out 
+in time. After that, we can talk about a flux of incident particles 
+per unit of space and time. 
+
+Now, considering the amount of particles scattering into an angle 
+$d\Omega$ per unit time, the number of particles is not constant if we 
+measure more number of time. Let the average no of particles be $N_s$ and let F
+be the flux. The differential cross section is defined as :
+\begin{equation}
+    \frac{d\sigma}{d\Omega} (E,\Omega) = \frac{1}{F}  \frac{N_s}{d\Omega}
+\end{equation}
+
+that is, $d\sigma/d\Omega2$ is the average fraction of the particles scattered into df2 per unit time per
+unit flux F. In terms of a single quantum mechanical particle, this may be reformulated
+as the scattered probability current in the angle $d\Omega$ divided by the total incident
+probability passing through a unit area in front of the target.
+
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{crossection.png}
+     \caption{CDiagram showing the cross section-\cite{leo1988techniques}}
+     \label{CSdiag}
+\end{figure}
+
+So, the total cross section is given by:
+
+\begin{equation}
+    \sigma(E)=\int d \Omega \frac{d \sigma}{d \Omega}
+\end{equation}
+
+
+Assuming that the target centers are uniformly distributed and 
+the slab is not too thick so that the likelihood of one center sitting 
+in front of another is low, the number of centers per unit perpendicular 
+area which will be seen by the beam is then $N\delta x$ where N is the 
+density of centers and $\delta x$ is the thickness of the material along 
+the direction of the beam. If the beam is broader than the target and A is 
+the total perpendicular area of the target, the number of incident particles 
+which are eligible for an interaction is then FA. The average number scattered 
+into $d\Omega$ per unit time is then:
+
+\begin{equation}
+    N_s(\Omega) = FAN\delta x \frac{d\sigma}{d\Omega}
+\end{equation}
+
+and,
+
+\begin{equation}
+    N_{tot} = FAN \delta x \sigma
+\end{equation}
+
+And the probability of interaction in $\delta x$ is $N\sigma \delta x$-\cite{leo1988techniques}
+
+\subsection{Interaction Probability}
+
+Here we will calculate what id probability that a particle does not involve
+in an interaction for a distance of x, this probability is known as the 
+survival probability $P(x)$. Let the probability of having an interaction between 
+$x$ and $dx$ be $wdx$. Then we have the probability of not having an interaction
+between $x$ and $x+dx$ as:
+
+\begin{equation}
+    P(x+dx) = P(x)(1-wdx)
+\end{equation}
+
+On solving, we get the P(x) as :
+\begin{equation}
+    P(x) = C\exp{-wx}
+\end{equation}
+C turns out to be 1 while substituting the usual probability properties.
+
+
+Now as we have the interaction probability, we will calculate the mean free
+path, which is defined as:
+\begin{equation}
+    \lambda = \frac{\int x P(x)dx}{\int P(x)dx} = \frac{1}{w}
+\end{equation}
+
+but the interaction probability depends on the $\delta x$ intuitively, after 
+approximating to the linear order terms we get:
+\begin{equation}
+    \lambda = \frac{1}{N\sigma}
+\end{equation}
+
+
+So the survival probability becomes:
+
+\begin{equation}
+    P(x) = \exp{(\frac{-x}{\sigma})}=\exp{(-N\sigma x)}
+\end{equation}
+
+
+\subsection{Energy Loss of the penetrating particle by Atomic Collisions}
+
+Inelastic collisions with atomic electrons and the elastic scattering from the nuclei
+are the two main reasons for the energy loss and change in direction of the particle.
+
+Of course, the inelastic collisions are statistical in nature and have a 
+certain quantum mechanical probability of happening. The fluctuations in 
+the total energy loss are, however, small due to their abundance per 
+macroscopic path length, so one can effectively work with the average 
+energy loss per unit path length. Bohr first calculated this quantity 
+often referred to as the stopping power or simply dE/dx—using classical 
+reasoning. Later, Bethe, Bloch, and others did so using quantum mechanics.
+
+
+\subsubsection{Bohr's Calculation}
+
+Consider a heavy particle traveling through a material medium with a 
+charge ze, mass M, and velocity v. Assume that an atomic electron is 
+present at a distance and from the particle trajectory as shown in 
+Figure-\ref{bohrsct1} 
+In order to capture the electric field acting 
+on the electron at its initial position, we assume that the electron 
+is free, initially at rest, and that it only moves very slightly during 
+the interaction with the heavy particle. Furthermore, because of its much 
+greater mass (M>m), we assume that the incident particle will have 
+essentially maintained its original course after the collision. 
+This is one justification for separating heavy particles from electrons!
 
 
 
 
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{bohrsct.png}
+     \caption{Diagram For Bohr Calculation of Scattering-\cite{leo1988techniques}}
+     \label{bohrsct1}
+\end{figure}
 
 
+Now, we will calculate the energy gained by the electron by finding the momentum impulse
+it receives by colliding with the heavy particle.so:
+\begin{equation}
+    I = \int F dt = e\int E_{\perp} dt =e\int E_{\perp} \frac{dx}{v}
+\end{equation}
+
+
+
+By applying the gauss law, we get,
+
+\begin{equation}
+    \int E_{\perp} 2\pi bdx = 4\pi ze 
+\end{equation}
+
+So that we have:
+
+\begin{equation}
+    I = \frac{2ze^2}{bv}
+\end{equation}
+
+The energy gained by the electron is then:
+\begin{equation}
+    \label{eq1}
+    \Delta E(b) = \frac{I^2}{2m_e} \frac{2z^2e^4}{mev^2b^2}
+\end{equation}
+
+Now, let the density of particles be $N_e$, then the energy lost to all the electrons
+in the range b to b+db is given by:
+\begin{equation}
+    -dE(b) = \Delta E(B) N_e dV = \frac{4\pi z^2e^4}{mev^2} N_e \frac{db}{b} dx
+\end{equation}
+
+On solving with volume element $dV = 2\pi b db dx$ we get:
+
+\begin{equation}
+    -\frac{db}{dx} = \frac{4\pi z^2 e^4}{m_e v^2}N_e \ln{(\frac{b_{max}}{b_{min}})}
+    \label{bmaxbmin}
+\end{equation}
+
+Ideally the limit should be 0 to infinity, but due to our assumption that
+the collision at large b wont take place over a short period of time, there is an upper bound
+$b_{max}$ and also at b=0, the integral diverges so there is also a $b_{min}$.
+
+To calculate the $b_{min}$, the maximum kinetic energy is transferred when there is
+a head on collision and the maximum energy it can gain is $\frac{1}{2}m_e (2v)^2$,
+taking relativity we get this energy as $2\gamma^2 m_e v^2 $
+substituting this to Equation-\ref{eq1}, we get,
+\begin{equation}
+    b_{min} = \frac{ze^2}{\gamma m_e v^2}
+\end{equation}
+
+
+
+Now for the calculation of $b_{max}$, We should look at the electrons. These electrons are not Free but bound to an atoms with some
+orbital frequency $\nu$. For the electron to absorb some energy, the perturbation caused by the incident particle 
+should be for a short time as compared to the angular frequency (1/$\nu$). Otherwise the perturbation 
+will be adiabatic and there will be no transfer od energy. For Collisions, the interaction time is $t=b/v$. Considering the
+relativistic effects, t becomes $t/\gamma$. so we can write:
+\begin{equation}
+    \frac{b}{\gamma v} \le \tau = \frac{1}{\bar{\nu}}
+\end{equation}
+where $\bar{nu}$ is the mean frequency averaged over all the states. The the upper limit of b becomes:
+\begin{equation}
+    b_{max} = \frac{\gamma v}{\bar{\nu}}
+\end{equation}
+
+Now substituting this into the Equation-\ref{bmaxbmin}, we get the classical bohr formula for the Energy Loss as:-\cite{leo1988techniques}
+
+\begin{equation}
+    -\frac{db}{dx} = \frac{4\pi z^2 e^4}{m_e v^2}N_e \ln{(\frac{\gamma^2 m_e v^3}{z e^2 \bar{\nu}})}
+    \label{classicalbohr}
+\end{equation}
+
+
+
+\subsubsection{The Bethe-Bloch Formula}
 
 
 

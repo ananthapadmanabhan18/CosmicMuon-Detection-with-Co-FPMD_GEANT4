@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{leo1988techniques}
+William~R Leo.
+\newblock Techniques for nuclear and particle physics experiments.
+\newblock {\em Nucl Instrum Methods Phys Res}, 834:290, 1988.
 
 \end{thebibliography}

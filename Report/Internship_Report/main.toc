@@ -1,1 +1,10 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Cosmic Muons and its Properties}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Production of Cosmic Muons}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Properties of Muons}{1}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Passage of Radiation Through Matter}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Cross section of the Interactions}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Interaction Probability}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Energy Loss of the penetrating particle by Atomic Collisions}{3}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Bohr's Calculation}{3}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}The Bethe-Bloch Formula}{4}{subsubsection.3.3.2}%
