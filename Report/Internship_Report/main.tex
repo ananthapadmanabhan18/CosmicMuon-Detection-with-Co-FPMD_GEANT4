@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 % \usepackage[utf8]{inputenc}
 \usepackage{multicol}
+\usepackage{dcolumn}
 \usepackage[a4paper,top=3cm,bottom=3cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 \usepackage{multicol}
 \usepackage{multirow}
@@ -87,7 +88,7 @@
 
 
 
-%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements
+%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements
 \newgeometry{top=4.5cm,bottom=3.5cm,left=3cm,right=3cm}
 \cleardoublepage
 \begin{center}
@@ -125,7 +126,7 @@ guidance, and contributions, which have been instrumental in the
 successful completion of this internship.
 \newpage
 \restoregeometry
-%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements%Acknowlegdements
+%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements%Acknowledgements
 
 
 
@@ -199,7 +200,7 @@ make significant contributions to the field of research.
 
 % Bottom of the page
 \begin{flushright}
-Sanjib Muhuri\\
+Dr Sanjib Muhuri\\
 (Project Guide)\\
 \end{flushright}
 \begin{flushleft}
@@ -646,17 +647,42 @@ Now substituting this into the Equation-\ref{bmaxbmin}, we get the classical boh
 \subsubsection{The Bethe-Bloch Formula}
 
 
+The more realistic Quantum mechanical formulation of the Energy loss is carried out by
+Bethe and Bloch in which the Energy is parametrized in terms of momentum rather than
+the impact parameter. The formula thus obtained is:
+
+\begin{equation}
+    -\frac{db}{dx} = 2 \pi N_a r_e^2 C^2 \rho \frac{z^2 Z}{A \beta^2} (\ln{(\frac{2 m_e \gamma^2 v^2 W_{max}}{I^2})}-2\beta^2)
+\end{equation}
+Where $r_e$ is the electron radius, $N_a$ is the Avogadro Number, $\rho$ is the density of the material,
+$m_e$ is the electron mass, I is the mean excitation potential, Z and A are the atomic
+number and atomic mass of the absorbing material, z is the charge of the incident particle in units of e,
+$W_{max}$ is the maximum energy transfer in a single collision, $\beta$ and $\gamma$ have the usual
+definition in terms of velocity of the incident particle.
+
+The maximum Energy Transfer id given by the formula:
+\begin{equation}
+    W_{max} = \frac{2m_e c^2 \eta^2}{1+2s\sqrt{1+\eta^2}+s^2}
+\end{equation}
+where $s=m_e/M$, where M is the mass of the incident particle and $\eta=\beta\gamma$.
+
+Normally, two corrections are also added to the bethe bloch formula which is then given by:
 
 
 
+\begin{eqnarray}
+        -\frac{db}{dx} = 2 \pi N_a r_e^2 C^2 \rho \times\frac{z^2 Z}{A \beta^2} \times (\ln{(\frac{2 m_e \gamma^2 v^2 W_{max}}{I^2})} \\ -2\beta^2 - \delta - 2\frac{C}{Z})
+\end{eqnarray} 
+
+
+Where C is the Shell Correction and $\delta$ is the density Correction.
+
+
+\section{Simulation Using Geant4}
 
 
 
 \end{multicols}
-
-
-
-
 \bibliographystyle{plain}
 \bibliography{bib.bib}
 

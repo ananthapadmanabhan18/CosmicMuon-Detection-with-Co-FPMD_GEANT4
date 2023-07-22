@@ -8,3 +8,4 @@
 \contentsline {subsection}{\numberline {3.3}Energy Loss of the penetrating particle by Atomic Collisions}{3}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Bohr's Calculation}{3}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}The Bethe-Bloch Formula}{4}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}Simulation Using Geant4}{4}{section.4}%
