@@ -1,8 +1,11 @@
-CMakeFiles/simulation.dir/run.cc.o: \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working\ Folder/run.cc \
+CMakeFiles/simulation.dir/event.cc.o: \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working\ Folder/event.cc \
  /usr/include/stdc-predef.h \
- /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working\ Folder/run.hh \
- /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working\ Folder/event.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UserEventAction.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Event.hh \
+ /home/apmnair18/geant4/include/Geant4/globals.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ios.hh \
  /home/apmnair18/geant4/include/Geant4/G4Types.hh \
  /home/apmnair18/geant4/include/Geant4/G4GlobalConfig.hh \
  /usr/include/c++/11/complex \
@@ -177,14 +180,6 @@ CMakeFiles/simulation.dir/run.cc.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/apmnair18/geant4/include/Geant4/tls.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4VAnalysisManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisManagerState.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisVerbose.hh \
- /home/apmnair18/geant4/include/Geant4/globals.hh \
- /home/apmnair18/geant4/include/Geant4/G4ios.hh \
  /usr/include/c++/11/iostream /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_algo.h \
@@ -241,6 +236,37 @@ CMakeFiles/simulation.dir/run.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
+ /home/apmnair18/geant4/include/Geant4/evtdefs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Allocator.hh \
+ /usr/include/c++/11/cstddef \
+ /home/apmnair18/geant4/include/Geant4/G4AllocatorPool.hh \
+ /home/apmnair18/geant4/include/Geant4/G4PrimaryVertex.hh \
+ /home/apmnair18/geant4/include/Geant4/pwdefs.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ThreeVector.hh \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Utility/defs.h \
+ /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/apmnair18/geant4/include/Geant4/G4PrimaryParticle.hh \
+ /home/apmnair18/geant4/include/Geant4/G4HCofThisEvent.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VHitsCollection.hh \
+ /home/apmnair18/geant4/include/Geant4/G4DCofThisEvent.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VDigiCollection.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TrajectoryContainer.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VTrajectory.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VUserEventInformation.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Profiler.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Profiler.icc \
+ /home/apmnair18/geant4/include/Geant4/PTL/Globals.hh \
+ /home/apmnair18/geant4/include/Geant4/PTL/Types.hh \
+ /home/apmnair18/geant4/include/Geant4/PTL/Utility.hh \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /home/apmnair18/geant4/include/Geant4/G4RootFileManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VTFileManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VFileManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4BaseFileManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisManagerState.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisVerbose.hh \
  /home/apmnair18/geant4/include/Geant4/G4Threading.hh \
  /usr/include/c++/11/condition_variable \
  /usr/include/c++/11/bits/shared_ptr.h \
@@ -251,83 +277,30 @@ CMakeFiles/simulation.dir/run.cc.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/fstream \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /home/apmnair18/geant4/include/Geant4/G4VTHnFileManager.hh \
+ /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/apmnair18/geant4/include/Geant4/G4VTBaseHnManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4HnInformation.hh \
- /home/apmnair18/geant4/include/Geant4/G4AnalysisUtilities.hh \
- /home/apmnair18/geant4/include/Geant4/G4BinScheme.hh \
- /home/apmnair18/geant4/include/Geant4/G4Fcn.hh \
- /home/apmnair18/geant4/include/Geant4/G4VAnalysisManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4HnManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TNtupleDescription.hh \
  /home/apmnair18/geant4/include/Geant4/G4NtupleBookingManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4Fcn.hh \
+ /home/apmnair18/geant4/include/Geant4/G4BinScheme.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisUtilities.hh \
  /home/apmnair18/geant4/include/Geant4/tools/ntuple_booking \
  /home/apmnair18/geant4/include/Geant4/tools/cids \
  /home/apmnair18/geant4/include/Geant4/tools/cid \
  /home/apmnair18/geant4/include/Geant4/tools/typedefs \
  /home/apmnair18/geant4/include/Geant4/tools/forit \
  /home/apmnair18/geant4/include/Geant4/G4NtupleBookingManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4VNtupleManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4VFileManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4BaseFileManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4VTHnFileManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4TH1ToolsManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4THnToolsManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4THnManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4THnManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4AutoLock.hh \
- /home/apmnair18/geant4/include/Geant4/G4THnMessenger.hh \
- /home/apmnair18/geant4/include/Geant4/G4UImessenger.hh \
- /home/apmnair18/geant4/include/Geant4/G4UIdirectory.hh \
- /home/apmnair18/geant4/include/Geant4/G4UIcommand.hh \
- /home/apmnair18/geant4/include/Geant4/G4UIparameter.hh \
- /home/apmnair18/geant4/include/Geant4/G4UItokenNum.hh \
- /home/apmnair18/geant4/include/Geant4/G4ApplicationState.hh \
- /home/apmnair18/geant4/include/Geant4/G4ThreeVector.hh \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Utility/defs.h \
- /home/apmnair18/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/apmnair18/geant4/include/Geant4/G4THnToolsManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4THnMessenger.icc \
- /home/apmnair18/geant4/include/Geant4/G4Tokenizer.hh \
- /home/apmnair18/geant4/include/Geant4/G4TH2ToolsManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4TH3ToolsManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4TP1ToolsManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4TP2ToolsManager.hh \
- /home/apmnair18/geant4/include/Geant4/tools/histo/h1d \
- /home/apmnair18/geant4/include/Geant4/tools/histo/h1 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/b1 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/base_histo \
- /home/apmnair18/geant4/include/Geant4/tools/histo/histo_data \
- /home/apmnair18/geant4/include/Geant4/tools/histo/axes \
- /home/apmnair18/geant4/include/Geant4/tools/histo/axis \
- /home/apmnair18/geant4/include/Geant4/tools/eqT \
- /home/apmnair18/geant4/include/Geant4/tools/histo/h2d \
- /home/apmnair18/geant4/include/Geant4/tools/histo/h2 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/b2 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/h3d \
- /home/apmnair18/geant4/include/Geant4/tools/histo/h3 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/b3 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/p1d \
- /home/apmnair18/geant4/include/Geant4/tools/histo/p1 \
- /home/apmnair18/geant4/include/Geant4/tools/histo/profile_data \
- /home/apmnair18/geant4/include/Geant4/tools/histo/p2d \
- /home/apmnair18/geant4/include/Geant4/tools/histo/p2 \
- /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4GenericFileManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4GenericFileManager.icc \
- /home/apmnair18/geant4/include/Geant4/G4RootFileManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4VTFileManager.hh \
- /home/apmnair18/geant4/include/Geant4/G4TNtupleDescription.hh \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
  /home/apmnair18/geant4/include/Geant4/G4TFileManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4TFileInformation.hh \
  /home/apmnair18/geant4/include/Geant4/G4TFileManager.icc \
@@ -344,6 +317,7 @@ CMakeFiles/simulation.dir/run.cc.o: \
  /home/apmnair18/geant4/include/Geant4/G4RootNtupleManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4TNtupleManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4BaseNtupleManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VNtupleManager.hh \
  /home/apmnair18/geant4/include/Geant4/G4TNtupleManager.icc \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/ntuple \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/tree \
@@ -388,4 +362,56 @@ CMakeFiles/simulation.dir/run.cc.o: \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/mpi_create_basket \
  /home/apmnair18/geant4/include/Geant4/tools/impi \
  /home/apmnair18/geant4/include/Geant4/tools/wroot/columns.icc \
- /home/apmnair18/geant4/include/Geant4/G4RootNtupleManager.icc
+ /home/apmnair18/geant4/include/Geant4/G4RootNtupleManager.icc \
+ /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working\ Folder/run.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
+ /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VAnalysisManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VTBaseHnManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4HnInformation.hh \
+ /home/apmnair18/geant4/include/Geant4/G4VAnalysisManager.icc \
+ /home/apmnair18/geant4/include/Geant4/G4HnManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TH1ToolsManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4THnToolsManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4THnManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4THnManager.icc \
+ /home/apmnair18/geant4/include/Geant4/G4AutoLock.hh \
+ /home/apmnair18/geant4/include/Geant4/G4THnMessenger.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UImessenger.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UIdirectory.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UIcommand.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UIparameter.hh \
+ /home/apmnair18/geant4/include/Geant4/G4UItokenNum.hh \
+ /home/apmnair18/geant4/include/Geant4/G4ApplicationState.hh \
+ /home/apmnair18/geant4/include/Geant4/G4THnToolsManager.icc \
+ /home/apmnair18/geant4/include/Geant4/G4THnMessenger.icc \
+ /home/apmnair18/geant4/include/Geant4/G4Tokenizer.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TH2ToolsManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TH3ToolsManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TP1ToolsManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4TP2ToolsManager.hh \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/h1d \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/h1 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/b1 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/base_histo \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/histo_data \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/axes \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/axis \
+ /home/apmnair18/geant4/include/Geant4/tools/eqT \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/h2d \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/h2 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/b2 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/h3d \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/h3 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/b3 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/p1d \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/p1 \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/profile_data \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/p2d \
+ /home/apmnair18/geant4/include/Geant4/tools/histo/p2 \
+ /home/apmnair18/geant4/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/apmnair18/geant4/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/apmnair18/geant4/include/Geant4/G4GenericFileManager.hh \
+ /home/apmnair18/geant4/include/Geant4/G4GenericFileManager.icc

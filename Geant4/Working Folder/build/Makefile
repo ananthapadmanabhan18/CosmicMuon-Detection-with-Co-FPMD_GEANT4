@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation
+CMAKE_SOURCE_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build
+CMAKE_BINARY_DIR = "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build/CMakeFiles /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build/CMakeFiles" "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Final_Simulation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -214,6 +214,30 @@ detector.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/detector.cc.s
 .PHONY : detector.cc.s
 
+event.o: event.cc.o
+.PHONY : event.o
+
+# target to build an object file
+event.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/event.cc.o
+.PHONY : event.cc.o
+
+event.i: event.cc.i
+.PHONY : event.i
+
+# target to preprocess a source file
+event.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/event.cc.i
+.PHONY : event.cc.i
+
+event.s: event.cc.s
+.PHONY : event.s
+
+# target to generate assembly for a file
+event.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/event.cc.s
+.PHONY : event.cc.s
+
 generator.o: generator.cc.o
 .PHONY : generator.o
 
@@ -310,6 +334,30 @@ simulation.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/simulation.cc.s
 .PHONY : simulation.cc.s
 
+stepping.o: stepping.cc.o
+.PHONY : stepping.o
+
+# target to build an object file
+stepping.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/stepping.cc.o
+.PHONY : stepping.cc.o
+
+stepping.i: stepping.cc.i
+.PHONY : stepping.i
+
+# target to preprocess a source file
+stepping.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/stepping.cc.i
+.PHONY : stepping.cc.i
+
+stepping.s: stepping.cc.s
+.PHONY : stepping.s
+
+# target to generate assembly for a file
+stepping.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/stepping.cc.s
+.PHONY : stepping.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -329,6 +377,9 @@ help:
 	@echo "... detector.o"
 	@echo "... detector.i"
 	@echo "... detector.s"
+	@echo "... event.o"
+	@echo "... event.i"
+	@echo "... event.s"
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"
@@ -341,6 +392,9 @@ help:
 	@echo "... simulation.o"
 	@echo "... simulation.i"
 	@echo "... simulation.s"
+	@echo "... stepping.o"
+	@echo "... stepping.i"
+	@echo "... stepping.s"
 .PHONY : help
 
 

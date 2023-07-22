@@ -21,4 +21,11 @@ void actioninitialization::Build() const
 
     runaction* runact = new runaction();
     SetUserAction(runact);
+
+
+    eventaction* eventact = new eventaction(runact);
+    SetUserAction(eventact);
+
+    steppingaction* stepact = new steppingaction(eventact);
+    SetUserAction(stepact);
 }

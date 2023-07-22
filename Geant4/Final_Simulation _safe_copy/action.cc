@@ -9,7 +9,9 @@ void actioninitialization::BuildForMaster() const {
 
     runaction* runact = new runaction();
     SetUserAction(runact);
-
+    
+    //primarygenerator* generator = new primarygenerator();
+    //SetUserAction(generator);
 }
 
 
