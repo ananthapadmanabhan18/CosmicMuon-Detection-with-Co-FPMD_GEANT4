@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  22 JUL 2023 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  23 JUL 2023 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,17 +766,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8109D98F4F3120EE9995E97AB94C90E7;2224.
  ) 
 Here is how much of TeX's memory you used:
- 11683 strings out of 476410
- 187088 string characters out of 5803184
- 1871845 words of memory out of 5000000
- 31792 multiletter control sequences out of 15000+600000
+ 11685 strings out of 476410
+ 187137 string characters out of 5803184
+ 1874845 words of memory out of 5000000
+ 31793 multiletter control sequences out of 15000+600000
  524495 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,77p,511b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Apps/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (9 pages, 617492 bytes).
+Output written on main.pdf (9 pages, 621268 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
