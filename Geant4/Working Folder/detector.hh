@@ -13,9 +13,10 @@
 #include"G4AnalysisManager.hh"
 #include "G4RootFileManager.hh"
 #include "G4RootNtupleManager.hh"
-// #include "run.hh"
+#include "run.hh"
 #include "G4RunManager.hh"
 #include "g4root_defs.hh"
+#include"Randomize.hh"
 
 
 class sensitivedetector : public G4VSensitiveDetector{
