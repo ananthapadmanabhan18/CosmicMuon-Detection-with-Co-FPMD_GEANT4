@@ -28,11 +28,15 @@ class detectorconstruction : public G4VUserDetectorConstruction
         detectorconstruction();
         ~detectorconstruction();
 
+        G4LogicalVolume *GetScoringVolume() const {return fScoringVolume;};
+
         virtual G4VPhysicalVolume* Construct();
 
     private:
         G4LogicalVolume* ArGaslogic;
         virtual void ConstructSDandField();
+
+        G4LogicalVolume *fScoringVolume;
 
 };
 

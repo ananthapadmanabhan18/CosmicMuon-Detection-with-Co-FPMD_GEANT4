@@ -110,7 +110,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     ArGaslogic = new G4LogicalVolume(arGas, gasMixture, "PCB");
     new G4PVPlacement(nullptr, G4ThreeVector(0, 0, 0), ArGaslogic, "PCB1", logicworld, false, 0,checkoverlap);
     ArGaslogic->SetVisAttributes(gas);
-
+    fScoringVolume = ArGaslogic;
 
     //Defining Honeycomb detector
     G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);

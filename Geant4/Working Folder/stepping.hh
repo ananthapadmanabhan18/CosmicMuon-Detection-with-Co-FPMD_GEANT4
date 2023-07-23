@@ -6,7 +6,7 @@
 #include "construction.hh"
 #include "event.hh"
 
-class steppingaction:G4UserSteppingAction
+class steppingaction : public G4UserSteppingAction
 {
     public:
         steppingaction(eventaction* eventAction);

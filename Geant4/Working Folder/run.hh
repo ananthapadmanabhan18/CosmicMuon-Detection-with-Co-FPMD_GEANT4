@@ -5,7 +5,8 @@
 #include"G4AnalysisManager.hh"
 #include "G4RootFileManager.hh"
 #include "G4RootNtupleManager.hh"
-
+#include "G4RootFileDef.hh"
+#include "g4root_defs.hh"
 
 class runaction : public G4UserRunAction{
 

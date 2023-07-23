@@ -15,6 +15,8 @@
 #include "G4RootNtupleManager.hh"
 // #include "run.hh"
 #include "G4RunManager.hh"
+#include "g4root_defs.hh"
+
 
 class sensitivedetector : public G4VSensitiveDetector{
 

@@ -6,6 +6,7 @@
 #include "G4RootFileManager.hh"
 #include "G4RootNtupleManager.hh"
 #include "run.hh"
+#include "g4root_defs.hh"
 
 class eventaction : public G4UserEventAction{
     public:
