@@ -694,6 +694,40 @@ particles in particle accelerators to modeling radiation therapy treatments in
 medical physics.
 
 
+\subsection{The Detector Geometry}
+
+The Detector Geometry is defined almost same as that is present in the laboratory to detect the muons. The Detector
+construction is implemented using G4box, G4Tubs and G4Polyhedra. The logical volumes are crated using the G4LogicalVolume
+and it is placed in appropriate positions just like what we have in the lab.
+
+The detector that we are using in the lab is a Cosmic flux Photon Multiplicity Detector (CofPMD) in which we will be detecting
+the Muons using the $Ar+CO_2$ (9:1) mixture present in the detector. So We will be setting the Sensitive detector as the Logical volume
+of the Gas mixture. Using this Sensitive Detector, we will Measure the position of incidence and the Total  Energy deposition
+from the Sensitive Detector.
+
+\subsubsection{The Honeycomb shaped Detector}
+
+Our main part of the detector is a honeycomb shaped detector made up of Copper in which at the Centre of each
+hexagon there is a thin gold wire and this acts as the Anode in the real case and the Cu part acts as the Cathode. This whole
+honeycomb is filled with a Mixture of Argon and Carbon Dioxide in the ratio 9:1. The Inner Radius of the Hexagon is $2.5mm$
+and its depth is $5mm$. The radius of the Gold wire present at the centre is 10 microns. The construction of the honeycomb
+and the gold wire is done using G4Polyhedra and G4Tubs respectively. The Constructed Hexagonal Honeycomb Structure is 
+shown in the Figure-\ref{honeycomb}.The detector also contains Two scintillation detectors (of Thickness 1 cm and length of 11cm)  which are placed one above and one below at equal distances of 11cm
+from the honeycomb detector. This is shown in the Figure-\ref{honeycomb1}
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{honeycomb.png}
+     \caption{Honeycomb structure created from GEANT4}
+     \label{honeycomb}
+\end{figure}
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{honeycomb1.png}
+     \caption{Honeycomb structure and Scintillation detectors created from GEANT4 (The RED BLUE and GREEN Lines are x,z and y axes)}
+     \label{honeycomb1}
+\end{figure}
 
 
 

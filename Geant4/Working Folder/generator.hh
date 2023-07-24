@@ -7,6 +7,7 @@
 #include "G4ParticleTable.hh"
 #include "G4MuonMinus.hh"
 #include "G4Proton.hh"
+#include "Randomize.hh"
 
 class primarygenerator : public G4VUserPrimaryGeneratorAction
 {
