@@ -2,5 +2,14 @@
     "cmake.configureOnOpen": false,
     "files.associations": {
         "*.icc": "cpp"
-    }
+    },
+    "cSpell.words": [
+        "Gaslogic",
+        "goldlogic",
+        "goldwire",
+        "hcdetector",
+        "hclogic",
+        "visgold",
+        "vishc"
+    ]
 }

@@ -3,5 +3,4 @@
 /vis/drawVolume
 /vis/viewer/set/autoRefresh true
 /vis/scene/add/trajectories smooth
-/vis/scene/add/axes
 /vis/scene/add/eventID

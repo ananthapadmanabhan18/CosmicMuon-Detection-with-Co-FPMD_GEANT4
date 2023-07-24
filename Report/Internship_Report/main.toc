@@ -9,3 +9,5 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Bohr's Calculation}{3}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}The Bethe-Bloch Formula}{4}{subsubsection.3.3.2}%
 \contentsline {section}{\numberline {4}Simulation Using Geant4}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Detector Geometry}{4}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}The Honeycomb shaped Detector}{4}{subsubsection.4.1.1}%
