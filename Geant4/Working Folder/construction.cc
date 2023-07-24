@@ -78,7 +78,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
     //Defining World Volume
-    G4Box *solidworld = new G4Box("world",1*km,1*km,10*km);
+    G4Box *solidworld = new G4Box("world",5*m,5*m,5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
     G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0*km),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
     // logicworld->SetVisAttributes(WW);

@@ -1,21 +1,15 @@
 #include "generator.hh"
 #include <cmath>
 
-primarygenerator::primarygenerator(){
+primarygenerator::primarygenerator():fparticlegun(0),muon_minus(0),muon_plus(0){
 
-    fparticlegun = new G4ParticleGun(1);
-    fparticlegun->SetParticleDefinition(G4MuonMinus::Definition());  
-    G4Random::setTheSeed(12345);
-    G4double rand_angle = M_PI*G4UniformRand()-0.5*M_PI;
+    // fMuonGen->SetUseCylinder();
+    // fMuonGen->SetCylinderRadius(1*m);
+    // fMuonGen->SetCylinderHeight(1*m);
 
-    G4ThreeVector pos(50*(cos(rand_angle))*cm,50*(sin(rand_angle))*cm,2.5*m);
-
-    G4ThreeVector mom(0,0,-1);
-    // fparticlegun->SetParticleDefinition(particle);
-    fparticlegun->SetParticlePosition(pos);
-    fparticlegun->SetParticleMomentumDirection(mom);
-    fparticlegun->SetParticleMomentum(1*GeV);
-    
+    // fparticlegun=new G4ParticleGun(1);
+    // muon_minus = G4MuonMinus::Definition();
+    // muon_plus = G4MuonPlus::Definition();
 }
 
 primarygenerator::~primarygenerator(){
@@ -25,7 +19,23 @@ primarygenerator::~primarygenerator(){
 
 void primarygenerator::GeneratePrimaries(G4Event *anEvent)
 {
-
-    fparticlegun->GeneratePrimaryVertex(anEvent);
-
+    // fMuonGen->Generate();
+    // std::array<double,3> muon_pos = fMuonGen->GetGenerationPosition();
+    // G4double muon_mom= fMuonGen->GetGenerationMomentum();
+    // G4double muon_theta = fMuonGen->GetGenerationTheta();
+    // G4double muon_phi = fMuonGen->GetGenerationPhi();
+    // fparticlegun->SetParticlePosition(G4ThreeVector(muon_pos[0]*mm,muon_pos[1]*mm,muon_pos[2]*mm));
+    // fparticlegun->SetParticleMomentum(G4ParticleMomentum(muon_mom*sin(muon_theta)*cos(muon_phi)*GeV,muon_mom*sin(muon_theta)*sin(muon_phi)*GeV,muon_mom*cos(muon_phi)*GeV));
+    
+    // if(fMuonGen->GetCharge()<0)
+    // {
+    //     fparticlegun->SetParticleDefinition(muon_minus);
+    // }
+    // else
+    // {
+    //     fparticlegun->SetParticleDefinition(muon_plus);
+    // }
+    
+    
+    // fparticlegun->GeneratePrimaryVertex(anEvent);
 }    
