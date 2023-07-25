@@ -1,7 +1,7 @@
 #include "generator.hh"
 #include <cmath>
 
-primarygenerator::primarygenerator():fparticlegun(0),muon_minus(0),muon_plus(0){
+primarygenerator::primarygenerator(){
 
     fparticlegun = new G4ParticleGun(1);
     fparticlegun->SetParticleDefinition(G4MuonMinus::Definition());  

@@ -751,6 +751,32 @@ the PMDs are constructed whose material is FR4.
 
 \subsection{Generation of Particles}
 
+The particle generation and its projection is done using the
+usual fParticleGun with the G4VUserPrimaryGeneratorAction in Geant4.
+Using this one can generate as many particles as we want in a single run.
+for our case we will be generating muons only for the single particle case and
+and for the Actual simulation of the Cosmic Shower, we will be using the
+EcoMug for the data for different types of partilces. The codes for
+the header Files and source files are given below in figure-\ref{gunheader}
+and figure-\ref{gunsouorce}
+
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{gunheader.png}
+     \caption{Code For the Header File for fParticleGun}
+     \label{gunheader}
+\end{figure}
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{gunsource.png}
+     \caption{Code For the Source File for fParticleGun}
+     \label{gunsouorce}
+\end{figure}
+
+
+
 
 \subsection{Collection of Energy Deposition Data}
 
