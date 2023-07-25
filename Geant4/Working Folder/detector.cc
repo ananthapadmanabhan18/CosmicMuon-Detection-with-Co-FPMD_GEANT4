@@ -10,6 +10,17 @@ G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist
     G4ParticleDefinition* particle = track->GetDefinition();
  
     if(particle==G4MuonMinus::Definition()){
+        G4double edep= aStep->GetTotalEnergyDeposit();
+        std::ofstream file("output.txt", std::ios::app);
+        file.seekp(0, std::ios::end);
+        file <<edep<< G4endl;
+        file.close();
+    }  
+
+}
+
+
+
         // G4StepPoint *presteppoint = aStep->GetPreStepPoint();
         // G4StepPoint *poststeppoint = aStep->GetPostStepPoint();
         // G4ThreeVector posMuon = presteppoint->GetPosition();
@@ -21,15 +32,3 @@ G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist
         // G4VPhysicalVolume *physVol = touchable->GetVolume();
         // G4ThreeVector posDetector = physVol->GetTranslation();
         // G4cout << "Detector position: " << posDetector << G4endl;
-        G4double edep= aStep->GetTotalEnergyDeposit();
-        // G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-        // G4AnalysisManager *man = G4AnalysisManager::Instance();
-        // man->FillNtupleDColumn(0, edep);
-        // man->AddNtupleRow(0);
-        std::ofstream file("output.txt", std::ios::app);
-        file.seekp(0, std::ios::end);
-        file <<edep<< G4endl;
-        file.close();
-    }  
-
-}

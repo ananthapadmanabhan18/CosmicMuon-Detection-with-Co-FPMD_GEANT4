@@ -9,7 +9,6 @@
 #include "G4MuonPlus.hh"
 #include "G4Proton.hh"
 #include "Randomize.hh"
-#include "EcoMug.h"
 #include <array>
 
 class primarygenerator : public G4VUserPrimaryGeneratorAction
@@ -18,9 +17,10 @@ class primarygenerator : public G4VUserPrimaryGeneratorAction
         primarygenerator ();
         ~primarygenerator();
         virtual void GeneratePrimaries(G4Event*);
+    private:    
         G4ParticleGun* fparticlegun;
         G4ParticleDefinition *muon_minus, *muon_plus;
-        EcoMug *fMuonGen;
+        // EcoMug *fMuonGen;
     
 };
 
