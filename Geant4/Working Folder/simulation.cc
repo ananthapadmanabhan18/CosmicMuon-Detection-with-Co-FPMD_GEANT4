@@ -28,6 +28,22 @@ int main(int argc, char** argv){
     runManager->Initialize();
 
 
+    primarygenerator generator;
+
+    // Loop to generate 10000 particles with different configurations
+    int totalLines = 100000;
+    for (int i = 0; i < totalLines; ++i) {
+        // Generate the primaries with the data from the i-th line
+        G4Event* event = new G4Event;
+        generator.GeneratePrimaries(event, i);
+
+        // Process your event and do the rest of the simulation
+
+        // Clear the event for the next iteration
+        delete event;
+    }
+
+
 
     if(argc==1){
         ui = new G4UIExecutive(argc,argv);
