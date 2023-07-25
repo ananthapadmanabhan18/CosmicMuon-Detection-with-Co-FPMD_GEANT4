@@ -712,8 +712,7 @@ hexagon there is a thin gold wire and this acts as the Anode in the real case an
 honeycomb is filled with a Mixture of Argon and Carbon Dioxide in the ratio 9:1. The Inner Radius of the Hexagon is $2.5mm$
 and its depth is $5mm$. The radius of the Gold wire present at the centre is 10 microns. The construction of the honeycomb
 and the gold wire is done using G4Polyhedra and G4Tubs respectively. The Constructed Hexagonal Honeycomb Structure is 
-shown in the Figure-\ref{honeycomb}.The detector also contains Two scintillation detectors (of Thickness 1 cm and length of 11cm)  which are placed one above and one below at equal distances of 11cm
-from the honeycomb detector. This is shown in the Figure-\ref{honeycomb1}
+shown in the Figure-\ref{honeycomb}.
 
 \begin{figure}[H]
     \centering	
@@ -728,6 +727,12 @@ from the honeycomb detector. This is shown in the Figure-\ref{honeycomb1}
      \caption{Honeycomb structure and Scintillation detectors created from GEANT4 (The RED BLUE and GREEN Lines are x,z and y axes)}
      \label{honeycomb1}
 \end{figure}
+The detector also contains Two scintillation detectors (of Thickness 1 cm and length of 11cm)  which are placed one above and one below at equal distances of 11cm
+from the honeycomb detector. This is shown in the Figure-\ref{honeycomb1}
+
+
+
+
 
 
 
@@ -749,6 +754,7 @@ the PMDs are constructed whose material is FR4.
 
 
 
+
 \subsection{Generation of Particles}
 
 The particle generation and its projection is done using the
@@ -759,6 +765,23 @@ and for the Actual simulation of the Cosmic Shower, we will be using the
 EcoMug for the data for different types of partilces. The codes for
 the header Files and source files are given below in figure-\ref{gunheader}
 and figure-\ref{gunsouorce}
+
+
+
+
+\subsection{Collection of Energy Deposition Data}
+The energy Deposit form the Gas Mixture is calculated by the 
+sensitive detector which was assigned for the Argon Gas mixture.
+Geant4 Calculates the Energy Deposits and then it writes the values
+for each run (each run consist of shooting of a single muon perpendicular to the 
+Gas detector) into a text file. Which is then read by the Python and ROOT for further analysis.
+The implementation  of the Detection and its calculation is 
+done using G4VSensitiveDetector and G4Track.
+
+
+
+
+
 
 
 \begin{figure}[H]
@@ -776,11 +799,13 @@ and figure-\ref{gunsouorce}
 \end{figure}
 
 
+\section{Single Particle Generation}
 
+In this case, we will be using the fParticleGun to Generate $\mu^-$-Particles 
+and will project them to the Detector through the scintillation detector 
+parallel to the Z-Axis. We will be defining the momentum in terms of Energy (MeV and GeV) and all of this
+With Construction of the detectors as mentioned above. 
 
-\subsection{Collection of Energy Deposition Data}
-
-\section{Analysis of the data from Geant4}
 
 
 

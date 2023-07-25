@@ -389,6 +389,14 @@ CMakeFiles/simulation.dir/action.cc.o: ../action.cc \
   /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
   /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandStudentT.h \
   /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /home/apmnair18/Documents/GitHub/Geant4_ROOT/EcoMug/EcoMug.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   ../run.hh \
   /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh \
   /home/apmnair18/geant4/include/Geant4/G4AnalysisManager.hh \
@@ -3247,7 +3255,15 @@ CMakeFiles/simulation.dir/generator.cc.o: ../generator.cc \
   /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandPoisson.icc \
   /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
   /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandStudentT.h \
-  /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandStudentT.icc
+  /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /home/apmnair18/Documents/GitHub/Geant4_ROOT/EcoMug/EcoMug.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h
 
 CMakeFiles/simulation.dir/physics.cc.o: ../physics.cc \
   /usr/include/stdc-predef.h \
@@ -5282,6 +5298,14 @@ CMakeFiles/simulation.dir/simulation.cc.o: ../simulation.cc \
   ../generator.hh \
   /home/apmnair18/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /home/apmnair18/geant4/include/Geant4/G4MuonPlus.hh \
+  /home/apmnair18/Documents/GitHub/Geant4_ROOT/EcoMug/EcoMug.h \
+  /usr/include/c++/11/random \
+  /usr/include/c++/11/bits/random.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+  /usr/include/c++/11/bits/random.tcc \
+  /usr/include/c++/11/numeric \
+  /usr/include/c++/11/bits/stl_numeric.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   ../event.hh \
   /home/apmnair18/geant4/include/Geant4/G4UserEventAction.hh \
   /home/apmnair18/geant4/include/Geant4/G4Event.hh \
@@ -6244,13 +6268,7 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 
 /usr/include/fenv.h:
 
-/usr/include/linux/close_range.h:
-
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/home/apmnair18/geant4/include/Geant4/G4ParticleChangeForDecay.hh:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -6610,6 +6628,20 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 
 ../event.hh:
 
+/home/apmnair18/geant4/include/Geant4/tools/cstr:
+
+/home/apmnair18/geant4/include/Geant4/tools/ntuple_binding:
+
+/home/apmnair18/geant4/include/Geant4/tools/rroot/leaf:
+
+../construction.cc:
+
+/home/apmnair18/geant4/include/Geant4/tools/rroot/iobject:
+
+/home/apmnair18/geant4/include/Geant4/G4StepPoint.icc:
+
+/home/apmnair18/geant4/include/Geant4/tools/rroot/info:
+
 /home/apmnair18/geant4/include/Geant4/G4OpenGLImmediateQt.hh:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
@@ -6664,6 +6696,12 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 
 /usr/include/c++/11/bits/codecvt.h:
 
+/home/apmnair18/geant4/include/Geant4/G4ParticleChangeForDecay.hh:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h:
+
 /home/apmnair18/geant4/include/Geant4/G4VTrajectory.hh:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
@@ -6699,6 +6737,10 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 /home/apmnair18/geant4/include/Geant4/G4ProcessType.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/home/apmnair18/geant4/include/Geant4/tools/get_lines:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /home/apmnair18/geant4/include/Geant4/G4VViewer.hh:
 
@@ -7446,10 +7488,6 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
-../construction.cc:
-
-/home/apmnair18/geant4/include/Geant4/tools/rroot/iobject:
-
 /usr/include/c++/11/bits/quoted_string.h:
 
 /home/apmnair18/geant4/include/Geant4/G4Box.icc:
@@ -7529,6 +7567,8 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 /usr/include/c++/11/bits/regex_error.h:
 
 /usr/include/c++/11/atomic:
+
+/usr/include/c++/11/bits/random.tcc:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -7714,6 +7754,8 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 
 /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandLandau.icc:
 
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
 /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandPoissonQ.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
@@ -7731,6 +7773,24 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 /home/apmnair18/geant4/include/Geant4/CLHEP/Random/RandStudentT.h:
 
 /home/apmnair18/geant4/include/Geant4/G4UIparameter.hh:
+
+/home/apmnair18/Documents/GitHub/Geant4_ROOT/EcoMug/EcoMug.h:
+
+/usr/include/c++/11/random:
+
+/usr/include/c++/11/bits/random.h:
+
+/usr/include/c++/11/numeric:
+
+/home/apmnair18/geant4/include/Geant4/G4VSDFilter.hh:
+
+/home/apmnair18/geant4/include/Geant4/G4SandiaTable.hh:
+
+/home/apmnair18/geant4/include/Geant4/tools/histo/axis:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
 
 /home/apmnair18/geant4/include/Geant4/G4UserRunAction.hh:
 
@@ -7769,10 +7829,6 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 /usr/include/c++/11/bits/regex_constants.h:
 
 /home/apmnair18/geant4/include/Geant4/tools/forit:
-
-/home/apmnair18/geant4/include/Geant4/G4StepPoint.icc:
-
-/home/apmnair18/geant4/include/Geant4/tools/rroot/info:
 
 /home/apmnair18/geant4/include/Geant4/G4VNtupleManager.hh:
 
@@ -7813,12 +7869,6 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 /home/apmnair18/geant4/include/Geant4/tools/wroot/ntuple:
 
 /home/apmnair18/geant4/include/Geant4/tools/histo/axes:
-
-/home/apmnair18/geant4/include/Geant4/G4VSDFilter.hh:
-
-/home/apmnair18/geant4/include/Geant4/G4SandiaTable.hh:
-
-/home/apmnair18/geant4/include/Geant4/tools/histo/axis:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -7983,13 +8033,3 @@ CMakeFiles/simulation.dir/stepping.cc.o: ../stepping.cc \
 /home/apmnair18/geant4/include/Geant4/tools/rroot/date:
 
 /home/apmnair18/geant4/include/Geant4/tools/sprintf:
-
-/home/apmnair18/geant4/include/Geant4/tools/rroot/leaf:
-
-/home/apmnair18/geant4/include/Geant4/tools/ntuple_binding:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/home/apmnair18/geant4/include/Geant4/tools/get_lines:
-
-/home/apmnair18/geant4/include/Geant4/tools/cstr:
