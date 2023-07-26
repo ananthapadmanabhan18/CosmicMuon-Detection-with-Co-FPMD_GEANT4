@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.17)  26 JUL 2023 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.17)  26 JUL 2023 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -868,12 +868,12 @@ Package pdftex.def Info: ED4GeVaccu.png  used on input line 817.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.857 \end{document}
+l.865 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.857 \end{document}
+l.865 \end{document}
                      <./ED4GeV.png> <./ED4GeVaccu.png (PNG copy)>] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
@@ -891,7 +891,7 @@ Here is how much of TeX's memory you used:
  0 hyphenation exceptions out of 8191
  79i,12n,93p,495b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (11 pages, 928297 bytes).
+Output written on main.pdf (11 pages, 930041 bytes).
 PDF statistics:
  328 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)

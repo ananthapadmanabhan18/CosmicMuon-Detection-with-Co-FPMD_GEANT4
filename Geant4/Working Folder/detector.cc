@@ -11,7 +11,7 @@ G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist
  
     if(particle==G4MuonMinus::Definition()){
         G4double edep= aStep->GetTotalEnergyDeposit();
-        std::ofstream file("output.txt", std::ios::app);
+        std::ofstream file("/home/apmnair18/Documents/GitHub/Geant4_ROOT/ROOT/Final_Analysis/Multi_Energy/datas/6GeV.txt", std::ios::app);
         file.seekp(0, std::ios::end);
         file <<edep<< G4endl;
         file.close();

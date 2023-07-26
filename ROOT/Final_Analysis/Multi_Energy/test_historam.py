@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("build/output.txt", "r")
+file = open("Multi_Energy/datas/1GeV.txt", "r")
 
 
 i=0
@@ -25,8 +25,8 @@ integral = histogram.Integral()
 histogram.Scale(1/integral)
 
 
-landau_func = ROOT.TF1("landau_func", "landau", 0,0.01)
-landau_func.SetParameters(0.002,0.0007)
+landau_func = ROOT.TF1("landau_func", "landau", 0.0003,0.004)
+landau_func.SetParameters(0.0005,0.001)
 histogram.Fit(landau_func, "R")
 fit_result = histogram.GetFunction("landau_func")
 
