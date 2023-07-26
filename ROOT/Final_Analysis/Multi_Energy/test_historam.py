@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("Multi_Energy/datas/1GeV.txt", "r")
+file = open("Multi_Energy/datas/80MeV.txt", "r")
 
 
 i=0
