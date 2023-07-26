@@ -8,6 +8,11 @@ Sea Agostinelli, John Allison, K~al Amako, John Apostolakis, H~Araujo, Pedro
   Accelerators, Spectrometers, Detectors and Associated Equipment},
   506(3):250--303, 2003.
 
+\bibitem{ROOT}
+ROOT Collaboration.
+\newblock Root - an object-oriented data analysis framework, 1995-2022.
+\newblock Version 6.
+
 \bibitem{leo1988techniques}
 William~R Leo.
 \newblock Techniques for nuclear and particle physics experiments.

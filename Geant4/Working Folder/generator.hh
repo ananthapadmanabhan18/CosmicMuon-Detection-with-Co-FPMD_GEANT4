@@ -16,7 +16,7 @@ class primarygenerator : public G4VUserPrimaryGeneratorAction
     public:
         primarygenerator ();
         ~primarygenerator();
-        virtual void GeneratePrimaries(G4Event*,int lineIndex);
+        virtual void GeneratePrimaries(G4Event*);
     private:    
         G4ParticleGun* fparticlegun;
         G4ParticleDefinition *muon_minus, *muon_plus;

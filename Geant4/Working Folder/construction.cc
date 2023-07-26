@@ -21,6 +21,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     G4Element* carbon = nistManager->FindOrBuildElement("C");
     G4Element* oxygen = nistManager->FindOrBuildElement("O");
 
+
     //Aluminium
     G4Material* Al = new G4Material("Aluminium", 2.7 * g/cm3, 1);
     Al->AddElement(Aluminium,1);    

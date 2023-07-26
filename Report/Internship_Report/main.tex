@@ -762,9 +762,7 @@ usual fParticleGun with the G4VUserPrimaryGeneratorAction in Geant4.
 Using this one can generate as many particles as we want in a single run.
 for our case we will be generating muons only for the single particle case and
 and for the Actual simulation of the Cosmic Shower, we will be using the
-EcoMug for the data for different types of partilces. The codes for
-the header Files and source files are given below in figure-\ref{gunheader}
-and figure-\ref{gunsouorce}
+EcoMug for the data for different types of particles.
 
 
 
@@ -782,29 +780,70 @@ done using G4VSensitiveDetector and G4Track.
 
 
 
-
-
-\begin{figure}[H]
-    \centering	
-     \includegraphics[width=\columnwidth]{gunheader.png}
-     \caption{Code For the Header File for fParticleGun}
-     \label{gunheader}
-\end{figure}
-
-\begin{figure}[H]
-    \centering	
-     \includegraphics[width=\columnwidth]{gunsource.png}
-     \caption{Code For the Source File for fParticleGun}
-     \label{gunsouorce}
-\end{figure}
-
-
-\section{Single Particle Generation}
+\section{Single Muon Interaction}
 
 In this case, we will be using the fParticleGun to Generate $\mu^-$-Particles 
 and will project them to the Detector through the scintillation detector 
 parallel to the Z-Axis. We will be defining the momentum in terms of Energy (MeV and GeV) and all of this
-With Construction of the detectors as mentioned above. 
+with Construction of the detectors as mentioned above. 
+
+
+\subsection{Obtained Energy Deposit data}
+
+As mentioned earlier, the $\mu^-$-particles are fired at different
+energies. Then its Most probable Energy Deposit Values are taken 
+and plot against the incident energy and the graph is Checked by the
+bethe-bloch formula.
+
+
+\subsubsection{Single Energy Muon}
+
+At first, we fired one particle at 4GeV perpendicular
+to the detector through the scintillator in one run (100000 Runs were made). The plot of the range of
+Energy Deposit is Shown in the Figure-\ref{ED4GeV} where we can see
+that the distribution is landau. The function is Fitted by the
+Landau function and MPV of the Energy Deposit is obtained as 515.87eV and the standard deviation
+is 165.912eV. The corresponding image of the accumulated paths of the muons
+as shown in the Figure-\ref{ED4GeVaccu}
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{ED4GeV.png}
+     \caption{Statistics of Energy Deposit by 4GeV Muon Minus-\cite{ROOT}}
+     \label{ED4GeV}
+\end{figure}
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{ED4GeVaccu.png}
+     \caption{Accumulated paths of the muons for 500 Runs-\cite{agostinelli2003geant4}}
+     \label{ED4GeVaccu}
+\end{figure}
+
+
+\subsubsection{Muons With Different Energies}
+
+Now, we will be calculating the Most Probable Value (MPV) of the
+Energy Deposit for different values of the incident energy. We will Start 
+from low energy (80MeV) and will end at calculating MPV of each Energy deposition
+till we reach 100GeV particles. For Each energy we will be firing 100000 $\mu^-$-particles
+one by one for each run. The energy Deposit is Calculated by the Sensitive Detector 
+(Argon+$CO_2$ Mixture)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

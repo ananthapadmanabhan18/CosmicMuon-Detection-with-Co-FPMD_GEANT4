@@ -14,4 +14,7 @@
 \contentsline {subsubsection}{\numberline {4.1.2}The Complete Setup}{5}{subsubsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.2}Generation of Particles}{5}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Collection of Energy Deposition Data}{5}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Single Particle Generation}{6}{section.5}%
+\contentsline {section}{\numberline {5}Single Muon Interaction}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Obtained Energy Deposit data}{5}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Single Energy Muon}{6}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Muons With Different Energies}{6}{subsubsection.5.1.2}%
