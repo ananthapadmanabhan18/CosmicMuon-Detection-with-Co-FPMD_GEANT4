@@ -224,33 +224,34 @@ Date:
 \newgeometry{top=5cm,bottom=2.5cm,left=3cm,right=3cm}
 
 \begin{abstract}
-    This report focuses on the simulation and 
-    experimental detection of cosmic muons using the ALICE 
-    (A Large Ion Collider Experiment) detector, employing the 
-    Geant4 simulation framework. The study aims to understand 
-    the behavior of cosmic muons and their energy deposition 
-    within the detector setup, consisting of a honeycomb gas 
-    detector filled with Argon and $CO_2$. The simulation phase involved utilizing Geant4 to replicate 
-    the laboratory setup and simulate the interaction of cosmic 
-    muons with the detector. By accurately modeling the trajectory 
-    and behavior of cosmic muons, the simulation facilitated the 
-    calculation of their energy deposition within the ALICE detector. 
-    This process provided valuable insights into the expected behavior 
-    of cosmic muons within the simulated environment. 
-    Subsequently, the actual experimental phase involved 
-    collecting data from the ALICE detector in the laboratory. 
-    The detector, filled with Argon and CO2 gases, accurately 
-    captured cosmic muons as they traversed through it. The collected 
-    data allowed for a comparison between the simulated and 
-    experimental results, validating the accuracy of the Geant4 
-    simulation model and providing further insights into the behavior 
-    of cosmic muons.
-    The internship report outlines the methodology employed during 
-    both the Geant4 simulation and the experimental data collection 
-    phases, including the parameters and variables considered. It 
-    discusses the data analysis techniques used to evaluate the energy 
-    deposition of cosmic muons and presents a comprehensive comparison 
-    between the simulated and experimental results.
+    This internship report presents a comprehensive study on the detection of 
+    cosmic muons using the CoFPMD (Cosmic Flux Photon Multiplicity Detector). 
+    The primary objectives were to construct the detector setup, investigate 
+    the energy deposit by muons at various incidence energies, and simulate 
+    the actual data from EcoMug to improve the detector's performance.
+    The internship commenced with the construction of the CoFPMD detector, 
+    which consists of a honeycomb gas detector filled with Argon and CO2. 
+    Geant4, a powerful simulation toolkit, was utilized to replicate the 
+    detector's geometry and model the interaction of cosmic muons with the 
+    detector materials. The fParticleGun was employed to simulate the 
+    firing of muons with different incidence energies, enabling the 
+    assessment of their energy deposit patterns within the detector.
+    The first phase of the internship involved analyzing the energy deposit by 
+    muons for different incidence energies. The obtained results provided valuable 
+    insights into the behavior of cosmic muons and their interaction with the Argon 
+    and CO2 gas mixture. The data facilitated the understanding of the detector's 
+    response to muon incidence at various energy levels.
+    In the second phase, data from Simulation in EcoMug, containing momentum, 
+    position, and energy information, was implemented in the Geant4 fParticleGun. 
+    This implementation allowed for the generation of realistic muon events, 
+    which closely represented the characteristics of actual cosmic muons. By 
+    incorporating real data, the accuracy of the simulation was enhanced, 
+    resulting in a more reliable representation of the detector's performance.
+    Based on the simulated data, a plot of the energy deposit by muons 
+    was generated. This plot not only demonstrated the sensitivity and 
+    efficiency of the CoFPMD detector in capturing cosmic muons but also 
+    highlighted the correlation between energy deposition and muon incidence energies.
+    In conclusion, this internship has provided valuable hands-on experience in the field of cosmic muon detection and its simulation using Geant4. The results obtained through this study offer a solid foundation for future research and advancements in the realm of cosmic muon detection and particle physics.
     
 \end{abstract}
 \restoregeometry
@@ -404,12 +405,12 @@ which is $\approx 10^{7}m/c \approx 0.03s$
 So, this is why we are able to observe the cosmic muons incident on the earths surface
 even if the half of the muons are in the range of micro seconds. The Calculations are based on an average scale.
 
-
-
-
-
 %Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties%Cosmic Muons and its Properties
 
+
+
+
+% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter
 \section{Passage of Radiation Through Matter}
 
 Naturally, penetrating radiation views matter as a collection 
@@ -678,6 +679,12 @@ Normally, two corrections are also added to the bethe bloch formula which is the
 Where C is the Shell Correction and $\delta$ is the density Correction.
 
 
+% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter% Passage of Radiation Through Matter
+
+
+
+%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4
+
 \section{Simulation Using Geant4}
 
 
@@ -777,10 +784,16 @@ The implementation  of the Detection and its calculation is
 done using G4VSensitiveDetector and G4Track.
 
 
+%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4%Simulation Using Geant4
 
 
 
-\section{Single Muon Interaction}
+
+%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction
+
+
+
+\section{Single Muon only Interaction}
 
 In this case, we will be using the fParticleGun to Generate $\mu^-$-Particles 
 and will project them to the Detector through the scintillation detector 
@@ -796,6 +809,32 @@ and plot against the incident energy and the graph is Checked by the
 bethe-bloch formula.
 
 
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{ED4GeVaccu.png}
+     \caption{Accumulated paths of the muons for 500 Runs-\cite{agostinelli2003geant4}}
+     \label{ED4GeVaccu}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{ED4GeV.png}
+     \caption{Statistics of Energy Deposit by 4GeV Muon Minus-\cite{ROOT}}
+     \label{ED4GeV}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{betheplot.png}
+     \caption{Variation of MPV of Energy Deposit with the incident Energy of Muons-\cite{python}}
+     \label{betheplot}
+\end{figure}
+
+
 \subsubsection{Single Energy Muon}
 
 At first, we fired one particle at 4GeV perpendicular
@@ -805,19 +844,14 @@ that the distribution is landau. The function is Fitted by the
 Landau function and MPV of the Energy Deposit is obtained as 677.82eV and the standard deviation
 is 136.66eV. The corresponding image of the accumulated paths of the muons
 as shown in the Figure-\ref{ED4GeVaccu}
-\begin{figure}[H]
-    \centering	
-     \includegraphics[width=\columnwidth]{ED4GeV.png}
-     \caption{Statistics of Energy Deposit by 4GeV Muon Minus-\cite{ROOT}}
-     \label{ED4GeV}
-\end{figure}
 
-\begin{figure}[H]
-    \centering	
-     \includegraphics[width=\columnwidth]{ED4GeVaccu.png}
-     \caption{Accumulated paths of the muons for 500 Runs-\cite{agostinelli2003geant4}}
-     \label{ED4GeVaccu}
-\end{figure}
+
+
+
+
+
+
+
 
 
 \subsubsection{Muons With Different Energies}
@@ -835,7 +869,15 @@ one by one for each run. The energy Deposit is Calculated by the Sensitive Detec
 The histogram showing the distributions for different values of the incident
 energy of the Muons is Shown in the Figure-\ref{multihist}. From these Plots, The histograms 
 are fitted with the Landau Function and the corresponding MPV of the Energy Deposits are taken out.
-It is then plotted against the Value of incident energy.
+It is then plotted against the $log_10 ()$Value of incident energy as Shown in the Figure-\ref{betheplot}
+Also, in the plot, we have made the comparison with the total
+energy deposit value obtained from the Bethe Bloch Formula
+
+
+
+
+
+
 
 \begin{figure*}[ht]
     \centering	
@@ -845,7 +887,12 @@ It is then plotted against the Value of incident energy.
 \end{figure*}
 
 
+%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction%Single Muon Interaction
 
+
+
+
+\section{Detection of Particles Generated From Cosmic Rays by the  CoFPMD}
 
 
 
