@@ -38,6 +38,7 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     G4Material* gasMixture = new G4Material("GasMixture", 1.72*g/L , 2);
     gasMixture->AddElement(argonGas, 0.9);
     gasMixture->AddMaterial(CO2, 0.1);
+    gasMixture->GetIonisation()->SetMeanExcitationEnergy(209.63*eV);
     //FR4
     G4Material* fr4 = new G4Material("fr4", 1.85*g/cm3 , 4);
     fr4->AddElement(Hydrogen, 0.475);

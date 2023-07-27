@@ -326,7 +326,7 @@ of times greater than those produced in the most powerful particle accelerators 
 cosmic rays enter the Earth's atmosphere, they interact with air molecules, producing a cascade 
 of secondary particles, including muons, neutrinos, and gamma rays.
 
-\subsection{Production of Cosmic Muons}
+\subsection{Production of Cosmic Muons}\label{muonproduction}
 When there Cosmic Rays Reach the Earths atmosphere, it collides with the air molecules and produces 
 many particles, mostly Pions and Kaons. These are the primary Particles. These particles then decay to produce a wide variety
 of particles most of which are muons. Also, more than 90\% of the cosmic muons are produced from Pions.
@@ -892,12 +892,38 @@ energy deposit value obtained from the Bethe Bloch Formula
 
 
 
-\section{Detection of Particles Generated From Cosmic Rays by the  CoFPMD}
+\section{Simulation of Actual Cosmic Muons}
+
+In this Section, we will do the simulation of the actual cosmic muons that is generated
+by the process mentioned in the above section-\ref{muonproduction}. In order to 
+simulate the actual cosmic muons. We need the initial position and momentum of the
+muons. For our case this wont be done in Geant4, but this is carried out in a 
+single standalone header file called EcoMug.
+
+
+\subsection{Cosmic Muon properties From EcoMug}
+
+For the actual simulation of the cosmic muons, we require the initial position,
+magnitude and direction of the momentum and the charge of the particle (to determine if 
+its a muon minus or muon plus particle). The EcoMug is first set use the
+simulation in the Flat-Sky mode with the center of the sky at the top
+most point of the world volume of the geant4 (ini our case its (0,0,5m)).
+The size of the Flat Sky is set to be $10m \times 10m $. Around 1.2 million
+cosmic muon data was produced using the monte-carlo techniques used in the 
+EcoMug. The data is generated in such a way that the only the relevant 
+data is generated to use for the geant4. The the value of the Zenith angle of
+the direction of momentum is restricted to the range of $2.948-\pi$ Radians.
+The angle is found out from the actual Experimental setup so that only the muons
+that pass through both the scintillation detectors and the CoFPMD is detected. 
 
 
 
+\subsection{Cosmic Muons in Geant4}
 
-
+The data from the EcoMug is written into a text file from which the it is converted to
+a macro-file that can be read by the Geant4 by a python script.
+The macro file then run by the geant4 using the previous geometry of detectors
+and the corresponding energy deposit is calculated.
 
 
 
