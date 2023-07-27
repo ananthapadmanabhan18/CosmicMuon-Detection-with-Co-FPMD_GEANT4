@@ -8,7 +8,7 @@ histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("Single_Energy/datas/ED4GeV.txt", "r")
+file = open("Final_cosmic_data.txt", "r")
 
 
 i=0
