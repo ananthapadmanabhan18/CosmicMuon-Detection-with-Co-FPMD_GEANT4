@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.17)  28 JUL 2023 00:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.17)  28 JUL 2023 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,12 +547,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (/home/apmnair18/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<NISER.png, id=95, 1204.5pt x 1239.63126pt>
+<NISER.png, id=111, 1204.5pt x 1239.63126pt>
 File: NISER.png Graphic file (type png)
 <use NISER.png>
 Package pdftex.def Info: NISER.png  used on input line 48.
 (pdftex.def)             Requested size: 92.47145pt x 95.16249pt.
-<VECC.png, id=97, 256.0767pt x 256.0767pt>
+<VECC.png, id=113, 256.0767pt x 256.0767pt>
 File: VECC.png Graphic file (type png)
 <use VECC.png>
 Package pdftex.def Info: VECC.png  used on input line 69.
@@ -761,7 +761,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 432--432
 []\OT1/cmr/bx/n/12 The Cross section of the
  []
 
-<crossection.png, id=169, 400.49625pt x 252.19218pt>
+<crossection.png, id=189, 400.49625pt x 252.19218pt>
 File: crossection.png Graphic file (type png)
 <use crossection.png>
 Package pdftex.def Info: crossection.png  used on input line 461.
@@ -777,7 +777,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.514 N
        ow as we have the interaction probability, we will calculate the mean... <./crossection.png>]
-<bohrsct.png, id=186, 300.3722pt x 149.8097pt>
+<bohrsct.png, id=206, 300.3722pt x 149.8097pt>
 File: bohrsct.png Graphic file (type png)
 <use bohrsct.png>
 Package pdftex.def Info: bohrsct.png  used on input line 567.
@@ -797,18 +797,18 @@ Overfull \hbox (1.28784pt too wide) in alignment at lines 674--676
  [][][] []
  []
 
-<honeycomb.png, id=210, 811.53188pt x 478.03593pt>
+<honeycomb.png, id=230, 811.53188pt x 478.03593pt>
 File: honeycomb.png Graphic file (type png)
 <use honeycomb.png>
 Package pdftex.def Info: honeycomb.png  used on input line 726.
 (pdftex.def)             Requested size: 236.84843pt x 139.51675pt.
 [4]
-<honeycomb1.png, id=223, 811.53188pt x 478.03593pt>
+<honeycomb1.png, id=243, 811.53188pt x 478.03593pt>
 File: honeycomb1.png Graphic file (type png)
 <use honeycomb1.png>
 Package pdftex.def Info: honeycomb1.png  used on input line 733.
 (pdftex.def)             Requested size: 236.84843pt x 139.51675pt.
-<combsetup.png, id=226, 811.53188pt x 478.03593pt>
+<combsetup.png, id=246, 811.53188pt x 478.03593pt>
 File: combsetup.png Graphic file (type png)
 <use combsetup.png>
 Package pdftex.def Info: combsetup.png  used on input line 756.
@@ -828,7 +828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 767--773
 \OT1/cmr/m/n/10 done using the usual fParticleGun with the
  []
 
-<ED4GeVaccu.png, id=227, 811.53188pt x 478.03593pt>
+<ED4GeVaccu.png, id=247, 811.53188pt x 478.03593pt>
 File: ED4GeVaccu.png Graphic file (type png)
 <use ED4GeVaccu.png>
 Package pdftex.def Info: ED4GeVaccu.png  used on input line 814.
@@ -849,17 +849,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has
                                                   \__shipout_drop_firstpage_...
 l.818 
        <./honeycomb.png (PNG copy)> <./honeycomb1.png (PNG copy)> <./combsetup.png (PNG copy)>]
-<ED4GeV.png, id=236, 1369.115pt x 682.55pt>
+<ED4GeV.png, id=256, 1369.115pt x 682.55pt>
 File: ED4GeV.png Graphic file (type png)
 <use ED4GeV.png>
 Package pdftex.def Info: ED4GeV.png  used on input line 822.
 (pdftex.def)             Requested size: 236.84843pt x 118.07327pt.
-<betheplot.png, id=239, 987.2082pt x 479.1501pt>
+<betheplot.png, id=259, 987.2082pt x 479.1501pt>
 File: betheplot.png Graphic file (type png)
 <use betheplot.png>
 Package pdftex.def Info: betheplot.png  used on input line 832.
 (pdftex.def)             Requested size: 236.84843pt x 114.9545pt.
-<multihist.png, id=246, 2710.125pt x 1505.625pt>
+<multihist.png, id=266, 2710.125pt x 1505.625pt>
 File: multihist.png Graphic file (type png)
 <use multihist.png>
 Package pdftex.def Info: multihist.png  used on input line 884.
@@ -879,31 +879,73 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.918 
-       <./ED4GeVaccu.png (PNG copy)> <./ED4GeV.png> <./betheplot.png>] (main.bbl) [7
+       <./ED4GeVaccu.png (PNG copy)> <./ED4GeV.png> <./betheplot.png>]
+<zenith.png, id=284, 1369.115pt x 682.55pt>
+File: zenith.png Graphic file (type png)
+<use zenith.png>
+Package pdftex.def Info: zenith.png  used on input line 952.
+(pdftex.def)             Requested size: 236.84843pt x 118.07327pt.
+<azimuthual.png, id=289, 1369.115pt x 682.55pt>
+File: azimuthual.png Graphic file (type png)
+<use azimuthual.png>
+Package pdftex.def Info: azimuthual.png  used on input line 960.
+(pdftex.def)             Requested size: 236.84843pt x 118.07327pt.
+<momentum.png, id=294, 1369.115pt x 682.55pt>
+File: momentum.png Graphic file (type png)
+<use momentum.png>
+Package pdftex.def Info: momentum.png  used on input line 967.
+(pdftex.def)             Requested size: 236.84843pt x 118.07327pt.
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.947 \end{document}
-                     <./multihist.png>] (main.aux)
+l.971 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.971 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.971 
+       <./multihist.png> <./zenith.png> <./azimuthual.png>]
+<cosmu.png, id=309, 1369.115pt x 682.55pt>
+File: cosmu.png Graphic file (type png)
+<use cosmu.png>
+Package pdftex.def Info: cosmu.png  used on input line 992.
+(pdftex.def)             Requested size: 236.84843pt x 118.07327pt.
+ (main.bbl) [8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1018 \end{document}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1018 \end{document}
+                      <./momentum.png> <./cosmu.png>] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 702E7463B6942EF48229D61D6C6823A7;4632.
+(rerunfilecheck)             Checksum: 2BE96FAB815495C9D3EC3FD5759A5204;5706.
  ) 
 Here is how much of TeX's memory you used:
- 11578 strings out of 477486
- 185720 string characters out of 5813979
+ 11623 strings out of 477486
+ 186465 string characters out of 5813979
  1936244 words of memory out of 5000000
- 32301 multiletter control sequences out of 15000+600000
+ 32337 multiletter control sequences out of 15000+600000
  565936 words of font info for 64 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  79i,12n,93p,495b,633s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (12 pages, 1480291 bytes).
+Output written on main.pdf (13 pages, 1578927 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 292 words of extra memory for PDF output out of 10000 (max. 10000000)
 

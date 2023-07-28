@@ -1,14 +1,14 @@
 import ROOT
 canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
-histogram = ROOT.TH1F("histogram", "Plot of Frequency  vs Energy Deposit  (GeV)", 100, 0, 0.005)
+histogram = ROOT.TH1F("histogram", "Plot of Frequency  vs Energy Deposit by Cosmic Muons", 250, 0, 0.005)
 
-histogram.SetXTitle("Incident Energy of the Muons on the Gas Mixture (GeV)")
-histogram.SetYTitle("Frequency (No of Particles in the Energy Range)")
+histogram.SetXTitle("Total Energy Deposit of the Cosmic Muons (MeV)")
+histogram.SetYTitle("Cosmic Muon Flux (no of particles/cm^2) ")
 histogram.SetLineColor(ROOT.kRed)
 
 
 
-file = open("datas/Final_cosmic_data.txt", "r")
+file = open("Single_Energy/datas/Final_cosmic_data.txt", "r")
 
 
 i=0
@@ -21,8 +21,8 @@ for line in file:
 file.close()
 
 
-# integral = histogram.Integral()
-# histogram.Scale(1/integral)
+integral = histogram.Integral()
+histogram.Scale(1/(49.45*10**-4))
 
 
 # landau_func = ROOT.TF1("landau_func", "landau", 0.0004,0.004)

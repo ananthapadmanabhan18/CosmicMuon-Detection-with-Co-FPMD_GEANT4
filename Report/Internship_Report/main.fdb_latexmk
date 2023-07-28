@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1690483194 "main.aux" "main.bbl" "main" 1690483810 0
+["bibtex main"] 1690532079 "main.aux" "main.bbl" "main" 1690533921 0
   "./bib.bib" 1690369055 1136 968f2449b99a70e82aeec5d30ee12b35 ""
   "/home/apmnair18/.miktex/texmfs/install/bibtex/bst/bibtex/plain.bst" 1689589271 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1690483809 7286 f00d18360e8876b9571fc5f369b5faab "pdflatex"
+  "main.aux" 1690533920 9499 c2ccbb0bff22df1c3e7c963be4f4ba51 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1690483805 "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Report/Internship_Report/main.tex" "main.pdf" "main" 1690483810 0
+["pdflatex"] 1690533917 "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Report/Internship_Report/main.tex" "main.pdf" "main" 1690533921 0
   "/home/apmnair18/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1690184422 25678 aa7c8fd3909e804e7d85441c21595406 ""
   "/home/apmnair18/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1689589173 20940275 6f6cbdb13cb3b4f9ffd9513b9899e48b ""
   "/home/apmnair18/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1689589239 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -120,23 +120,27 @@
   "/home/apmnair18/.miktex/texmfs/install/tex/latex/tools/layout.sty" 1689589178 14907 1c7fc5539837fe10e3b874f84d0a3c25 ""
   "/home/apmnair18/.miktex/texmfs/install/tex/latex/tools/multicol.sty" 1689589178 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "/home/apmnair18/.miktex/texmfs/install/tex/latex/url/url.sty" 1689589225 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Report/Internship_Report/main.tex" 1690483804 37369 a6a78df1842b9243c37d72ccc82ea711 ""
+  "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Report/Internship_Report/main.tex" 1690532074 39279 c214b909dd79e555bde53c903af4530c ""
   "ED4GeV.png" 1690370973 32476 d7687c80ce5805b1ed1e4a2d8969087d ""
   "ED4GeVaccu.png" 1690367580 99721 7892aa444c8ebedd8a1858cb7c59b42b ""
   "NISER.png" 1689568844 274313 13e6d9c2183b7bf35f46713dc275ac6a ""
   "VECC.png" 1689659012 193578 7be94cb86b6455030bb66f0f9e301200 ""
+  "azimuthual.png" 1690531145 28036 46c68a99b2160f46349201eb21e2a7c4 ""
   "betheplot.png" 1690449594 59950 b459ac7e17f19251313ff4b00756f5e6 ""
   "bohrsct.png" 1690053532 4202 8e11c68c2194c14c414506fde0269cdb ""
   "combsetup.png" 1690225189 25127 1f00f4e7ecf4141f8f9afcbe9fd12e21 ""
+  "cosmu.png" 1690533916 30092 716e54bae1f87a5fb06a1d6d840a1720 ""
   "crossection.png" 1690053532 10428 f559d7c8f9b30b387874f8c7ec1a9bd4 ""
   "honeycomb.png" 1690187106 50973 015e621991631cba7a087faf8c21a611 ""
   "honeycomb1.png" 1690187219 90665 737158fac5db7c3c45ea5cf2f8271eac ""
-  "main.aux" 1690483809 7286 f00d18360e8876b9571fc5f369b5faab "pdflatex"
-  "main.bbl" 1690483194 842 1323ad57a52d1a5cd3efcbadae12bc7e "bibtex main"
-  "main.out" 1690483809 4632 702e7463b6942ef48229d61d6c6823a7 "pdflatex"
-  "main.tex" 1690483804 37369 a6a78df1842b9243c37d72ccc82ea711 ""
-  "main.toc" 1690483809 2144 0a6427607175d8fe63fd5194020cc7eb "pdflatex"
+  "main.aux" 1690533920 9499 c2ccbb0bff22df1c3e7c963be4f4ba51 "pdflatex"
+  "main.bbl" 1690532079 842 1323ad57a52d1a5cd3efcbadae12bc7e "bibtex main"
+  "main.out" 1690533920 5706 2be96fab815495c9d3ec3fd5759a5204 "pdflatex"
+  "main.tex" 1690532074 39279 c214b909dd79e555bde53c903af4530c ""
+  "main.toc" 1690533920 2601 399c35230bfa307cbefa2b9be6709647 "pdflatex"
+  "momentum.png" 1690531247 28405 c49dc70a862309a3563d68a3fb6cb173 ""
   "multihist.png" 1690449594 602080 7066ee3d2246200163fca67f35001d4a ""
+  "zenith.png" 1690530937 25616 cb0169123dc5b3ffd72016a70af771be ""
   (generated)
   "main.aux"
   "main.log"

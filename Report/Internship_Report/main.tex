@@ -908,13 +908,68 @@ magnitude and direction of the momentum and the charge of the particle (to deter
 its a muon minus or muon plus particle). The EcoMug is first set use the
 simulation in the Flat-Sky mode with the center of the sky at the top
 most point of the world volume of the geant4 (ini our case its (0,0,5m)).
-The size of the Flat Sky is set to be $10m \times 10m $. Around 1.2 million
+The size of the Flat Sky is set to be $10m \times 10m $. Around 2.2 million
 cosmic muon data was produced using the monte-carlo techniques used in the 
 EcoMug. The data is generated in such a way that the only the relevant 
 data is generated to use for the geant4. The the value of the Zenith angle of
-the direction of momentum is restricted to the range of $2.948-\pi$ Radians.
+the direction of momentum is restricted to the range of $2.49801-\pi$ Radians.
 The angle is found out from the actual Experimental setup so that only the muons
 that pass through both the scintillation detectors and the CoFPMD is detected. 
+
+
+
+
+\subsubsection{The Zenith angle (\texorpdfstring{$\theta$}{theta}) distribution of Cosmic Muons}
+
+From the several lakhs of Cosmic Muons Generated, a histogram of the
+distribution of the zenith angle ($\theta$) of muon momentum direction is made and it is shown in the
+Figure-\ref{zenith}
+
+
+
+
+\subsubsection{The Azimuthal Angle Distribution}
+
+Just like the Zenith angle, the Azimuthal angle $\phi$ distribution
+from the Eco Mug is made and is shown in the Figure-\ref{azimuthal}.
+From the Figure we can see the average Azimuthal angle is $\pi$
+
+
+
+\subsubsection{Momentum Distribution of Muons}
+
+Similarly, the distribution of the cosmic muon momentum defined in terms of its
+Energy/c is made and is shown in the Figure-\ref{momentum}. It
+is observed that the average energy of the incident muons on the earth
+surface is 3GeV.
+
+
+
+
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{zenith.png}
+     \caption{Zenith Angle $(\theta)$ Distribution of the Cosmic Muon Momentum -\cite{ROOT}\cite{python}}
+     \label{zenith}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{azimuthual.png}
+     \caption{Azimuthal Angle $(\phi)$ Distribution of the Cosmic Muon Momentum-\cite{ROOT}\cite{python}}
+     \label{azimuthal}
+\end{figure}
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{momentum.png}
+     \caption{Momentum Distribution of the Cosmic Muon Momentum-\cite{ROOT}\cite{python}}
+     \label{momentum}
+\end{figure}
+
+
 
 
 
@@ -924,6 +979,22 @@ The data from the EcoMug is written into a text file from which the it is conver
 a macro-file that can be read by the Geant4 by a python script.
 The macro file then run by the geant4 using the previous geometry of detectors
 and the corresponding energy deposit is calculated.
+
+
+\subsubsection{The Distribution of Energy Deposit}
+
+
+The distribution of the Energy deposit observed in the Geant4
+analyzed in ROOT-\cite{ROOT} is Shown in the Figure-\ref{cosmu}.
+
+\begin{figure}[H]
+    \centering	
+     \includegraphics[width=\columnwidth]{cosmu.png}
+     \caption{MDistribution of Energy Deposit by Cosmic Muons-\cite{ROOT}\cite{python}}
+     \label{cosmu}
+\end{figure}
+
+
 
 
 

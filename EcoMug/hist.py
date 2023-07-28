@@ -1,6 +1,6 @@
 import ROOT
 
-data_file = "p_data.txt"
+data_file = "theta_data.txt"
 
 data_values = []
 
