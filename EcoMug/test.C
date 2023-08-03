@@ -35,7 +35,8 @@ int main() {
         // fprintf(file, "%lf\t%lf\t%lf\t%lf\t%lf\t%lf\t%lf\n", muon_x, muon_y, muon_z, muon_mom, muon_theta, muon_phi, muon_charge);
         // fprintf(file, "%lf\n",muon_mom);
     }
-    printf("%f");
+    double time = gen.GetEstimatedTime(1000000);
+    printf("%f",time);
     fclose(file);
     return 0;
 }

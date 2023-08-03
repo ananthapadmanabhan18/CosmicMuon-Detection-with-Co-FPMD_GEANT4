@@ -23,7 +23,7 @@ file.close()
 
 
 integral = histogram.Integral()
-histogram.Scale(1/(49.45))
+histogram.Scale(1/(49.45*(76.63/60)))
 canvas.SetLogy()
 
 # landau_func = ROOT.TF1("landau_func", "landau", 0.0004,0.004)
