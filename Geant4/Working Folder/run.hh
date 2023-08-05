@@ -2,7 +2,7 @@
 #define RUN_HH
 
 #include "G4UserRunAction.hh"
-#include"G4AnalysisManager.hh"
+#include "g4root.hh"
 #include "G4RootFileManager.hh"
 #include "G4RootNtupleManager.hh"
 #include "G4RootFileDef.hh"

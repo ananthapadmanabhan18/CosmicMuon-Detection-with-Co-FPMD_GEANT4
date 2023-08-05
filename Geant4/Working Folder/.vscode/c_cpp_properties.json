@@ -4,13 +4,14 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/apmnair18/geant4/include/Geant4",
-                "/home/apmnair18/geant4/include/Geant4/",
+                "/home/apmnair18/Geant4/geant4install/include/Geant4",
+                "/home/apmnair18/Geant4/geant4install/include/Geant4/",
                 "${workspaceFolder}",
-                "${workspaceFolder}"
+                "${workspaceFolder}",
+                "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/clang-14",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
             "cppStandard": "c++14",
             "intelliSenseMode": "linux-clang-x64"

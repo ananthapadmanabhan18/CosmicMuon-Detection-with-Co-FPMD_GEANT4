@@ -10,7 +10,7 @@
 #include "G4ParticleTable.hh"
 #include "G4MuonMinus.hh"
 #include "G4Proton.hh"
-#include"G4AnalysisManager.hh"
+#include "g4root.hh"
 #include "G4RootFileManager.hh"
 #include "G4RootNtupleManager.hh"
 #include "run.hh"
