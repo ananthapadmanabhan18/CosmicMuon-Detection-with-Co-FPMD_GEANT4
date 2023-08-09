@@ -1,4 +1,4 @@
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build/CMakeFiles/simulation.dir
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build/CMakeFiles/Simulation.dir
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build/CMakeFiles/edit_cache.dir
-/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/build/CMakeFiles/rebuild_cache.dir
+/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/simulation.dir
+/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/Simulation.dir
+/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/edit_cache.dir
+/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/rebuild_cache.dir
