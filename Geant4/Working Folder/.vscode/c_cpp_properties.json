@@ -8,7 +8,6 @@
                 "/home/apmnair18/Geant4/geant4install/include/Geant4/",
                 "${workspaceFolder}",
                 "${workspaceFolder}",
-                "/home/apmnair18/Documents/GitHub/Geant4_ROOT/Geant4/Working Folder/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

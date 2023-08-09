@@ -12,5 +12,6 @@
         "hclogic",
         "visgold",
         "vishc"
-    ]
+    ],
+    "C_Cpp.default.compilerPath": "/usr/bin/cpp"
 }
