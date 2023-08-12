@@ -1,9 +1,9 @@
 import ROOT
 canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
-histogram = ROOT.TH1F("histogram", "Plot of Frequency  vs Energy Deposit by Cosmic Muons", 25, 0, 0.005)
+histogram = ROOT.TH1F("histogram", "Plot of Cosmic Muon Flux  vs Energy Deposit", 25, 0, 0.005)
 
 histogram.SetXTitle("Total Energy Deposit of the Cosmic Muons (MeV)")
-histogram.SetYTitle("Cosmic Muon Flux (no of particles /cm^{2}) ")
+histogram.SetYTitle("Cosmic Muon Flux (no of particles cm^{-2}min^{-1})")
 # histogram.SetLogy()
 histogram.SetLineColor(ROOT.kRed)
 

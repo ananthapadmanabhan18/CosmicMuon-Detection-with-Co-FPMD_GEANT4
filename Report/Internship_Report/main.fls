@@ -1,6 +1,6 @@
-PWD /home/apmnair18/Documents/GitHub/Geant4_ROOT/Report/Internship_Report
+PWD /home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Internship_Report
 INPUT /home/apmnair18/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/apmnair18/Documents/GitHub/Geant4_ROOT/Report/Internship_Report/main.tex
+INPUT /home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Internship_Report/main.tex
 OUTPUT main.log
 INPUT /home/apmnair18/.miktex/texmfs/install/tex/latex/base/article.cls
 INPUT /home/apmnair18/.miktex/texmfs/install/tex/latex/base/article.cls
