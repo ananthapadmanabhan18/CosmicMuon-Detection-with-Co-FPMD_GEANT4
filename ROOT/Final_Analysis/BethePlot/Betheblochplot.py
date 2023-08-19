@@ -36,25 +36,25 @@ yobs=[2.23347e-03,6.22615e-04,5.31900e-04,5.30453e-04,5.379379e-04,
 
 #Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical
 x=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,2,3,4,5,6,10,25,50,75,100]
-xev=[np.log(x[i]*(10**9)) for i in range(len(x))]
-calc_energy=[]
-for i in range(len(x)):
-    calc_energy.append(get_tot_ED(x[i]))
+# xev=[np.log(x[i]*(10**9)) for i in range(len(x))]
+# calc_energy=[]
+# for i in range(len(x)):
+#     calc_energy.append(get_tot_ED(x[i]))
 #Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical#Theorectical
 
 
 
 
 #Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot
-plt.scatter(xev,calc_energy,color='green',s=20,label='Energy Deposit Calculated from bethe-bloch Formula')
-plt.plot(xev,calc_energy,color='green',)
+# plt.scatter(xev,calc_energy,color='green',s=20,label='Energy Deposit Calculated from bethe-bloch Formula')
+# plt.plot(xev,calc_energy,color='green',)
 #Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot#Calculated Plot
 
 
 
 #observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed
-plt.scatter(xev,yobs,color='blue',s=20,label='Energy Deposit Observed From Geant4')
-plt.plot(xev,yobs,color='blue',)
+plt.scatter(x,yobs,color='blue',s=20,label='Energy Deposit Observed From Geant4')
+plt.plot(x,yobs,color='blue',)
 #observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed#observed
 
 

@@ -1,6 +1,12 @@
 import ROOT
+import numpy as np
+
+def bethefn(x):
+    return ((-1.665179153997467e-05)/(x*x))*(np.log(40.364180576082084 * x*x)-2*x*x) + 0.0007043300392805913
+
+
 canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
-histogram = ROOT.TH1F("histogram", "Plot of Cosmic Muon Flux  vs Energy Deposit", 25, 0, 0.005)
+histogram = ROOT.TH1F("histogram", "Plot of Cosmic Muon Flux  vs Energy Deposit", 25, 0, 5000000)
 
 histogram.SetXTitle("Total Energy Deposit of the Cosmic Muons (MeV)")
 histogram.SetYTitle("Cosmic Muon Flux (no of particles cm^{-2}min^{-1})")
@@ -18,7 +24,9 @@ for line in file:
     value = float(line.strip())
     i=i+value
     count+=1
-    histogram.Fill(value)
+    if value!=0:
+        histogram.Fill(bethefn(value*0.001))
+        print(bethefn(value*0.001))
 file.close()
 
 
@@ -41,3 +49,4 @@ canvas.SetLogy()
 histogram.Draw()
 canvas.Update()
 ROOT.gApplication.Run()
+
