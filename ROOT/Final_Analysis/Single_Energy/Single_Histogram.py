@@ -5,6 +5,8 @@ def bethefn(x):
     return ((-1.665179153997467e-05)/(x*x))*(np.log(40.364180576082084 * x*x)-2*x*x) + 0.0007043300392805913
 
 
+
+
 canvas = ROOT.TCanvas("canvas", "Histogram", 1600, 900)
 histogram = ROOT.TH1F("histogram", "Plot of Cosmic Muon Flux  vs Energy Deposit", 25, 0, 5000000)
 
@@ -49,4 +51,8 @@ canvas.SetLogy()
 histogram.Draw()
 canvas.Update()
 ROOT.gApplication.Run()
+
+
+
+
 
