@@ -11,9 +11,10 @@ G4bool sensitivedetector:: ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist
  
     if(particle==G4MuonMinus::Definition()){
         G4double edep= aStep->GetTotalEnergyDeposit();
+        G4double time = aStep->GetPreStepPoint()->GetGlobalTime();
         std::ofstream file("output.txt", std::ios::app);
         file.seekp(0, std::ios::end);
-        file <<edep<< G4endl;
+        file << edep << "\t" << time/s<<G4endl;
         file.close();
     }  
 
