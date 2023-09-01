@@ -22,24 +22,6 @@ ylist = [2.23347e-03,6.22615e-04,5.31900e-04,5.30453e-04,5.379379e-04,
     6.78881e-04,6.98291e-04,7.28788e-04,7.38014e-04,7.42980e-04,
     7.64237e-04,8.11232e-04,8.35784e-04,8.43543e-04,8.47351e-04]  
 
+for i in range(len(xlist)):
+    print(xlist[i],"\t",ylist[i])
 
-
-xlist = np.array(xlist)
-ylist = np.array(ylist)
-ylist2 = np.array(ylist2)
-
-# Perform spline fitting on the given data
-spline = UnivariateSpline(xlist, ylist, s=0)  # You can adjust the smoothing factor 's' as needed
-
-# Estimate x coordinates for y values in ylist2
-x_estimated = spline(ylist2)
-
-# Print the results
-# for y, x in zip(ylist2, x_estimated):
-#     print(f"For y = {y}, estimated x = {x}")
-
-
-
-plt.plot(xlist,ylist)
-plt.plot(x_estimated,ylist2,color='r')
-plt.show()    
