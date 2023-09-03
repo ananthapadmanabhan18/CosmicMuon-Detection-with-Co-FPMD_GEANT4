@@ -1,0 +1,10 @@
+^C:\USERS\APMNA\ONEDRIVE\DOCUMENTS\GITHUB REPOS\GEANT4_ROOT\GEANT4\FINAL_SIMULATION _SAFE_COPY\BUILD1\CMAKEFILES\B351612E83C245C82588E4C54401F6FD\GENERATE.STAMP.RULE
+setlocal
+D:\Apps\CMake\bin\cmake.exe "-SC:/Users/apmna/OneDrive/Documents/GItHub Repos/Geant4_ROOT/Geant4/Final_Simulation _safe_copy" "-BC:/Users/apmna/OneDrive/Documents/GItHub Repos/Geant4_ROOT/Geant4/Final_Simulation _safe_copy/build1" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/apmna/OneDrive/Documents/GItHub Repos/Geant4_ROOT/Geant4/Final_Simulation _safe_copy/build1/simulation.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
