@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1693883954 "/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Conference_paper/invt_samp.tex" "invt_samp.pdf" "invt_samp" 1693883954 2
+["pdflatex"] 1693884591 "/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Conference_paper/invt_samp.tex" "invt_samp.pdf" "invt_samp" 1693884592 2
   "/home/apmnair18/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1693883952 25678 aa7c8fd3909e804e7d85441c21595406 ""
   "/home/apmnair18/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1691822603 20940275 04f77f6df47b895ddec077bf478d54bd ""
   "/home/apmnair18/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1691822647 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -96,12 +96,12 @@
   "/home/apmnair18/.miktex/texmfs/install/tex/latex/tools/bm.sty" 1691822605 13231 df28b16cc1506f657b947b66cabad463 ""
   "/home/apmnair18/.miktex/texmfs/install/tex/latex/tools/dcolumn.sty" 1691822605 2758 e40d567548bec26177b312c119fdc7ce ""
   "/home/apmnair18/.miktex/texmfs/install/tex/latex/url/url.sty" 1691822638 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Conference_paper/invt_samp.tex" 1693883944 8150 f7b3d1958532d09fe5f75f9a62350e0b ""
+  "/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Conference_paper/invt_samp.tex" 1693884589 8153 e2755722ba60cb6d2cf96a4dbf5b78ff ""
   "10pt.rtx" 996781240 4047 60a6d697ecb934a93b1e74b66f7c359c ""
   "aps.rtx" 1280474508 14168 894969157e77660e9ecc1fdda50dc6ee ""
   "fig_1.eps" 996790934 187 2ffa232c715809d67fd2599000fb1bbe ""
-  "invt_samp.aux" 1693883954 1292 ab97b464388ed4ba9a7913eba8c448e5 "pdflatex"
-  "invt_samp.tex" 1693883944 8150 f7b3d1958532d09fe5f75f9a62350e0b ""
+  "invt_samp.aux" 1693884591 1292 ab97b464388ed4ba9a7913eba8c448e5 "pdflatex"
+  "invt_samp.tex" 1693884589 8153 e2755722ba60cb6d2cf96a4dbf5b78ff ""
   "snp.cls" 1253269008 154141 d926a5d3679a66d9b50870280372ce36 ""
   "snpsymb.sty" 1253271820 5632 9bde4e417caa40f60ad34d5a36731424 ""
   (generated)
