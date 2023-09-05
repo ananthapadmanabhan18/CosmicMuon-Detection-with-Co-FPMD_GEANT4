@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.12)  5 SEP 2023 08:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.8.12)  5 SEP 2023 09:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -186,20 +186,9 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Conference_paper/invt_samp.tex:13: Missing } inserted.
-<inserted text> 
-                }
-l.13 \begin{document}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 /home/apmnair18/Documents/GitHub/VECC_Internship_2023/Report/Conference_paper/invt_samp.tex:13: Extra \endgroup.
-<recently read> \endgroup 
-                          
+\document ->\endgroup 
+                      \init@documenthook \set@typesize@hook \normalsize \set...
 l.13 \begin{document}
                      
 Things are pretty mixed up, but I think the worst is over.
@@ -259,137 +248,35 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/home/apmnair18/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (/home/apmnair18/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/home/apmnair18/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Package natbib Warning: Citation `poster' on page 1 undefined on input line 41.
-
-
-Package natbib Warning: Citation `dae' on page 1 undefined on input line 47.
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 51--55
-\OT1/cmr/m/n/10 here is very similar to that of Physical
- []
-
-
-Underfull \hbox (badness 4608) in paragraph at lines 51--55
-\OT1/cmr/m/n/10 Review C format. Very few changes
- []
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 51--55
-\OT1/cmr/m/n/10 have been made in this format, e.g., in
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 51--55
-\OT1/cmr/m/n/10 textwidth, textheight, etc. The sizes of
- []
-
-
-Underfull \hbox (badness 3792) in paragraph at lines 51--55
-\OT1/cmr/m/n/10 using the command []\OT1/cmtt/m/n/10 \Large{Title} \OT1/cmr/m/n/10 and
- []
-
-
-Underfull \hbox (badness 5147) in paragraph at lines 58--69
-[]\OT1/cmr/m/n/10 As the proceedings print will be in
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 58--69
-\OT1/cmr/m/n/10 monocolor, all necessary figures, plots,
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 58--69
-\OT1/cmr/m/n/10 2. Include only PostScript images (esp.
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 58--69
-\OT1/cmr/m/n/10 followed by dvips -Ppdf, which produces
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--69
-\OT1/cmr/m/n/10 a PostScript document with embedded
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 58--69
-\OT1/cmr/m/n/10 PostScript images. You can convert the
- []
-
-[1{/home/apmnair18/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}]
-
-LaTeX Warning: Reference `fig1' on page 2 undefined on input line 70.
-
-Package epstopdf Info: Source file: <fig_1.eps>
-(epstopdf)                    date: 2001-08-03 03:52:14
-(epstopdf)                    size: 187 bytes
-(epstopdf)             Output file: <fig_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-09-05 08:49:13
-(epstopdf)                    size: 4427 bytes
-(epstopdf)             Command: <miktex-epstopdf --outfile=fig_1-eps-converted-to.pdf fig_1.eps>
-(epstopdf)             \includegraphics on input line 75.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig_1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<fig_1-eps-converted-to.pdf, id=19, 100.375pt x 100.375pt>
-File: fig_1-eps-converted-to.pdf Graphic file (type pdf)
-<use fig_1-eps-converted-to.pdf>
-Package pdftex.def Info: fig_1-eps-converted-to.pdf  used on input line 75.
-(pdftex.def)             Requested size: 150.5621pt x 150.5621pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-[]\OT1/cmr/m/n/10 Below we have numbered single-line
- []
-
-
-LaTeX Warning: Reference `eq:one' on page 2 undefined on input line 137.
-
-
-Underfull \hbox (badness 1596) in paragraph at lines 149--154
-[]\OT1/cmr/m/n/10 Once the paper is written as per the
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 165--166
+Underfull \hbox (badness 1205) in paragraph at lines 70--71
  []\OT1/cmr/m/n/10 DAE Symp. on Nucl. Phys. \OT1/cmr/bx/n/10 vv\OT1/cmr/m/n/10 , ppp
  []
 
-[2 <./fig_1-eps-converted-to.pdf>] (invt_samp.aux)
-
-LaTeX Warning: There were undefined references.
-
+[1{/home/apmnair18/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}] (invt_samp.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
  ) 
 Here is how much of TeX's memory you used:
- 4357 strings out of 477486
- 60784 string characters out of 5813979
- 1948244 words of memory out of 5000000
- 25290 multiletter control sequences out of 15000+600000
- 576246 words of font info for 103 fonts, out of 8000000 for 9000
+ 4324 strings out of 477486
+ 60058 string characters out of 5813979
+ 1927244 words of memory out of 5000000
+ 25259 multiletter control sequences out of 15000+600000
+ 575551 words of font info for 101 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 66i,12n,76p,580b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on invt_samp.pdf (2 pages, 291859 bytes).
+ 66i,7n,76p,367b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></home/apmnair18/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on invt_samp.pdf (1 page, 149671 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
