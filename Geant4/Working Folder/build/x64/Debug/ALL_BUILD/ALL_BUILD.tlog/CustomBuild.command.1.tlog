@@ -1,0 +1,10 @@
+^C:\USERS\APMNA\DOCUMENTS\GITHUB\VECC_INTERNSHIP_2023\GEANT4\WORKING FOLDER\CMAKELISTS.TXT
+setlocal
+D:\Apps\CMake\bin\cmake.exe "-SC:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder" "-BC:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build" --check-stamp-file "C:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

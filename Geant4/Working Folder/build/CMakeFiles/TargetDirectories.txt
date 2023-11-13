@@ -1,4 +1,5 @@
-/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/simulation.dir
-/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/Simulation.dir
-/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/edit_cache.dir
-/home/apmnair18/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/rebuild_cache.dir
+C:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/simulation.dir
+C:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/Simulation.dir
+C:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/INSTALL.dir
+C:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/apmna/Documents/GitHub/VECC_Internship_2023/Geant4/Working Folder/build/CMakeFiles/ZERO_CHECK.dir

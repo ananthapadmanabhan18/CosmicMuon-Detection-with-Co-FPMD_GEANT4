@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\apmna\Documents\GitHub\VECC_Internship_2023\Geant4\Working Folder\build\CMakeFiles\3e1266d73243f0c284f83376309be34e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AA1E1AA9-19C2-3B09-A622-27A6507CA365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
