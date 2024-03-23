@@ -1,6 +1,0 @@
-#/run/numberOfThreads 4
-#/run/initialize
-/gun/particle mu-
-/gun/position 1.880232	2.224431 5.0 m
-/gun/momentum 0.01469158638310497 0.3042441313853957 -1.7268111381118358 GeV
-/run/beamOn 1

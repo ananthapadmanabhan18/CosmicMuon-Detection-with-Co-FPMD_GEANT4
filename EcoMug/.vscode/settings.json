@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "TestSuite.C": "cpp",
-        "Test.C": "cpp",
-        "void.C": "cpp",
-        "test.C": "cpp"
-    }
-}
