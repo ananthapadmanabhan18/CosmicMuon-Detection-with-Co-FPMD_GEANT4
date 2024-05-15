@@ -10,7 +10,7 @@
 #include "G4Proton.hh"
 #include "Randomize.hh"
 #include <array>
-// #include "EcoMug.h"
+#include "EcoMug.h"
 
 class primarygenerator : public G4VUserPrimaryGeneratorAction
 {
@@ -20,6 +20,8 @@ class primarygenerator : public G4VUserPrimaryGeneratorAction
         virtual void GeneratePrimaries(G4Event*);
     private:    
         G4ParticleGun* fparticlegun;
+        EcoMug* ecoMug;
+
 };
 
 
