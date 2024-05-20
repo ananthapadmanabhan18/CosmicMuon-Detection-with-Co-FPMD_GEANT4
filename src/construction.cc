@@ -16,7 +16,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct(){
     G4NistManager* nistManager = G4NistManager::Instance();
 
     // Defining the checkOverlaps
-    G4bool checkoverlap = true;
+    G4bool checkoverlap = false;
 
     // Defining the Materials
         //Defining Elements

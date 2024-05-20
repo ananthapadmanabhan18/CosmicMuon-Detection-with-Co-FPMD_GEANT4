@@ -12,7 +12,7 @@ void EventAction::BeginOfEventAction(const G4Event*){
 
 void EventAction::EndOfEventAction(const G4Event*){
 
-    G4cout << "Energy deposited: " << fEdep << G4endl;
+    // G4cout << "Energy deposited: " << fEdep << G4endl;
     G4AnalysisManager* man = G4AnalysisManager::Instance();
     man->FillNtupleDColumn(1, 0, fEdep);
     man->AddNtupleRow(1);

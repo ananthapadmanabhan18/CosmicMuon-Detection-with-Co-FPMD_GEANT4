@@ -25,7 +25,7 @@ void RunAction::BeginOfRunAction(const G4Run* run){
 
 
     G4AnalysisManager* man = G4AnalysisManager::Instance();
-    man->OpenFile("D:\\Coding\\Codes\\GIthub_Repos\\CosmicMuon-Detection-with-Co-FPMD_GEANT4\\Outputs\\outputs" + strRunID.str() + ".root");
+    man->OpenFile("D:\\Coding\\Codes\\GIthub_Repos\\CosmicMuon-Detection-with-Co-FPMD_GEANT4\\Outputs\\output_" + strRunID.str() + "_.root");
 
 }
 

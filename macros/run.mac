@@ -4,6 +4,43 @@
 /tracking/verbose 0
 /run/numberOfThreads 4
 /run/initialize
+/gun/energy 100 MeV
 /run/beamOn 10000
+/gun/energy 200 MeV
 /run/beamOn 10000
+/gun/energy 300 MeV
+/run/beamOn 10000
+/gun/energy 400 MeV
+/run/beamOn 10000
+/gun/energy 500 MeV
+/run/beamOn 10000
+/gun/energy 600 MeV
+/run/beamOn 10000
+/gun/energy 700 MeV
+/run/beamOn 10000
+/gun/energy 800 MeV
+/run/beamOn 10000
+/gun/energy 900 MeV
+/run/beamOn 10000
+/gun/energy 1 GeV
+/run/beamOn 10000
+/gun/energy 2 GeV
+/run/beamOn 10000
+/gun/energy 5 GeV
+/run/beamOn 10000
+/gun/energy 10 GeV
+/run/beamOn 10000
+/gun/energy 20 GeV
+/run/beamOn 10000
+/gun/energy 40 GeV
+/run/beamOn 10000
+/gun/energy 50 GeV
+/run/beamOn 10000
+/gun/energy 60 GeV
+/run/beamOn 10000
+/gun/energy 70 GeV
+/run/beamOn 10000
+/gun/energy 80 GeV
+/run/beamOn 10000
+/gun/energy 100 GeV
 /run/beamOn 10000
