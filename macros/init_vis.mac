@@ -4,4 +4,5 @@
 /tracking/verbose 0
 /run/numberOfThreads 4
 /run/initialize
-/run/beamOn 20000
+#/run/beamOn 200000
+/control/execute vis.mac

@@ -3,22 +3,20 @@
 
 #include "G4UserSteppingAction.hh"
 #include "G4Step.hh"
+#include "G4Track.hh"
+#include "G4ThreeVector.hh"
 #include "construction.hh"
+#include "G4RunManager.hh"
 #include "event.hh"
-#include "G4MuonPlus.hh"
-#include "G4MuonMinus.hh"
 
-class steppingaction : public G4UserSteppingAction
-{
+class SteppingAction : public G4UserSteppingAction{
     public:
-        steppingaction(eventaction* eventAction);
-        ~steppingaction();
-
+        SteppingAction(EventAction* eventAction);
+        ~SteppingAction();
 
         virtual void UserSteppingAction(const G4Step*);
-
     private:
-        eventaction *fEventAction;
+        EventAction* fEventAction;    
 };
 
 

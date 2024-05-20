@@ -2,17 +2,24 @@
 
 #define M_PI 3.14159265358979323846
 
+DetectorConstruction::DetectorConstruction(){
 
-detectorconstruction::detectorconstruction(){}
+}
 
-detectorconstruction::~detectorconstruction(){}
+DetectorConstruction::~DetectorConstruction(){
+
+}
+
+G4VPhysicalVolume *DetectorConstruction::Construct(){
 
 
-G4VPhysicalVolume *detectorconstruction::Construct(){
-
-    // Define materials
     G4NistManager* nistManager = G4NistManager::Instance();
-    //Defining Elements
+
+    // Defining the checkOverlaps
+    G4bool checkoverlap = true;
+
+    // Defining the Materials
+        //Defining Elements
     G4Material* air = nistManager->FindOrBuildMaterial("G4_AIR");
     G4Material* plastic = nistManager->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
     G4Element* gold = nistManager->FindOrBuildElement("Au");
@@ -23,7 +30,6 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     G4Element* Silicon = nistManager->FindOrBuildElement("Si");
     G4Element* carbon = nistManager->FindOrBuildElement("C");
     G4Element* oxygen = nistManager->FindOrBuildElement("O");
-
 
     //Aluminium
     G4Material* Al = new G4Material("Aluminium", 2.7 * g/cm3, 1);
@@ -78,13 +84,13 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     G4VisAttributes* WW = new G4VisAttributes(G4Colour(0.85,0.85,1,0));
     WW->SetForceSolid(true);
 
-    G4bool checkoverlap = false;
+
 
 
     //Defining World Volume
     G4Box *solidworld = new G4Box("world",5*m,5*m,5*m);
     G4LogicalVolume *logicworld = new G4LogicalVolume(solidworld, air,"logicalworld");
-    G4VPhysicalVolume *physicalworld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0*km),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
+    G4VPhysicalVolume *physWorld = new G4PVPlacement(nullptr,G4ThreeVector(0,0,0*km),logicworld, "physicalworld", nullptr, false,0,checkoverlap);
     // logicworld->SetVisAttributes(WW);
 
 
@@ -114,7 +120,6 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
     ArGaslogic = new G4LogicalVolume(arGas, gasMixture, "PCB");
     new G4PVPlacement(nullptr, G4ThreeVector(0, 0, 0), ArGaslogic, "PCB1", logicworld, false, 0,checkoverlap);
     ArGaslogic->SetVisAttributes(gas);
-    fScoringVolume = ArGaslogic;
 
     //Defining Honeycomb detector
     G4Polyhedra *hcdetector = new G4Polyhedra("HCD", phiStart,phiTotal,numSides,numZplanes,zPlanes,rInner, rOuter);
@@ -273,12 +278,14 @@ G4VPhysicalVolume *detectorconstruction::Construct(){
 
 
 
-    return physicalworld;
+
+    fScoringVolume = ArGaslogic;
+    return physWorld;
 }
 
 
+void DetectorConstruction::ConstructSDandField(){
+    SensitiveDetector* sensitiveDetector = new SensitiveDetector("SensitiveDetector");
+    ArGaslogic->SetSensitiveDetector(sensitiveDetector);
 
-void detectorconstruction::ConstructSDandField(){
-    sensitivedetector *sensdet = new sensitivedetector("SD");
-    ArGaslogic->SetSensitiveDetector(sensdet);
 }

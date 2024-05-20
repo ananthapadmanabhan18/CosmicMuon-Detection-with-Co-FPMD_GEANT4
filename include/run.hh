@@ -2,29 +2,19 @@
 #define RUN_HH
 
 #include "G4UserRunAction.hh"
+#include "G4Run.hh"
 #include "G4AnalysisManager.hh"
-#include "G4RootFileManager.hh"
-#include "G4RootNtupleManager.hh"
-#include "G4RootFileManager.hh"
-#include "G4RootNtupleManager.hh"
-#include "G4RootFileDef.hh"
-#include "g4root_defs.hh"
+// #include "G4RootAnalysisManager.hh"
 
-class runaction : public G4UserRunAction{
+
+class RunAction : public G4UserRunAction{
 
     public:
-        runaction();
-        ~runaction();
-
-
-    virtual void BeginOfRunAction(const G4Run*);
-    virtual void EndOfRunAction(const G4Run*);
-
-
+        RunAction();
+        ~RunAction();
+        virtual void BeginOfRunAction(const G4Run*);
+        virtual void EndOfRunAction(const G4Run*);
 };
-
-
-
 
 
 #endif

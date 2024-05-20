@@ -1,23 +1,27 @@
 #include "stepping.hh"
 
 
-steppingaction::steppingaction(eventaction *eventAction){
+SteppingAction::SteppingAction(EventAction* eventAction){
 
     fEventAction = eventAction;
+
+}
+SteppingAction::~SteppingAction(){
+
 }
 
-steppingaction::~steppingaction(){}
+void SteppingAction::UserSteppingAction(const G4Step* step){
 
+    G4LogicalVolume* volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();   
 
-void steppingaction::UserSteppingAction(const G4Step *step)
-{
-    G4double edep=step->GetTotalEnergyDeposit();
-    G4ParticleDefinition* def =  step->GetTrack()->GetDefinition();
-    if(def == G4MuonPlus::Definition() || def == G4MuonMinus::Definition()){
-        fEventAction->AddEdep(edep);
-        // G4cout << " Muon Detected" << G4endl;
-        // G4cout << "Energy deposited: " << edep << " MeV" << G4endl;
-
-    }
+    const DetectorConstruction* detectorConstruction_1 = static_cast<const DetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    G4LogicalVolume* fScoringVolume = detectorConstruction_1->GetScoringVolume();
     
+    if(volume != fScoringVolume){
+        return;
+    }
+    G4double edep = step->GetTotalEnergyDeposit();
+    fEventAction->AddEdep(edep);
+
 }
+

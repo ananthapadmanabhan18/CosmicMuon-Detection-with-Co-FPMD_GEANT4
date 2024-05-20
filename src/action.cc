@@ -1,31 +1,31 @@
 #include "action.hh"
 
-actioninitialization::actioninitialization(){}
+ActionInitialization::ActionInitialization(){
+    
+}
 
-actioninitialization::~actioninitialization(){}
+ActionInitialization::~ActionInitialization(){
+    
+}
 
 
-void actioninitialization::BuildForMaster() const {
-
-    runaction* runact = new runaction();
-    SetUserAction(runact);
-
+void ActionInitialization::BuildForMaster() const{
+    RunAction* runAction = new RunAction();
+    SetUserAction(runAction);
 }
 
 
 
-void actioninitialization::Build() const
-{
-    primarygenerator* generator = new primarygenerator();
-    SetUserAction(generator);
+void ActionInitialization::Build() const{
+    PrimaryGenerator* primaryGenerator = new PrimaryGenerator();
+    SetUserAction(primaryGenerator);
 
-    runaction* runact = new runaction();
-    SetUserAction(runact);
+    RunAction* runAction = new RunAction();
+    SetUserAction(runAction);
 
-
-    eventaction* eventAction = new eventaction(runact);
+    EventAction* eventAction = new EventAction(runAction);
     SetUserAction(eventAction);
 
-    steppingaction* stepact = new steppingaction(eventAction);
-    SetUserAction(stepact);
+    SteppingAction* steppingAction = new SteppingAction(eventAction);
+    SetUserAction(steppingAction);
 }

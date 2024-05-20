@@ -1,28 +1,38 @@
 #include "run.hh"
 
+RunAction::RunAction(){
 
-
-
-runaction::runaction(){} 
-
-
-runaction::~runaction(){} 
-
-
-
-void runaction::BeginOfRunAction(const G4Run*){
-
-    G4AnalysisManager*man = G4AnalysisManager::Instance();
-    man->OpenFile("D:\\Coding\\Codes\\GIthub_Repos\\Detection_of_Cosmic_Muons_using_Geant4\\Outputs\\output.root");
+    G4AnalysisManager* man = G4AnalysisManager::Instance();
     man->CreateNtuple("Hits", "Hits");
-    man->CreateNtupleDColumn("EnergyDeposit");
+    man->CreateNtupleDColumn("X");
+    man->CreateNtupleDColumn("Y");
+    man->CreateNtupleDColumn("Z");
     man->FinishNtuple(0);
+
+    man->CreateNtuple("Scoring", "Scoring");
+    man->CreateNtupleDColumn("fEdep");
+    man->FinishNtuple(1);
+
+}
+RunAction::~RunAction(){}
+
+void RunAction::BeginOfRunAction(const G4Run* run){
+    std::cout << "Run started!" << std::endl;
+
+    G4int runNumber = run->GetRunID();
+    std::stringstream strRunID;
+    strRunID << runNumber;
+
+
+    G4AnalysisManager* man = G4AnalysisManager::Instance();
+    man->OpenFile("D:\\Coding\\Codes\\GIthub_Repos\\CosmicMuon-Detection-with-Co-FPMD_GEANT4\\Outputs\\outputs" + strRunID.str() + ".root");
 
 }
 
-void runaction::EndOfRunAction(const G4Run*){
+void RunAction::EndOfRunAction(const G4Run*){
 
     G4AnalysisManager*man = G4AnalysisManager::Instance();
     man->Write();
     man->CloseFile();
+    std::cout << "Run ended!" << std::endl;
 }
