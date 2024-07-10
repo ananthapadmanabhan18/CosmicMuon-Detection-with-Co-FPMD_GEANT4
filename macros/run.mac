@@ -2,7 +2,7 @@
 /run/verbose 0
 /event/verbose 0
 /tracking/verbose 0
-/run/numberOfThreads 4
+/run/numberOfThreads 20
 /run/initialize
 /gun/energy 100 MeV
 /run/beamOn 10000
