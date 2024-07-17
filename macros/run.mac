@@ -44,3 +44,21 @@
 /run/beamOn 10000
 /gun/energy 100 GeV
 /run/beamOn 10000
+/gun/energy 200 GeV
+/run/beamOn 10000
+/gun/energy 300 GeV
+/run/beamOn 10000
+/gun/energy 400 GeV
+/run/beamOn 10000
+/gun/energy 500 GeV
+/run/beamOn 10000
+/gun/energy 600 GeV
+/run/beamOn 10000
+/gun/energy 700 GeV
+/run/beamOn 10000
+/gun/energy 800 GeV
+/run/beamOn 10000
+/gun/energy 900 GeV
+/run/beamOn 10000
+/gun/energy 1000 GeV
+/run/beamOn 10000
