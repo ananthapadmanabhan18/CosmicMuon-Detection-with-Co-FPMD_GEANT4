@@ -17,7 +17,7 @@ RunAction::RunAction(){
 RunAction::~RunAction(){}
 
 void RunAction::BeginOfRunAction(const G4Run* run){
-    std::cout << "Run started!" << std::endl;
+    // std::cout << "Run started!" << std::endl;
 
     G4int runNumber = run->GetRunID();
     std::stringstream strRunID;
@@ -34,5 +34,5 @@ void RunAction::EndOfRunAction(const G4Run*){
     G4AnalysisManager*man = G4AnalysisManager::Instance();
     man->Write();
     man->CloseFile();
-    std::cout << "Run ended!" << std::endl;
+    // std::cout << "Run ended!" << std::endl;
 }

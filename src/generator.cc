@@ -9,6 +9,14 @@ PrimaryGenerator::PrimaryGenerator(){
     // ecoMug->SetUseSky();
     // ecoMug->SetSkySize({{5*m,5*m}});
     // ecoMug->SetSkyCenterPosition({{0*m,0*m,5*m}});
+
+
+    fParticleGun->SetParticleDefinition(G4MuonMinus::Definition());
+    G4ThreeVector pos(0.0025*m,0.0025*m,2*m);
+    fParticleGun->SetParticlePosition(pos);
+    G4double mom = 1*GeV;
+    fParticleGun->SetParticleMomentum(mom);
+    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0*m,0*m,-1));
 }
 
 PrimaryGenerator::~PrimaryGenerator(){
@@ -20,12 +28,16 @@ void PrimaryGenerator::GeneratePrimaries(G4Event* anEvent){
 
 
 
-    fParticleGun->SetParticleDefinition(G4MuonMinus::Definition());
-    G4ThreeVector pos(0.0025*m,0.0025*m,2*m);
-    fParticleGun->SetParticlePosition(pos);
-    G4double mom = 1*GeV;
-    fParticleGun->SetParticleMomentum(mom);
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0*m,0*m,-1));
+    // fParticleGun->SetParticleDefinition(G4MuonMinus::Definition());
+    // G4ThreeVector pos(0.0025*m,0.0025*m,2*m);
+    // fParticleGun->SetParticlePosition(pos);
+    // G4double mom = 1*GeV;
+    // fParticleGun->SetParticleMomentum(mom);
+    // fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0*m,0*m,-1));
+
+
+
+
     // ecoMug->Generate();
 
     // //Setting the Particle according to charge
